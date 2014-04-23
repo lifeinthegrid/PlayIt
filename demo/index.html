@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PlayIt Main Menu - An HTML 5 Media Plugin.</title>
+	<meta name="description" content="Create or own media play center on your web site with PlayIt" />
+	<link rel="stylesheet" href="../style.css" type="text/css" media="all" /> 
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../source/jquery.playit.js" id="playit-source"></script>
+	<script type="text/javascript" src="../config.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			jQuery('#playit-version').html(PLAYIT_DETAILS);
+		});
+	</script>
+</head>
+<body>
+
+
+<!-- ==============================================
+TOP NAVIGATION -->
+<table class="top-nav">
+	<tr>
+		<td class="column-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td class="column-1">
+			<h2>PlayIt!</h2>
+			<div>The Ultimate Web Player!</div>
+		</td>
+		<td class="column-2"></td>
+		<td class="column-3">
+			<a href="../index.html">Start</a> |
+			<i>Demos</i><br/><div id="playit-version-mode"></div>
+		</td>
+	</tr>
+</table>
+
+
+<div class="content-index-screen">
+	<h2>
+		<img src="../source/images/bundle-32.png"  /> Demos
+	</h2> 
+	
+	<hr />
+	<div class="sub-title">
+		<i style="font-size:14px">
+			To get started take a look at the 'About PlayIt' demo and the 'Quick Start' template...
+		</i><br/><br/>
+		<table class="attr-grid" style="background-color:#F9F9F9">
+			<tr>
+				<td>DEMO</td>
+				<td>DESCRIPTION</td>
+			</tr>
+			<tr>
+				<td style="white-space:nowrap;"><a href="about-playit.html">About PlayIt</a></td>
+				<td>This demo helps to document the various features in PlayIt</td>
+			</tr>
+			<tr>
+				<td><a href="playit-help.html">PlayIt Help</a></td>
+				<td>Create a help system around all your Media.</td>
+			</tr>					
+			<tr>
+				<td><a href="media-player.html">Media Player</a></td>
+				<td>Create a full blown media player with any customizable ThemeRoller template.</td>
+			</tr>
+			<tr>
+				<td><a href="localize.html">Localizable</a></td>
+				<td>Customize PlayIt to your specific language.</td>
+			</tr>
+			<tr>
+				<td style="white-space:nowrap;"><a href="quick-start.html">Quick Start</a></td>
+				<td>Use this template to start your setup quickly</td>
+			</tr>		
+		</table>
+	</div>
+</div>
+
+
+	
+</body>
+</html>

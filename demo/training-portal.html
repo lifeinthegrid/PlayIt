@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PlayIt - Training Portal Demo</title>
+	<meta name="description" content="Create powerful media displays with PlayIt. PlayIt is your ultimate web based media player." />
+	<link rel="stylesheet" href="../style.css" type="text/css" media="all" /> 
+
+	<!-- ==============================================
+	REQUIRED FOR PLAYIT: HTML 5 and Legacy support -->
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/redmond/jquery-ui.css" id="playit-jquery-ui-css" type="text/css"/>
+	<link rel="stylesheet" href="../source/jquery.playit.css" type="text/css" /> 
+	<link rel="stylesheet" href="../lib/mediaelementjs/mediaelementplayer.css" type="text/css" /> 
+	<link rel="stylesheet" href="../lib/mediaelementjs/mejs-skins.css" type="text/css" /> 
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../source/jquery.playit.js" id="playit-source"></script>
+	<script type="text/javascript" src="../lib/mediaelementjs/mediaelement-and-player.min.js"></script>
+	<!-- ============================================== -->
+	
+	<!-- ==============================================
+	REQUIRED FOR PLAYIT: HTML 5 Only Support 
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" id="playit-jquery-ui-css" type="text/css"/>
+	<link rel="stylesheet" href="../source/jquery.playit.css" type="text/css" /> 
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../source/jquery.playit.js" id="playit-source"></script>
+	<!-- ============================================== -->
+
+	<script type="text/javascript" src="../config.js"></script>
+</head>
+<body>
+
+	<!-- ==============================================
+	TOP NAVIGATION -->
+	<table class="top-nav">
+		<tr>
+			<td class="column-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td class="column-1">
+				<h2>PlayIt - Training Simulator</h2>
+				<span>Create your own training system with PlayIt</span>
+			</td>
+			<td class="column-2">
+				ThemeRoller Ready!<br/>
+				<select id="theme" onchange="javascript:applyTheme(this.options[this.selectedIndex].text);">
+					<option>cupertino</option>
+					<option>black-tie</option>
+					<option>blitzer</option>
+					<option>excite-bike</option>
+					<option>flick</option>
+					<option>hot-sneaks</option>
+					<option>humanity</option>
+					<option>overcast</option>
+					<option>pepper-grinder</option>
+					<option selected="true">redmond</option>
+					<option>smoothness</option>
+					<option>south-street</option>
+					<option>start</option>
+					<option>sunny</option>
+					<option>ui-lightness</option>
+				</select>
+			</td>
+			<td class="column-3">
+				<a href="../index.html">Main Menu</a> |
+				<a href="training-portal.xml">Configuration</a><br/>
+				<div id="playit-version-mode"></div>
+			</td>
+		</tr>
+	</table>
+
+
+
+	<div class="content">
+		
+		<!-- ==============================================
+		REQUIRED FOR PLAYIT. -->
+		<div id="player" style="width:100%; height:600px"></div><br /><br />
+		
+		<script type="text/javascript">
+		    var player = null;
+
+		    jQuery(document).ready(function ()
+		    {
+		        var xmlfile = "../data-web/training-portal.xml";
+		        player = jQuery("#player").playit(
+				{
+				    dataSourceOptions: {
+				        xmlConfig: xmlfile,
+				        cacheXml: false
+				    }
+				});
+		    });
+			
+            function applyTheme(theme)
+            {
+                if (player)
+                {
+                    player.each(function ()  {this.playit.applyTheme(theme);  return; });
+                }
+            }
+		</script>
+		<!-- ============================================== -->
+		
+	</div>
+	
+</body>
+</html>

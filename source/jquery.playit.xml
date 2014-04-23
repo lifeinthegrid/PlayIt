@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  ===============================================================
+This XML file contains the basic skeleton and default elements for PLAYIT
+For full details see: http://lifeinthegrid.com/playit
+================================================================== -->
+<playit  xmlns="http://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
+	accordion-animate="true"
+	accordion-autoselect="true"
+	accordion-minwidth="200"
+	accordion-maxwidth="400"
+	autofill="false"
+	
+	toolbar-title="PlayIt - Quick Start"
+	toolbar-showsearch="true"
+	toolbar-searchtext="Search"
+	toolbar-searchwidth="auto"
+
+	view-default="grid"
+	
+	audio-autoplay="false"
+	audio-info-enable="true"
+	audio-infobox-modal="true"
+	audio-infobox-height="350"
+	audio-infobox-width="600"
+	audio-infobox-resizable="true"
+	
+	image-autoplay="true"
+	image-dialog-height="500"
+	image-dialog-width="800"
+	image-info-enable="true"
+	image-slides-interval="3000"
+	
+	video-autoplay="false"
+	video-dialog-height="400"
+	video-dialog-width="600"
+	video-info-enable="true"
+	video-navbar-enable="true">
+
+    <section name="Section 1" isdefault="true">
+        <category type="link" name="" link-src="" ></category>
+    </section>
+
+	<section name="Section 2" isdefault="false">
+		<!--  ===============================================================
+		AUDIO
+		================================================================== -->
+		<category
+			type="Audio"
+			name="Audio Category">
+			<grid>
+				<fields sort-column="title" sort-direction="desc">
+					<field match="title" display="Name" />
+					<field match="artist" display="Artist"/>
+					<field match="album" display="Album"/>
+				</fields>
+			</grid>
+			<list>
+				<fields sort-column="artist" sort-direction="desc">
+					<field match="title" display="" sort-display="Title"/>
+					<field match="artist" display="Artist: " sort-display="Artist"/>
+				</fields>
+			</list>
+			<tile item-size=""></tile>
+			<audio title="" src="" artist="" album="" info-enable="" poster="" thumb="" track="">
+				<info>
+                    <![CDATA[	 ]]>
+               </info>
+			</audio>
+            
+		</category>
+
+		<!--  ===============================================================
+		IMAGE
+		================================================================== -->
+		<category type="image" name="Images Category" isdefault="false">
+			<grid>
+				<fields  sort-column="title" sort-direction="asc">
+					<field match="title" display="Title" />
+				</fields>
+			</grid>
+			<list>
+				<fields  sort-column="title" sort-direction="asc">
+					<field match="title" display="" sort-display="Title" />
+				</fields>
+			</list>
+			<tile item-size=""></tile>
+			<img  title="" src=""  poster=""  thumb="" info-enable="">
+			    <info><![CDATA[  ]]></info>
+			</img>
+		</category>
+
+		<!--  ===============================================================
+		LINK
+		================================================================== -->
+		<category type="link" name="Links Category" isdefault="false">
+			<grid>
+				<fields>
+					<field match="title" display="Link" />
+				</fields>
+			</grid>
+			<list>
+				<fields>
+					<field match="title" sort-display="Link" />
+				</fields>
+			</list>
+			<tile item-size=""></tile>
+			<link title="" src="" poster="" thumb="" features="" target="" />
+		</category>
+
+		<!--  ===============================================================
+		VIDEO
+		================================================================== -->
+		<category type="video" name="Video Category" isdefault="false">
+			<grid>
+				<fields>
+					<field match="title" display="Title" />
+					<field match="length" display="Length" />
+				</fields>
+			</grid>
+			<list>
+				<fields>
+					<field match="title" display="Title: " />
+                    <field match="length" display="Length: " />
+                    <field match="size" display="My Size: " />
+				</fields>
+			</list>
+			<tile item-size=""></tile>
+            
+			<video player="" title="" src="" poster="" thumb="" info-enable="" length="" size="" >
+				<info><![CDATA[  ]]></info>
+			</video>
+		</category>
+	</section>
+</playit>

@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playit
+	accordion-animate="true"
+	accordion-autoselect="true"
+	
+	toolbar-title="Adobe Creative Suite - Training Portal"
+	toolbar-showsearch="true"
+	toolbar-searchtext="Search"
+	toolbar-searchwidth="auto"	
+
+	view-default="list"	
+	
+	audio-autoplay="false"
+	audio-info-enable="true"
+	audio-infobox-modal="true"
+	audio-infobox-height="350"
+	audio-infobox-width="600"
+	audio-infobox-resizable="true"
+	
+	image-autoplay="false"
+	image-dialog-height="500"
+	image-dialog-width="800"
+	image-info-enable="false"
+	image-slides-interval="5500"
+	
+	video-autoplay="false"
+	video-dialog-height="500"
+	video-dialog-width="800"
+	video-info-enable="true"
+	video-navbar-enable="true">
+
+
+	<!--  ===============================================================
+	AFTER EFFECT SECTION 
+	================================================================== -->
+	<section name="After Effects">
+	
+		<category type="link" name="Overview" link-src="links/training-overview.html" ></category>
+		<category type="separator"></category>
+		<category type="link" name="About" link-src="http://en.wikipedia.org/w/index.php?title=Adobe_After_Effects&amp;printable=yes" ></category>
+	
+	
+	
+		<category
+			type="Link"
+			name="Articles"
+			isdefault="false">	
+			<grid>
+				<fields sort-column="artist" sort-direction="desc">
+					<field match="artist" display="Producer" width="200px" />
+					<field match="title" display="Title" />
+				</fields>
+			</grid>
+			<list enable="false" />
+			<tile enable="false" />
+			<link
+				src="http://www.adobetv.com"
+				url="adobetv.com"
+				title="Adobe TV: After Effects Channel"
+				desc="All kinds of videos on After Effects"
+				thumb="http://a1.twimg.com/profile_images/718296138/ATV_300_normal.jpg">
+			</link>
+		</category>
+		
+		<category type="link" name="Help &amp; Support" link-src="http://help.adobe.com/en_US/aftereffects/cs/using/index.html" ></category>
+		<category type="link" name="Keyboard Shortcuts" link-src="http://www.shortcutworld.com/en/mac/After-Effects_CS5.pdf" ></category>
+	
+		<category
+			type="Audio"
+			name="Podcasts">
+			<grid>
+				<fields sort-column="artist" sort-direction="desc">
+					<field match="title" display="Title" width="40%" />
+					<field match="artist" display="Producer" width="250px" />
+					<field match="length" display="Length" />
+					<field match="series" display="Series" />
+				</fields>
+			</grid>
+			<list>
+				<fields>
+					<field match="title" display="" sort-display="Title"/>
+					<field match="artist" display="Produced By: " sort-display="Producer"/>
+				</fields>
+			</list>
+			<audio
+				title="AE Basics 1: Workspaces"
+				src="http://podcasts2.creativecow.net/episodes/wAd/ipod/1020.mp4"
+				artist="CreativeCow.com"
+				album="After Effects"
+				length="9:19"
+				poster="http://forums.creativecow.net/graphics/creativecow_icon.gif"
+				series="1 of 4"
+				track="1">
+					<info>
+				    <![CDATA[
+                    <div class='playit-info-podcast'>
+						<p>
+							<i>By: Andrew Devis (00:09:19) -- 6/15/2011</i><br/>
+							<img src="http://forums.creativecow.net/graphics/creativecow_icon.gif" />
+							In this first tutorial, Andrew Devis introduces After Effects workspaces - how to modify, save, reset and delete them - as well as showing how to move 
+							panels around to create a custom workspace just the way you want it!
+						</p><br/><br/>
+						<a href="http://podcasts.creativecow.net/after-effects-tutorials-podcast/camera-mapping-in-after-effects" target="_blank">Read Full Article</a> <br/>
+						<a href="http://creativecow.net" target="_blank">Visit CreativeCow.com </a>
+                    </div>
+                    ]]>
+					</info>
+			</audio>
+			<audio
+				title="AE Basics 2: Importing Assets"
+				src="http://podcasts2.creativecow.net/episodes/wAd/ipod/1021.mp4"
+				artist="CreativeCow.com"
+				album="After Effects"
+				length="5:55"
+				poster="http://forums.creativecow.net/graphics/creativecow_icon.gif"
+				series="2 of 4"
+				track="2">
+					<info>
+					<![CDATA[
+                    <div class='playit-info-podcast'>
+						<p>
+							<i>By: Andrew Devis (00:05:55) -- 6/22/2011</i><br/>
+							<img src="http://forums.creativecow.net/graphics/creativecow_icon.gif" />
+							AE Basics - A Creative Cow series for new users of Adobe After Effects - in this second tutorial Andrew Devis looks at how to get your assets in to After Effects with a variety of useful methods from direct import to browsing in Adobe Bridge. 
+						</p><br/><br/>
+						<a href="http://podcasts.creativecow.net/after-effects-tutorials-podcast/ae-basics-2-importing-assets" target="_blank">Read Full Article</a> <br/>
+						<a href="http://creativecow.net" target="_blank">Visit CreativeCow.com </a>
+                    </div>
+                    ]]>
+					</info>
+			</audio>
+			<audio
+				title="AE Basics 3: Creating Compositions"
+				src="http://podcasts2.creativecow.net/episodes/wAd/ipod/1022.mp4"
+				artist="CreativeCow.com"
+				album="After Effects"
+				length="10:12"
+				poster="http://forums.creativecow.net/graphics/creativecow_icon.gif"
+				series="3 of 4"
+				track="3">
+					<info>
+					<![CDATA[
+                    <div class='playit-info-podcast'>
+						<p>
+							<i>By: Andrew Devis (00:10:12) -- 6/29/2011</i><br/>
+							<img src="http://forums.creativecow.net/graphics/creativecow_icon.gif" />
+							In this third tutorial, Andrew Devis shows how to create compositions in After Effects. Compositions are the 'boxes' in which you work with your assets. 
+							AE Basics - A Creative Cow series for new users of Adobe After Effects. Andrew shows how to create compositions from presets as well as how to instantly create a composition that exactly matches the footage you are using. 
+						</p><br/><br/>
+						<a href="" target="_blank">Read Full Article</a> <br/>
+						<a href="http://creativecow.net" target="_blank">Visit CreativeCow.com </a>
+                    </div>
+                    ]]>
+					</info>
+			</audio>
+			<audio
+				title="AE Basics 4: Importing Photoshop Documents (PSDs)"
+				src="http://podcasts2.creativecow.net/episodes/wAd/ipod/1039.mp4"
+				artist="CreativeCow.com"
+				album="After Effects"
+				length="11:25"
+				poster="http://forums.creativecow.net/graphics/creativecow_icon.gif"
+				series="4 of 4"
+				track="4">
+					<info>
+					<![CDATA[
+                    <div class='playit-info-podcast'>
+						<p>
+							<i>By: Andrew Devis (00:11:25) -- 7/6/2011</i><br/>
+							<img src="http://forums.creativecow.net/graphics/creativecow_icon.gif" />
+							AE Basics -- A Creative Cow series for new users of Adobe After Effects. 4 -- In this fourth tutorial, Andrew Devis goes over the options After Effects gives you for importing Photoshop documents. When you try and import a Photoshop document, After Effects gives you a dialogue box with several options. Andrew looks at those options so that you get exactly what you want from your Photoshop document when you bring it into After Effects.
+						</p><br/><br/>
+						<a href="" target="_blank">Read Full Article</a> <br/>
+						<a href="http://creativecow.net" target="_blank">Visit CreativeCow.com </a>
+                    </div>
+                    ]]>
+					</info>
+			</audio>
+
+			<audio
+				title="Learn how to use Mocha in After Effects CS4"
+				src="http://hw.libsyn.com/p/d/6/b/d6bf05956b4999b3/podcast-AE-mocha.mp4"
+				artist="CreativeSuitePodcast.com"
+				album="After Effects"
+				length="12:28"
+				poster="http://images.groups.adobe.com.s3.amazonaws.com/132b53d/cs5_logo.jpg"
+				series="1 of 1">
+				<info>
+				<![CDATA[
+				      <div class='playit-info-podcast'>
+						<p>
+							<img src="http://images.groups.adobe.com.s3.amazonaws.com/132b53d/cs5_logo.jpg" />
+							In this episode special guest and After Effects wizard Steve Whatley shows us how to use the NEW Mocha plug-in that ships with After Effects CS4!
+						</p>
+						<div style='text-align:center'>
+							<a href="http://creativesuitepodcast.com/learn_how_to_use_mocha_in_after_effects_cs4" target="_blank">View Article</a> <br/>
+							<a href="http://www.http://creativesuitepodcast.com" target="_blank">CreativeSuitePodcast.com </a><br/><br/>
+						</div>
+                    </div>
+				]]>
+				</info>
+			</audio>
+			
+			<audio
+				title="After Effects CS5.5 Workflow Techniques"
+				src="http://media.kelbymediagroup.com/layersmagazine/video/tutorials/mcmahon_pr_premiere_workflow.mp4"
+				artist="LayersMagazine.com"
+				album="After Effects"
+				length="7:58"
+				poster="http://media.kelbymediagroup.com/layersmagazine/images/tutorials/design/photoshop/56/cover_1.jpg"
+				series="1 of 1">
+				<info>
+				<![CDATA[
+				      <div class='playit-info-podcast'>
+						<p>
+							<img src="http://media.kelbymediagroup.com/layersmagazine/images/tutorials/design/photoshop/56/cover_1.jpg" />
+							Franklin covers new workflow techniques in CS5.5 and efficient ways to complete projects faster including creating a new composition from files, exporting into Premiere Pro CS5.5, saving a backwards compatible version, changing the dual time display as well as the improved disk caching.
+						</p>
+						<div style='text-align:center'>
+							<a href="http://layersmagazine.com/category/aftereffects" target="_blank">View Article</a> <br/>
+							<a href="http://layersmagazine.com" target="_blank">LayersMagazine.com</a><br/><br/>
+						</div>
+                    </div>
+				]]>
+				</info>
+			</audio>	
+			<audio
+				title="Warp Stabilizer in After Effects CS5.5"
+				src="http://media.kelbymediagroup.com/layersmagazine/video/tutorials/mcmahon_pr_warp_stabilizer.mp4"
+				artist="LayersMagazine.com"
+				album="After Effects"
+				length="9:41"
+				poster="http://media.kelbymediagroup.com/layersmagazine/images/tutorials/design/photoshop/56/cover_1.jpg"
+				series="1 of 1">
+				<info>
+				<![CDATA[
+				      <div class='playit-info-podcast'>
+						<p>
+							<img src="http://media.kelbymediagroup.com/layersmagazine/images/tutorials/design/photoshop/56/cover_1.jpg" />
+							Franklin goes over how to master the new Warp Stabilizer tool in AE CS5.5, including the subspace warp feature and the synthesize edges option.
+						</p>
+						<div style='text-align:center'>
+							<a href="http://layersmagazine.com/category/aftereffects" target="_blank">View Article</a> <br/>
+							<a href="http://layersmagazine.com" target="_blank">LayersMagazine.com</a><br/><br/>
+						</div>
+                    </div>
+				]]>
+				</info>
+			</audio>	
+
+		</category>	
+	
+		
+		<category
+			type="Video"
+			name="Videos" 
+			view-default="tile"
+			isdefault="false">
+			<grid>
+				<fields sort-column="artist" sort-direction="desc">
+					<field match="artist" display="Producer" width="200px" />
+					<field match="title" display="Title" />
+					<field match="series" display="Series" />
+					<field match="time" display="Runtime" />
+					<field match="date" display="Added" />
+				</fields>
+			</grid>
+			<list>
+				<fields>
+					<field match="title" display="" sort-display="Title"/>
+					<field match="artist" display="Produced By: " sort-display="Producer"/>
+					<field match="series" display="Series: " />
+				</fields>
+			</list>	
+			<tile enable="true" />
+			<!-- ADOBE TV -->
+			<video
+				player="remote"
+				src="http://tv.adobe.com/embed/426/5991/"
+				title="After Effects workflow overview"
+				artist="AdobeTV.com"
+				time="02:25"
+				series="1 of 5"
+				date="04/29/2010"
+				poster="http://thumbnails.tv.adobe.com/CA1E2D2E-1C23-D1F3-EF402DF1CA0C17E9.jpg">
+			</video>	
+			<video
+				player="remote"
+				src="http://tv.adobe.com/embed/426/5993/"
+				title="Panels and Workspaces"
+				artist="AdobeTV.com"
+				time="06:10"
+				series="2 of 5"
+				date="04/30/2010"
+				poster="http://thumbnails.tv.adobe.com/CA1E2D2E-1C23-D1F3-EF402DF1CA0C17E9.jpg">
+			</video>	
+			<video
+				player="remote"
+				src="http://tv.adobe.com/embed/426/5994/"
+				title="Importing elements into After Effects"
+				artist="AdobeTV.com"
+				time="02:30"
+				series="3 of 5"
+				date="05/01/2010"
+				poster="http://thumbnails.tv.adobe.com/CA1E2D2E-1C23-D1F3-EF402DF1CA0C17E9.jpg">
+			</video>
+			<video
+				player="remote"
+				src="http://tv.adobe.com/embed/426/5995/"
+				title="Adding elements to the timeline"
+				artist="AdobeTV.com"
+				time="02:04"
+				series="4 of 5"
+				date="04/30/2010"
+				poster="http://thumbnails.tv.adobe.com/CA1E2D2E-1C23-D1F3-EF402DF1CA0C17E9.jpg">
+			</video>
+			<video
+				player="remote"
+				src="http://tv.adobe.com/embed/426/5996/"
+				title="Working with Layers"
+				artist="AdobeTV.com"
+				time="03:52"
+				series="5 of 5"
+				date="05/02/2010"
+				poster="http://thumbnails.tv.adobe.com/CA1E2D2E-1C23-D1F3-EF402DF1CA0C17E9.jpg">
+			</video>	
+
+			<!-- LAYERS MAG -->
+			<video
+				player="local"
+				src="http://media.kelbymediagroup.com/layersmagazine/video/tutorials/green_ae_rotobrush.mp4"
+				title="Rotobrush Tool in After Effects CS5"
+				artist="Layers Magazine"
+				time="05:47"
+				series="1 of 1"
+				date="04/13/2011"
+				poster="http://media.kelbymediagroup.com/layersmagazine/images/tutorials/design/photoshop/56/cover_1.jpg">
+			</video>	
+			<video
+				player="local"
+				src="http://media.kelbymediagroup.com/layersmagazine/video/tutorials/mcmahon_ae_interpolation.mp4"
+				title="Understanding Interpolation Animation in After Effects CS5"
+				artist="Layers Magazine"
+				time="05:47"
+				series="1 of 1"
+				date="03/15/2011"
+				poster="http://media.kelbymediagroup.com/layersmagazine/images/tutorials/design/photoshop/56/cover_1.jpg">
+			</video>
+			<video
+				player="local"
+				src="http://media.kelbymediagroup.com/layersmagazine/video/tutorials/mcmahon_ae_roving_keyframes.mp4"
+				title="Roving Keyframes for Smooth Motion in After Effects CS5"
+				artist="Layers Magazine"
+				time="06:59"
+				series="1 of 1"
+				date="03/10/2011"
+				poster="http://media.kelbymediagroup.com/layersmagazine/images/tutorials/design/photoshop/56/cover_1.jpg">
+			</video>
+
+			<video
+				player="local"
+				src="http://media.kelbymediagroup.com/layersmagazine/video/tutorials/mcmahon_ae_text_animation.mp4"
+				title="3D Text Animation in After Effects"
+				artist="Layers Magazine"
+				time="11:00"
+				series="1 of 1"
+				date="05/02/2010"
+				poster="http://media.kelbymediagroup.com/layersmagazine/images/tutorials/design/photoshop/56/cover_1.jpg">
+			</video>
+		</category>
+		
+		
+		<category
+			type="Link"
+			name="Web Sites"
+			isdefault="false">	
+			<grid enable="false" />
+			<list>
+				<fields>
+					<field match="title" display="Title: " sort-display="Title" />
+					<field match="desc" display="About: " />
+					<field match="url" display="Link: "  sort-display="URL"/>
+				</fields>
+            </list>		
+			<tile enable="false" />
+			<link
+				src="http://www.adobetv.com"
+				url="adobetv.com"
+				title="Adobe TV: After Effects Channel"
+				desc="All kinds of videos on After Effects"
+				thumb="http://a1.twimg.com/profile_images/718296138/ATV_300_normal.jpg">
+			</link>
+			<link
+				src="http://layersmagazine.com/"
+				url="layersmagazine.com"
+				title="Layers Magazine"
+				desc="The How-to Magazine for Everything Adobe"
+				thumb="http://media.kelbymediagroup.com/layersmagazine/images/tutorials/design/photoshop/56/cover_1.jpg">
+			</link>
+			<link
+				src="http://help.adobe.com/en_US/aftereffects/cs/using/index.html"
+				url="adobe.com"
+				title="Support and Help"
+				desc="Help for Adobe After Effects CS5 &amp; CS5.5"
+				thumb="http://gilmercomputertech.com/images/adobe-logo.png">
+			</link>		
+			<link
+				src="http://www.adobe.com/support/aftereffects/gettingstarted/"
+				url="adobe.com"
+				title="Getting Started &amp; Tutorials"
+				desc="Get going with Adobe After Effects"
+				thumb="http://gilmercomputertech.com/images/adobe-logo.png">
+			</link>		
+			<link
+				src="http://forums.adobe.com/community/aftereffects_general_discussion"
+				url="adobe.com"
+				title="Forums"
+				desc="Interact with other users"
+				thumb="http://gilmercomputertech.com/images/adobe-logo.png">
+			</link>		
+			<link
+				src="http://www.adobe.com/support/creativesuite/"
+				url="adobe.com"
+				title="Resources"
+				desc="Tools, help and much more"
+				thumb="http://gilmercomputertech.com/images/adobe-logo.png">
+			</link>		
+			<link
+				src="http://ae.tutsplus.com/"
+				url="ae.tutsplus.com"
+				title="Awesome Tutorials"
+				desc="Indepth on everything After Effects"
+				thumb="http://zaxwerks.com/blogattachments/2009/08/aetuts.png">
+			</link>				
+		</category>
+
+	
+	</section>
+	
+	<!--  ===============================================================
+	AUDITION SECTION 
+	================================================================== -->
+	<section name="Audition"></section>
+	
+	
+	
+	<!--  ===============================================================
+	PHOTOSHOP SECTION 
+	================================================================== -->
+	<section name="PhotoShop">
+		<category
+			type="Video"
+			name="Videos">
+			<grid>
+				<fields sort-column="title" sort-direction="desc">
+					<field match="artist" display="Producer" width="200px" />
+					<field match="title" display="Title" />
+					<field match="desc" display="Overview" />
+					<field match="length" display="Length" />
+				</fields>
+			</grid>
+			<list>
+				<fields>
+					<field match="title" display="" sort-display="Title"/>
+					<field match="artist" display="Produced By: " sort-display="Producer"/>
+				</fields>
+			</list>			
+			<video
+				player="remote"
+				src="http://blip.tv/play/AYK4yUgC.html"
+				album="Album"
+				title="Smoothing with Raw"
+				desc="This week's episode of the Photoshop Quicktips Podcast Justin shows you how to soften skin using Adobe's Camera Raw Plugin. This technique is really simple and can create some awesome portraits once you've dialed it in!"
+				artist="Seeley.tv"
+				size="100"
+				poster="http://www.seeley.tv/wp-content/uploads/2011/03/psqt_feat-180x135.png">
+			</video>			
+		</category>
+
+	
+	</section>
+	<section name="Premiere Pro"></section>
+</playit>
+	

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<playit 
+	accordion-animate="true"
+	accordion-autoselect="true"
+	
+	toolbar-title="關於 PlayIt"
+	toolbar-showsearch="true"
+	toolbar-searchtext="搜索"
+	toolbar-searchwidth="auto"	
+
+	view-default="grid"	
+	
+	audio-autoplay="false"
+	audio-info-enable="true"
+	audio-infobox-modal="true"
+	audio-infobox-height="350"
+	audio-infobox-width="600"
+	audio-infobox-resizable="true"
+	
+	image-autoplay="false"
+	image-dialog-height="500"
+	image-dialog-width="800"
+	image-info-enable="true"
+	image-slides-interval="5500"
+	
+	video-autoplay="false"
+	video-dialog-height="500"
+	video-dialog-width="800"
+	video-info-enable="true"
+	video-navbar-enable="true">
+	
+
+	<section name="本地化" >
+		<category type="link" name="概述" link-src="link/localize-help.html#Chinese" ></category>
+
+		<!--  ===============================================================
+		AUDIO
+		================================================================== -->
+		<category
+			type="Audio"
+			name="音頻">
+			<grid>
+				<fields sort-column="title" sort-direction="desc">
+					<field match="title" display="名稱" />
+					<field match="artist" display="藝術家"/>
+					<field match="album" display="專輯"/>
+				</fields>
+			</grid>
+			<list>，
+				<fields sort-column="artist" sort-direction="desc">
+					<field match="title" display="標題: " sort-display="標題"/>
+					<field match="artist" display="藝術家: " sort-display="藝術家"/>
+				</fields>
+			</list>
+			<tile item-size="80"></tile>
+			<audio title="單演示"  artist="1932年的管弦樂運動" album="單" src="audio/april-elsewhere.mp3">
+				<info><![CDATA[	 <div class='playit-info-audio'><span>中國信息數據</span></div> ]]></info>
+			</audio>	
+			<audio title="丟失在角落" artist="1932年的管弦樂運動" album="相冊 1" src="audio/lostoncorners.mp3" track="1" info-enable="false" poster="image/violin-256.png" />
+			<audio title="分享沼津" artist="1932年的管弦樂運動" album="相冊 1"  src="audio/share-numazu.mp3" track="2" info-enable="false" poster="image/violin-256.png" />	
+		</category>
+		
+		<!--  ===============================================================
+		IMAGE 
+		================================================================== -->		
+		<category 
+			type="image"
+			name="圖片">	
+            <grid>
+				<fields  sort-column="title" sort-direction="asc">
+					<field match="title" display="標題" />
+					<field match="desc" display="地點" />
+					<field match="date" display="日期"  />
+				</fields>
+            </grid>
+			<list>
+				<fields  sort-column="title" sort-direction="asc">
+					<field match="title" display="" sort-display="標題" />
+					<field match="desc" display=""  sort-display="地點" />
+					<field match="date" display=""  sort-display="日期" />
+				</fields>
+			</list>
+			<img title="鵜鶘"  desc="加利福尼亞州" date="2011年9月30號" src="image/pics/California02.jpg" thumb="image/pics/California02_thumb.jpg">	
+				<info><![CDATA[ 中國信息數據 ]]></info>						
+			</img>
+			<img title="日落" desc="加利福尼亞州" date="2011年9月30號" src="image/pics/California05.jpg" thumb="image/pics/California05_thumb.jpg" />	
+			<img title="鮮花" desc="加利福尼亞州" date="2011年9月30號" src="image/pics/California07.jpg" thumb="image/pics/California07_thumb.jpg" />	
+		</category>
+
+		<!--  ===============================================================
+		LINK
+		================================================================== -->	
+		<category 
+			type="link"
+			name="鏈接">	
+			<grid>
+				<fields>
+					<field match="title" display="鏈接" />
+					<field match="desc" display="說明" />
+				</fields>
+            </grid>
+			<list>
+				<fields>
+					<field match="title" sort-display="鏈接" />
+					<field match="desc" sort-display="說明" />
+				</fields>
+            </list>	
+		</category>
+
+		<!--  ===============================================================
+		VIDEO
+		================================================================== -->	
+		<category 
+			type="video"
+			name="視頻">	
+			<grid>
+				<fields>
+					<field match="title" display="標題" />
+					<field match="length" display="長度" />
+				</fields>
+            </grid>
+			<list>
+				<fields>
+					<field match="title" display="標題: " />
+					<field match="length" display="長度: " />
+				</fields>
+            </list>			
+			<video player="local" title="PlayIt預告" length="0:41" src="video/playit-intro.mp4">
+				<info><![CDATA[ <div class='playit-info-video'><span>中國信息數據</span></div> ]]></info>
+			</video>
+			<video player="remote" title="下一代網站" length="1:22" src="http://player.vimeo.com/video/26232472?title=0&amp;byline=0&amp;portrait=0" />
+		</category>	
+
+	</section>
+</playit>

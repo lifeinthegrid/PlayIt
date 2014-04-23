@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<title>PlayIt - Video Link Tester</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="../../style.css" type="text/css" media="screen, print" />
+	<style>
+		.movie-content {
+			text-align:center; margin:50px auto; width:675px; background-color:#efefef;
+			height:640px; border:1px solid silver; border-radius:5px;
+		}
+		.movie-frame {
+			border-radius:3px;
+			border:1px solid silver;
+			background-color:#000;
+			width:310px;
+			float:left;
+			margin:10px;
+			color:#fff;
+		}
+		.movie-frame b {font-size:20px}
+		p.version {
+			margin:auto;
+			border-radius:3px;
+			border:1px solid silver;
+			width:500px; 
+			padding:5px;
+			background-color:#000;
+			color:#fff;
+			font-weight:bold;
+		}
+	</style>
+	<script type="text/javascript">
+	<!--
+	var BrowserDetect = {
+		init: function () {
+			this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
+			this.version = this.searchVersion(navigator.userAgent)
+				|| this.searchVersion(navigator.appVersion)
+				|| "an unknown version";
+			this.OS = this.searchString(this.dataOS) || "an unknown OS";
+		},
+		searchString: function (data) {
+			for (var i=0;i<data.length;i++)	{
+				var dataString = data[i].string;
+				var dataProp = data[i].prop;
+				this.versionSearchString = data[i].versionSearch || data[i].identity;
+				if (dataString) {
+					if (dataString.indexOf(data[i].subString) != -1)
+						return data[i].identity;
+				}
+				else if (dataProp)
+					return data[i].identity;
+			}
+		},
+		searchVersion: function (dataString) {
+			var index = dataString.indexOf(this.versionSearchString);
+			if (index == -1) return;
+			return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
+		},
+		dataBrowser: [
+			{
+				string: navigator.userAgent,
+				subString: "Chrome",
+				identity: "Chrome"
+			},
+			{ 	string: navigator.userAgent,
+				subString: "OmniWeb",
+				versionSearch: "OmniWeb/",
+				identity: "OmniWeb"
+			},
+			{
+				string: navigator.vendor,
+				subString: "Apple",
+				identity: "Safari",
+				versionSearch: "Version"
+			},
+			{
+				prop: window.opera,
+				identity: "Opera",
+				versionSearch: "Version"
+			},
+			{
+				string: navigator.vendor,
+				subString: "iCab",
+				identity: "iCab"
+			},
+			{
+				string: navigator.vendor,
+				subString: "KDE",
+				identity: "Konqueror"
+			},
+			{
+				string: navigator.userAgent,
+				subString: "Firefox",
+				identity: "Firefox"
+			},
+			{
+				string: navigator.vendor,
+				subString: "Camino",
+				identity: "Camino"
+			},
+			{		// for newer Netscapes (6+)
+				string: navigator.userAgent,
+				subString: "Netscape",
+				identity: "Netscape"
+			},
+			{
+				string: navigator.userAgent,
+				subString: "MSIE",
+				identity: "Explorer",
+				versionSearch: "MSIE"
+			},
+			{
+				string: navigator.userAgent,
+				subString: "Gecko",
+				identity: "Mozilla",
+				versionSearch: "rv"
+			},
+			{ 		// for older Netscapes (4-)
+				string: navigator.userAgent,
+				subString: "Mozilla",
+				identity: "Netscape",
+				versionSearch: "Mozilla"
+			}
+		],
+		dataOS : [
+			{
+				string: navigator.platform,
+				subString: "Win",
+				identity: "Windows"
+			},
+			{
+				string: navigator.platform,
+				subString: "Mac",
+				identity: "Mac"
+			},
+			{
+				   string: navigator.userAgent,
+				   subString: "iPhone",
+				   identity: "iPhone/iPod"
+			},
+			{
+				string: navigator.platform,
+				subString: "Linux",
+				identity: "Linux"
+			}
+		]
+
+	};
+	BrowserDetect.init();
+
+	// -->
+	</script>	
+</head>
+<body>
+
+<div class="movie-content">
+
+	<div style="font-size:20px;"><h2 style="margin:2px">Video Validator</h2></div>
+	<i>Use this page to test which video type your browser supports</i><br/><br/>
+	
+	<script type="text/javascript">
+		<!--
+		document.write('<p class="version">You\'re using ' + BrowserDetect.browser + ' ' + BrowserDetect.version + ' on ' + BrowserDetect.OS + '!</p>');
+		// -->
+	</script><br/>
+	
+	<div class="movie-frame">
+		<b>MOV</b><br/>
+		<video width="300px" height="182px" controls="controls" >
+			<source src='playit-intro.mov' type="video/mov" />
+		</video><br/>
+
+	</div>
+
+	<div class="movie-frame">
+		<b>MP4</b><br/>
+		<video width="300px" height="182px" controls="controls" >
+			<source src='playit-intro.mp4'  type="video/mp4"  />
+		</video>
+	</div>
+
+	<div class="movie-frame">
+		<b>WEBM</b><br/>
+		<video width="300px" height="182px" controls="controls" >
+			<source src='playit-intro.webm'  type="video/webm" />
+		</video>
+	</div>
+
+	<div class="movie-frame">
+		<b>OGG</b><br/>
+		<video width="300px" height="182px" controls="controls" >
+			<source src='playit-intro.ogg'  type="video/ogg" />
+		</video>
+	</div>
+
+	<i>Some browsers will not be able to render some videos without plugin support.<br />
+	For a detailed break-down please this <a href="http://en.wikipedia.org/wiki/HTML5_video" target="_blank">HTML 5 Video link</a> </i><br/>
+</div>
+
+</body>
+</html>

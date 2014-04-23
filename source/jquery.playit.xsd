@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="jquery.playit"
+    targetNamespace="http://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="playit">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="section">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="category">
+                                <xs:complexType>
+                                    <xs:sequence minOccurs="0">
+                                        <xs:element name="grid">
+                                            <xs:complexType>
+                                                <xs:sequence minOccurs="0">
+                                                    <xs:element name="fields">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="unbounded" name="field">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="match" type="xs:string" use="required" />
+                                                                        <xs:attribute name="display" type="xs:string" use="required" />
+                                                                        <xs:attribute name="width" type="xs:unsignedByte" use="optional" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="sort-column" type="xs:string" use="optional" />
+                                                            <xs:attribute name="sort-direction" type="xs:string" use="optional" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="enable" type="xs:boolean" use="optional" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="list">
+                                            <xs:complexType>
+                                                <xs:sequence minOccurs="0">
+                                                    <xs:element name="fields">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="unbounded" name="field">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="match" type="xs:string" use="required" />
+                                                                        <xs:attribute name="display" type="xs:string" use="optional" />
+                                                                        <xs:attribute name="sort-display" type="xs:string" use="optional" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="sort-column" type="xs:string" use="optional" />
+                                                            <xs:attribute name="sort-direction" type="xs:string" use="optional" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="enable" type="xs:boolean" use="optional" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="video">
+                                            <xs:complexType>
+                                                <xs:sequence minOccurs="0">
+                                                    <xs:element name="info" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="player" type="xs:string" use="required" />
+                                                <xs:attribute name="src" type="xs:string" use="required" />
+                                                <xs:attribute name="title" type="xs:string" use="required" />
+                                                <xs:attribute name="info-enable" type="xs:boolean" use="optional" />
+                                                <xs:attribute name="thumb" type="xs:string" use="optional" />
+                                                <xs:attribute name="poster" type="xs:string" use="optional" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="link">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="src" type="xs:string" use="required" />
+                                                        <xs:attribute name="title" type="xs:string" use="required" />
+                                                        <xs:attribute name="features" type="xs:string" use="optional" />
+                                                        <xs:attribute name="target" type="xs:string" use="required" />
+                                                        <xs:attribute name="thumb" type="xs:string" use="optional" />
+                                                        <xs:attribute name="poster" type="xs:string" use="optional" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="img">
+                                            <xs:complexType>
+                                                <xs:sequence minOccurs="0">
+                                                    <xs:element name="info" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="title" type="xs:string" use="required" />
+                                                <xs:attribute name="src" type="xs:string" use="required" />
+                                                <xs:attribute name="thumb" type="xs:string" use="optional" />
+                                                <xs:attribute name="poster" type="xs:string" use="optional" />
+                                                <xs:attribute name="height" type="xs:unsignedByte" use="optional" />
+                                                <xs:attribute name="width" type="xs:unsignedByte" use="optional" />
+                                                <xs:attribute name="info-enable" type="xs:boolean" use="optional" />
+                         
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element minOccurs="0" name="tile">
+                                            <xs:complexType>
+                                                <xs:attribute name="item-size" type="xs:unsignedByte" use="optional" />
+                                                <xs:attribute name="enable" type="xs:boolean" use="optional" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="audio">
+                                            <xs:complexType mixed="true">
+                                                <xs:sequence minOccurs="0">
+                                                    <xs:element name="info" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="title" type="xs:string" use="required" />
+                                                <xs:attribute name="src" type="xs:string" use="required" />
+                                                <xs:attribute name="artist" type="xs:string" use="required" />
+                                                <xs:attribute name="album" type="xs:string" use="required" />
+                                                <xs:attribute name="info-enable" type="xs:boolean" use="optional" />
+                                                <xs:attribute name="thumb" type="xs:string" use="optional" />
+                                                <xs:attribute name="poster" type="xs:string" use="optional" />
+                                                <xs:attribute name="track" type="xs:unsignedShort" use="optional" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="type" type="xs:string" use="required" />
+                                    <xs:attribute name="name" type="xs:string" use="required" />
+                                    <xs:attribute name="link-src" type="xs:string" use="optional" />
+                                    <xs:attribute name="link-scroll" type="xs:string" use="optional" />
+                                    <xs:attribute name="view-default" type="xs:string" use="optional" />
+                                    <xs:attribute name="isdefault" type="xs:boolean" use="optional" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" use="required" />
+                        <xs:attribute name="isdefault" type="xs:boolean" use="optional" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="accordion-animate" type="xs:boolean" use="optional" />
+            <xs:attribute name="accordion-autoselect" type="xs:boolean" use="optional" />
+			<xs:attribute name="accordion-minwidth" type="xs:unsignedShort" use="optional" />
+			<xs:attribute name="accordion-maxwidth" type="xs:unsignedShort" use="optional" />
+			<xs:attribute name="autofill" type="xs:unsignedShort" use="optional" />
+            <xs:attribute name="toolbar-title" type="xs:string" use="optional" />
+            <xs:attribute name="toolbar-showsearch" type="xs:boolean" use="optional" />
+            <xs:attribute name="toolbar-searchtext" type="xs:string" use="optional" />
+            <xs:attribute name="toolbar-searchwidth" type="xs:string" use="optional" />
+            <xs:attribute name="view-default" type="xs:string" use="optional" />
+            <xs:attribute name="audio-autoplay" type="xs:boolean" use="optional" />
+            <xs:attribute name="audio-info-enable" type="xs:boolean" use="optional" />
+            <xs:attribute name="audio-infobox-modal" type="xs:boolean" use="optional" />
+            <xs:attribute name="audio-infobox-height" type="xs:unsignedShort" use="optional" />
+            <xs:attribute name="audio-infobox-width" type="xs:unsignedShort" use="optional" />
+            <xs:attribute name="audio-infobox-resizable" type="xs:boolean" use="optional" />
+            <xs:attribute name="image-autoplay" type="xs:boolean" use="optional" />
+            <xs:attribute name="image-dialog-height" type="xs:unsignedShort" use="optional" />
+            <xs:attribute name="image-dialog-width" type="xs:unsignedShort" use="optional" />
+            <xs:attribute name="image-info-enable" type="xs:boolean" use="optional" />
+            <xs:attribute name="image-slides-interval" type="xs:unsignedShort" use="optional" />
+            <xs:attribute name="video-autoplay" type="xs:boolean" use="optional" />
+            <xs:attribute name="video-dialog-height" type="xs:unsignedShort" use="optional" />
+            <xs:attribute name="video-dialog-width" type="xs:unsignedShort" use="optional" />
+            <xs:attribute name="video-info-enable" type="xs:boolean" use="optional" />
+            <xs:attribute name="video-navbar-enable" type="xs:boolean" use="optional" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

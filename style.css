@@ -1,0 +1,112 @@
+/* ----------------------------------------------------------------------------
+PLAYIT: Used for styling the demos it is not requried for PlayIt */
+
+@import url(http://fonts.googleapis.com/css?family=Iceland);
+
+/*GLOBAL TAGS */
+body
+{
+	height: 100%;
+	margin: 0px auto;
+	padding:0px;
+	font-family: Tahoma, Geneva, Verdana;
+}
+h2 	{margin: 0px 0px 0px 3px; font-size:1.3em; font-style:italic; }
+*:focus { outline: 0 none; }
+a {color:#000;}
+a:hover {color:#000;}
+a, a:link, a:visited, a:hover, a:focus, a:active {outline:0 none; border-style:none; noFocusLine: expression(this.onFocus=this.blur());}
+
+
+div.content-index-screen {
+	padding:10px; margin:auto; margin-top:50px; width:800px; line-height:24px; 
+	border:1px solid silver; border-radius:5px; background-color:#F3F3F3; 
+}
+
+div.content {padding:10px; }
+div.content hr {color:#C0C0C0;}
+
+/*  --------------------------
+TOP NAVIGATION */
+span#playit-devversion{color:#8B4550}
+span#playit-webversion{color:#2E55B7}
+span#playit-proversion{color:#406747}
+span.playit-compression {font-size:16px}
+
+table.top-nav {
+	width:100%;
+	padding:2px 8px 2px 8px;
+	margin:0px 0px 10px 0px;
+	border-top:0px solid silver;
+	border-bottom:1px solid silver;
+	background-color:#efefef;
+	line-height:22px;
+}
+table.top-nav td { padding:2px; }
+table.top-nav td.column-0 {width: 120px !important; background: url('source/images/play-32.png') no-repeat;}
+table.top-nav td.column-1 {white-space:nowrap; }
+table.top-nav td.column-1 div {margin:5px 0px 0px 20px;}
+table.top-nav td.column-1 h2 {font-family: 'Iceland', Tahoma; font-size:35px; font-weight:bold;}
+table.top-nav td.column-2 {text-align:center; width:100%; font-size:16px;}
+table.top-nav td.column-2 select {font-size:16px; border-radius:5px; padding:2px; border:1px solid silver; width:175px; }
+table.top-nav td.column-3 {white-space:nowrap; font-size:16px; text-align:right;}
+
+
+/*  --------------------------
+ATTRIBUTES GRID TABLE */
+table.attr-grid {width:100%; border-collapse:collapse; font-size:14px;}
+table.attr-grid  tr:first-child  {font-weight:bold; background-color:gray; color:white; }
+table.attr-grid tr > td:first-child  {font-weight:bold; }
+table.attr-grid td {padding:5px; border:1px solid silver; }
+
+
+/*FANCY BOX*/
+div.link-button {
+	border:1px solid silver;
+	padding:8px;
+	border-radius:5px;
+	font-size:24px;
+	
+	background: rgb(255,255,255); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
+}
+
+div.link-button a {text-decoration:none;}
+div.link-button img {height:24px; width:24px; margin:-5px 5px 0px 0px;}
+div.link-button-on {border:1px solid #747474; cursor:pointer;}
+
+
+/* FIGURE BOXES */
+div.figure-box  {
+	border-radius:5px;
+	margin:0px 0px 5px 0px;
+	padding:5px;
+	border: 1px solid silver;
+	border-radius:5px;
+	margin-bottom:8px;
+	box-shadow: 3px 3px 4px #999;
+	-moz-box-shadow: 3px 3px 4px #999;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#999999')";
+}
+div.figure-text {
+	margin-top:15px;
+	text-align:center;
+	color:#000;
+	font-style:italic;
+	font-size:12px;
+	line-height:14px;
+}
+div.sub-title  {
+	padding:5px 0px 0px 20px;
+	margin-bottom:30px;
+}
+
+div#switcher a {padding-bottom:8px !important; white-space:nowrap !important; } 

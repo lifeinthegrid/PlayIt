@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playit 
+	accordion-animate="true"
+	accordion-autoselect="true"
+	
+	toolbar-title="PlayIt - Help System"
+	toolbar-showsearch="true"
+	toolbar-searchtext="Search"
+	toolbar-searchwidth="auto"	
+
+	view-default="grid"	
+	
+	audio-autoplay="false"
+	audio-info-enable="true"
+	audio-infobox-modal="true"
+	audio-infobox-height="350"
+	audio-infobox-width="600"
+	audio-infobox-resizable="true"
+	
+	image-autoplay="false"
+	image-dialog-height="500"
+	image-dialog-width="800"
+	image-info-enable="false"
+	image-slides-interval="5500"
+	
+	video-autoplay="false"
+	video-dialog-height="500"
+	video-dialog-width="800"
+	video-info-enable="true"
+	video-navbar-enable="true">
+	
+	<section name="User Guide">
+		<category type="link" name="Index" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#index" ></category>
+		<category type="link" name="Overview" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#overview" ></category>
+		<category type="link" name="Setting Up" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#setup" ></category>
+		<category type="link" name="XML Datasource" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-xml" ></category>
+		<category type="link" name="&#xA0;&#xA0; Navigation" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-xml-group-1" ></category>
+		<category type="link" name="&#xA0;&#xA0; &#xA0;&#xA0; &#38;#60;playit&#62;" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-xml-group-1-playit" ></category>
+		<category type="link" name="&#xA0;&#xA0; &#xA0;&#xA0; &#38;#60;section&#62;" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-xml-group-1-section" ></category>
+		<category type="link" name="&#xA0;&#xA0; &#xA0;&#xA0; &#38;#60;category&#62;" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-xml-group-1-category" ></category>
+		<category type="link" name="&#xA0;&#xA0; Category Views" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-xml-group-2" ></category>
+		<category type="link" name="&#xA0;&#xA0; &#xA0;&#xA0; &#38;#60;grid&#62;" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-xml-group-2-grid" ></category>
+		<category type="link" name="&#xA0;&#xA0; &#xA0;&#xA0; &#38;#60;list&#62;" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-xml-group-2-list" ></category>
+		<category type="link" name="&#xA0;&#xA0; &#xA0;&#xA0; &#38;#60;tile&#62;" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-xml-group-2-tile" ></category>
+		<category type="link" name="&#xA0;&#xA0; &#xA0;&#xA0; &#38;#60;fields&#62;" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-xml-group-2-fields" ></category>
+		<category type="link" name="&#xA0;&#xA0; &#xA0;&#xA0; &#38;#60;field&#62;" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-xml-group-2-field" ></category>
+		<category type="link" name="&#xA0;&#xA0; Category Types" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-xml-group-3" ></category>
+		<category type="link" name="&#xA0;&#xA0; &#xA0;&#xA0; &#38;#60;audio&#62;" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-xml-group-3-audio" ></category>
+		<category type="link" name="&#xA0;&#xA0; &#xA0;&#xA0; &#38;#60;img&#62;" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-xml-group-3-img" ></category>
+		<category type="link" name="&#xA0;&#xA0; &#xA0;&#xA0; &#38;#60;link&#62;" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-xml-group-3-link" ></category>
+		<category type="link" name="&#xA0;&#xA0; &#xA0;&#xA0; &#38;#60;video&#62;" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-xml-group-3-video" ></category>
+		<category type="link" name="Service Datasource" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#datasource-websrv" ></category>
+		<category type="link" name="Stying &amp; Theming" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#styling" ></category>
+		<category type="link" name="Globalization" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#globalization" ></category>
+		<category type="link" name="Performance" link-src="http://lifeinthegrid.com/support/_kb/lab_playit/v1.5/01_user-guide.html#performance" ></category>
+	</section>
+
+	<section name="Tutorials">
+		<!-- ?autohide=1&amp;showinfo=0&amp;showsearch=0&amp;rel=0&amp;hd=1&amp;autoplay=1" -->
+		<category type="link" name="Quick Overview" link-src="http://www.youtube.com/embed/kdnHE63YX_0?autohide=1&amp;showinfo=0&amp;showsearch=0&amp;rel=0&amp;hd=1&amp;autoplay=1" link-iosiframeasobjectlink="false"></category>
+		<category type="link" name="Setting up navigation" link-src="http://www.youtube.com/embed/50_bUYYHSiw?autohide=1&amp;showinfo=0&amp;showsearch=0&amp;rel=0&amp;hd=1&amp;autoplay=1" link-iosiframeasobjectlink="false"></category>
+		<category type="link" name="Understanding views" link-src="http://www.youtube.com/embed/KRo2NP2ndfA?autohide=1&amp;showinfo=0&amp;showsearch=0&amp;rel=0&amp;hd=1&amp;autoplay=1" link-iosiframeasobjectlink="false"></category>
+		<category type="link" name="Playing Audio" link-src="http://www.youtube.com/embed/kYvKTXimvK4?autohide=1&amp;showinfo=0&amp;showsearch=0&amp;rel=0&amp;hd=1&amp;autoplay=1" link-iosiframeasobjectlink="false"></category>
+		<category type="link" name="Viewing Pictures" link-src="http://www.youtube.com/embed/O2EeO2IctaA?autohide=1&amp;showinfo=0&amp;showsearch=0&amp;rel=0&amp;hd=1&amp;autoplay=1" link-iosiframeasobjectlink="false"></category>
+		<category type="link" name="Creating Links" link-src="http://www.youtube.com/embed/krf3V-YyoO4?autohide=1&amp;showinfo=0&amp;showsearch=0&amp;rel=0&amp;hd=1&amp;autoplay=1" link-iosiframeasobjectlink="false"></category>
+		<category type="link" name="Watching Videos" link-src="http://www.youtube.com/embed/H2jlBCPbZUY?autohide=1&amp;showinfo=0&amp;showsearch=0&amp;rel=0&amp;hd=1&amp;autoplay=1" link-iosiframeasobjectlink="false"></category>
+		<category type="link" name="Customizing PlayIt" link-src="http://www.youtube.com/embed/PUzzqaTNrs8?autohide=1&amp;showinfo=0&amp;showsearch=0&amp;rel=0&amp;hd=1&amp;autoplay=1" link-iosiframeasobjectlink="false"></category>
+
+		<!--  ===============================================================
+		IMAGE
+		================================================================== 	
+		<category 
+			type="image"
+			name="Images">	
+            <grid>
+				<fields  sort-column="title" sort-direction="asc">
+					<field match="title" display="Title" />
+					<field match="desc" display="Location" />
+					<field match="date" display="Date"  />
+				</fields>
+            </grid>
+			<list>
+				<fields  sort-column="title" sort-direction="asc">
+					<field match="title" display="" sort-display="Title" />
+					<field match="desc" display=""  sort-display="Location" />
+					<field match="date" display=""  sort-display="Date" />
+				</fields>
+			</list>
+			<img title="Pelican"  desc="California" date="09/01/2011" src="image/pics/California02.jpg" thumb="image/pics/California02_thumb.jpg">	
+				<info><![CDATA[ Your Custom Info ]]></info>						
+			</img>
+			<img title="Sunset" desc="California" date="09/02/2011" src="image/pics/California05.jpg" thumb="image/pics/California05_thumb.jpg" />	
+			<img title="Flowers" desc="California" date="09/03/2011" src="image/pics/California07.jpg" thumb="image/pics/California07_thumb.jpg" />	
+		</category>-->	
+
+		<!--  ===============================================================
+		LINK
+		================================================================== 
+		<category 
+			type="link"
+			name="Links">	
+			<grid>
+				<fields>
+					<field match="title" display="Link" />
+					<field match="desc" display="Description" />
+				</fields>
+            </grid>
+			<list>
+				<fields>
+					<field match="title" sort-display="Link" />
+					<field match="desc" sort-display="Description" />
+				</fields>
+            </list>	
+			<link
+				src="http://validator.w3.org/#validate_by_input"
+				title="Markup Validation Service"
+				desc="Validate your XML Configuration File"
+				features="menubar=0,resizable=1,width=800,height=600"
+				target="PopUp"
+				type="W3C Validator - New Window">
+			</link>	
+
+		</category>-->	
+
+		<!--  ===============================================================
+		VIDEO
+		================================================================== 	
+		<category 
+			type="video"
+			name="Video">	
+			<grid>
+				<fields>
+					<field match="title" display="Title" />
+					<field match="length" display="Length" />
+				</fields>
+            </grid>
+			<list>
+				<fields>
+					<field match="title" display="Title: " />
+					<field match="length" display="Length: " />
+				</fields>
+            </list>			
+			<video player="local" title="PlayIt Trailer" length="0:41" src="video/playit-intro.mp4">
+				<info><![CDATA[ <div class='playit-info-video'><span>English Information Here</span></div> ]]></info>
+			</video>
+			<video player="remote" title="Next Generation Website" length="1:22" src="http://player.vimeo.com/video/26232472?title=0&amp;byline=0&amp;portrait=0" />
+		</category>	-->
+
+	</section>
+	
+	<section name="Resources">
+		<category type="link" name="Validate Your XML" link-src="http://validator.w3.org/#validate_by_input" ></category>
+		<category type="link" name="Customize Your Theme" link-src="http://jqueryui.com/themeroller" ></category>
+		<!--category type="link" name="You Tube Videos" link-src="http://code.google.com/apis/youtube/player_parameters.html" ></category-->
+		
+		
+		
+	</section>
+</playit>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PlayIt - Quick Start</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	
+	<!-- ==============================================
+	REQUIRED FOR PLAYIT: HTML 5 and Legacy support 
+	THEMES SETTINGS:
+		- Change the reference "/smoothness/" to a valid ThemeRoller theme (see http://jqueryui.com/themeroller)
+		- Create your own ThemeRoller Theme and download -->
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" id="playit-jquery-ui-css" type="text/css"/>
+	<link rel="stylesheet" href="../source/jquery.playit.css" type="text/css" /> 
+	<link rel="stylesheet" href="../lib/mediaelementjs/mediaelementplayer.css" type="text/css" /> 
+	<link rel="stylesheet" href="../lib/mediaelementjs/mejs-skins.css" type="text/css" /> 
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../source/jquery.playit.js" id="playit-source"></script>
+	<script type="text/javascript" src="../lib/mediaelementjs/mediaelement-and-player.min.js"></script>
+	<!-- ============================================== -->
+	
+	<style>
+		body {font-family: Tahoma, Geneva, Verdana;}
+	</style>
+	
+</head>
+<body>
+
+	<div class="content">
+		<!-- ==============================================
+		REQUIRED FOR PLAYIT. -->
+		<div id="player" style="width:98%; height:530px;"></div><br /><br />
+		
+		<script type="text/javascript">
+		    var _player = null;
+			
+			jQuery(document).ready(function ()
+		    {
+				var xmlFile   = "quick-start.xml";
+				_player = jQuery("#player").playit(
+				{
+					//Set cacheXml to true when your done editing your configuration
+					dataSourceOptions: { 
+						xmlConfig: xmlFile,
+						cacheXml: false 
+					}
+				});
+            });
+		</script>
+		<!-- ============================================== -->
+	</div>
+	
+</body>
+</html>

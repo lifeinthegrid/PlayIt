@@ -1,0 +1,848 @@
+/*!
+ * PlayIt an HTML 5 enabled media player 
+ * version:1.0.0 (05-11-2011)
+ * @requires jQuery v1.7.1 or later
+ * @requires jQuery v1.8.16 or later
+ * 
+ * Documentation:
+ * 		http://www.lifeinthegrid.com/playit
+ *
+ * Copyright 2011 Cory Lamle, Ryan Heideman
+ * 
+ */
+
+/* ============================================================================
+ALL CONTENT: 
+============================================================================ */
+div.playit-all a img 
+{
+	border-style:none;
+}
+
+div.playit-all
+{
+	height:100%;
+	width:100%;
+	border:1px solid silver;
+	padding:8px 12px 50px 8px;
+	border-radius:5px;
+	background-color:#efefef;
+	user-select:none;
+	-webkit-user-select:none;
+}
+.playit-error 
+{
+	color: #f00 !important; 
+}
+.playit-box-shadow  
+{
+	box-shadow: 3px 3px 4px #999;
+	-moz-box-shadow: 3px 3px 4px #999;
+}
+*:focus { outline: 0px; }
+div.playit-config-msg {padding:40px; text-align:center}
+
+.ui-dialog-buttonpane {font-size:0.8em; text-align:center !important}
+.ui-dialog-buttonset {float:none !important}
+.ui-resizable-helper { border: 2px dotted #777; }
+h3.ui-accordion-header {line-height:16px;}
+
+/* ============================================================================
+TOOLBAR: 
+============================================================================ */
+div.playit-toolbar 
+{
+	margin-bottom:5px;
+}	
+div.playit-toolbar table 
+{
+	margin:0px;
+	height:30px;
+	width:100%;
+}
+.playit-toolbar-title-cell 
+{
+	font-weight:bold;
+	text-align:center;
+	width:100%;
+}
+.playit-toolbar-btns-cell
+{
+	font-size:0.6em;
+	white-space:nowrap;
+}
+/* ------------------------------------
+TOOLBAR-SEARCH: 
+Search Text Box
+----------------------------------- */
+.playit-browser-opera .playit-toolbar-search-container
+{
+    table-layout: fixed;
+}
+.playit-browser-opera .playit-toolbar-search-cell3
+{
+    width: 190px;
+    text-align: right;
+}
+div.playit-search-content 
+{
+	background-color:#fff;
+	border: solid 1px #d0d0d0;
+	border-top-width: 2px;
+	border-left-width: 2px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background-image:url('images/search.png');
+	background-repeat:no-repeat;
+	background-position:3px;
+	padding-left:25px;
+	margin: 0px;
+}
+div.playit-search-content input 
+{
+    border: 0px none;
+	color:silver;
+	-webkit-appearance: none;
+
+}
+.playit-search-text-active 
+{
+	color:black !important; 
+}
+.playit-search-clear
+{
+    float: right;
+    margin: 4px 3px 0px 0px;
+    visibility: hidden;
+    height: 15px;
+    width: 15px;
+}
+.playit-browser-ie7 .playit-search-clear,
+.playit-browser-webkit-iphone .playit-search-clear,
+.playit-browser-webkit-ipod .playit-search-clear,
+.playit-browser-webkit-ipad .playit-search-clear
+{
+    margin-top: -18px;
+}
+.playit-browser-webkit-iphone .playit-search-clear,
+.playit-browser-webkit-ipod .playit-search-clear,
+.playit-browser-webkit-ipad .playit-search-clear
+{
+    margin-right: 1px;
+}
+.playit-search-text-disable
+{
+	background-color: #efefef !important;
+	color: transparent !important;
+}
+.playit-search-clear a
+{
+    height: 15px;
+    width: 15px;
+    display: block;
+	background:url('images/clear-15.png') no-repeat 0px 0px;
+	border-style: none;
+	cursor: pointer;
+}
+
+
+/* ============================================================================
+MAIN-VIEW: Layout Items
+Navigation (accordion) and Main data view
+============================================================================ */
+/* ------------------------------------
+MAIN-NAVIGATION: 
+The accordion control
+----------------------------------- */
+div.playit-nav
+{
+	height:100%;
+	width:100%;
+}
+div.playit-nav-accordion 
+{
+	margin-top:-1px;
+	height:100%;
+}
+.ui-accordion-icons .ui-accordion-header a
+{
+	padding-left:1.5em !important;
+}
+a.playit-nav-link
+{
+	display:block;
+	padding:5px 3px 5px 40px;
+	font-size:90% !important;
+	text-decoration:none !important;
+	border-left:none !important;
+	border-right:none !important;
+}
+.playit-loading-content
+{
+    height: 100%;
+    text-align: center;
+    font-size: 0.7em;
+}
+.playit-loading-content-data
+{
+    position: relative;
+    top: 45%;
+}
+.playit-main-area .playit-loading-content-data
+{
+    height: 0px;
+    top: 20em;
+}
+.ui-accordion-content
+{
+	padding:0px 0px 0px 0px !important;
+}
+.playit-accordion-grip
+{
+	width:11px;
+	background-image:url('images/grip-vert.png');
+	background-repeat:no-repeat;
+	background-position:8px 45%;
+	z-index: 1000 !important;
+	margin-right:-2px;
+}
+.playit-browser-webkit-ipad .playit-accordion-grip,
+.playit-browser-webkit-ipod .playit-accordion-grip,
+.playit-browser-webkit-iphone .playit-accordion-grip
+{
+    background-image: none;
+}
+/* ------------------------------------
+MAIN-AREA: 
+Contains: Grid, List, and Tile Views
+----------------------------------- */
+div.playit-main-area
+{
+	height:100%;
+	width: 100%;
+}
+.playit-main-table 
+{
+	width:100%;
+	height:100%;
+	position: relative;
+}
+.playit-main-table-left
+{
+	width:20%;
+	height:100%;
+	position: relative;
+	padding-left:0px !important;
+}
+.playit-main-table-right
+{
+	height:100%;
+	margin-left: 21%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+}
+.playit-files-content
+{
+	overflow-y:scroll;
+	padding:10px;
+	display:none;
+	*position: relative; /*IE 7 Hack*/
+}
+.playit-files-item table
+{
+    width:100%;
+}
+.playit-files-item-icon
+{
+    width:48px;
+	height:48px
+}
+.playit-files-noresults
+{
+    font-weight:bold;
+    text-align:center;
+    padding:30px;
+}
+
+
+
+/* ============================================================================
+GRIDS VIEWS:   
+============================================================================ */
+div.playit-grid table
+{
+    width:100%;
+	border-collapse:collapse;
+}
+div.playit-grid table th
+{
+    text-align:left;
+}
+div.playit-grid table tr
+{
+    vertical-align:middle;
+	border-style: none !important;
+}
+
+div.playit-grid table th,
+div.playit-grid table td
+{
+    padding:3px;
+	margin:0px;
+}
+div.playit-grid table td:hover
+{
+	cursor:pointer;
+	font-weight:normal !important;
+}
+th.playit-grid-header-title div 
+{
+	cursor:pointer;
+}
+th.playit-grid-header-title div  img
+{
+	margin:1px 0px 0px 3px;
+}
+th.playit-grid-header-title-on 
+{
+	width:24px;
+}
+.playit-grid-item-on
+{
+	font-style:italic !important;
+}
+.playit-grid-item-on td:first-child
+{
+	background-image:url('images/speaker-sm.png');
+	background-repeat:no-repeat;
+	background-position:5px;
+	padding-left:0px;
+}
+div.playit-grid table tr.ui-state-hover
+{
+	font-weight:normal !important;
+}
+
+
+/* ============================================================================
+LIST-VIEWS:   
+============================================================================ */
+/* ------------------------------------
+LIST-VIEWS-ALL: 
+Shared across all list views.  
+----------------------------------- */
+div.playit-list-sortbar 
+{
+	padding:4px;
+	text-align:center;
+	font-size:0.7em;
+}
+/* ------------------------------------
+LIST-VIEWS-COMMON:
+Used for common: images,links,video
+----------------------------------- */
+.playit-list div:hover 
+{
+	cursor:pointer; font-weight:normal !important;
+}
+div.playit-list-item
+{
+	margin:8px 3px 6px 3px;
+	cursor:pointer;
+}
+div.playit-list-item tr 
+{
+	vertical-align:top;
+}
+div.playit-list-item table img 
+{
+	height:48px; 
+	width:48px;
+	box-shadow: 3px 3px 4px #999;
+	-moz-box-shadow: 3px 3px 4px #999;
+	/* Some instances of IE8 have reported issues, use at your own discretion
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#999999')"   */
+	margin-right:8px;
+}
+div.playit-list-item table td 
+{
+	font-size:0.9em !important;
+}
+div.playit-list-item-on table td:first-child
+{
+	background-image:url('images/speaker-sm.png');
+	background-repeat:no-repeat;
+	background-position:15px 65px;
+}
+/* ------------------------------------
+LIST-AUDIO:
+Used only for audio
+----------------------------------- */
+div.playit-list-item-on-audio table td:first-child
+{
+	width:20px;
+}
+div.playit-list-item-on-audio table td:first-child
+{
+	width:27px;
+	background-image:url('images/speaker-sm.png');
+	background-repeat:no-repeat;
+	background-position:5px;
+}
+
+
+/* ============================================================================
+TILE VIEWS:   
+============================================================================ */
+/* ------------------------------------
+TILE-VIEWS-COMMON:
+Used for common: images,links,video
+----------------------------------- */
+div.playit-tile-sortbar 
+{
+	padding:0px;
+	margin:-5px 0px 0px 0px;
+	border-top:none !important;
+	width:100%;
+	text-align:center;
+	font-size:0.9em;
+	*width:98%; /*IE 7 Hack*/
+}
+div.playit-tile-sortbar table 
+{
+	width:100%;
+}
+div.playit-tile-sortbar table td 
+{
+	padding:2px;
+}
+div.playit-tile-slider-smsquare {height:8px;width:8px;}
+div.playit-tile-slider-lgsquare {height:12px;width:12px;}
+span.playit-tile-btnset {font-size:0.7em;}
+div.playit-tile-slider {font-size:0.7em; width:125px !important;}
+/* ------------------------------------
+TILE-AUDIO:
+Used only for audio
+----------------------------------- */
+
+div.playit-tile {margin-top:-15px;}
+div.playit-tile div
+{
+	float:left;
+	padding:3px;
+	margin:25px 5px 20px 5px;
+	text-align:center;
+	width:64px !important;
+	height:64px;
+	cursor:pointer;
+	border: 4px solid transparent;
+}
+div.playit-tile div span
+{
+	display:block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+div.playit-tile div img
+{
+	width:100%;
+	height:100%;
+	display:block;
+	margin-bottom:6px;
+	box-shadow: 3px 3px 4px #999; 
+	-moz-box-shadow: 3px 3px 4px #999; 
+	
+}
+div.playit-tile .ui-state-hover
+{
+	border:4px solid;
+	border-radius:5px;
+}
+div.playit-tile .ui-state-focus
+{
+	border:4px solid;
+	border-radius:5px;
+}
+br.clear 
+{
+	clear:both
+}
+span.playit-tile-item-on-audio 
+{
+	padding-left:25px;
+	background-image:url('images/speaker-sm16.png');
+	background-repeat:no-repeat;
+	background-position:0px;
+}
+
+
+/* ============================================================================
+AUDIO-PLAYER: 
+============================================================================ */
+div.playit-audio-panel {
+	height:80px;
+	margin-top:8px;
+	font-size:12px;
+	width:100%;
+	display:none;
+}
+img.playit-audio-play:hover 
+{
+}
+table.playit-audio-data
+{
+	width:100%;
+	table-layout:fixed;
+	margin:0px;
+	padding:0px;
+}
+table.playit-audio-data img 
+{
+	height:32px; 
+	width:32px;
+	margin: 3px 15px 0px 0px;
+	display:none;
+	box-shadow: 3px 3px 4px #999;
+	-moz-box-shadow: 3px 3px 4px #999;
+}
+.playit-audio-data div
+{
+	float:left;
+	text-align:center;
+	font-size:0.9em;
+}
+table.playit-audio-data-slider
+{
+	width:100%;
+	table-layout:fixed;
+	margin:0px;
+	padding:0px;
+}
+
+/*Media element converts to div 
+so leave the class nuetral */
+.playit-audio-tag, .playit-audio-panel .mejs-container
+{
+	position: absolute !important;
+	top: -2000px;
+	left: -2000px;
+	height: 1px;
+	width: 1px;
+}
+.playit-browser-opera .playit-audio-tag, .playit-browser-opera .playit-audio-panel .mejs-container /* Must be visible on Opera or wont play */
+{
+    top: 0px;
+    left: 0px;
+    opacity: .01;
+}
+table.playit-audio-table
+{
+	border-collapse:collapse;
+	vertical-align:top;
+}
+table.playit-audio-table td
+{
+	padding:3px 5px 0px 5px;
+	margin:0px;
+	white-space:nowrap;
+}
+.playit-browser-opera table.playit-audio-btns-table 
+{
+	width:214px;
+}
+.playit-browser-webkit-ipad .playit-audio-btns-row-volume
+{
+	visibility: hidden;
+}
+table.playit-audio-btns-table 
+{
+	*width:221px; /* IE7 */
+}
+td.playit-audio-btns-cell 
+{
+	font-size:1.2em;
+	padding:0px 0px 0px 15px;
+	width:150px;
+}
+td.playit-audio-btns-cell .ui-button
+{
+    *float: left; /*IE7*/
+    *margin-top: 0px; /*IE7*/
+}
+td.playit-audio-btns-cell button span.ui-button-text
+{
+    *padding-top: 0.05em; /*IE7*/
+}
+div.playit-audio-vol-slider
+{
+	width:110px;
+	font-size:0.8em !important;
+}
+div.playit-audio-vol-val 
+{	
+	font-size:0.8em;
+	vertical-align:middle;
+	width:12px !important;
+}
+td.playit-audio-vol-mute  
+{
+	font-size:0.6em;
+	cursor:pointer;
+}
+div.playit-audio-info 
+{
+	padding:1px;
+	width:99% !important;
+	text-align:center;
+	font-size:13px;
+	line-height:14px;
+}
+div.playit-audio-info  table td 
+{
+	padding:0px;
+}
+td.playit-audio-slider 
+{
+	font-size:0.5em;
+	padding-left:5px !important;
+}
+td.playit-audio-time 
+{
+	padding:3px;
+	font-size:0.9em;
+	width:60px;
+}
+div.playit-audio-logo
+{
+	position:relative;
+}
+div.playit-audio-logo div
+{
+	width:32px;
+	height:32px;
+	position:absolute;
+	width:100%;
+	background-image:url('images/notes-32.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	left: 0px;
+	top: 0px;
+}
+
+
+/* ============================================================================
+VIDEO-PLAYER: 
+============================================================================ */
+div.playit-video-infodata { }
+div.playit-video-dialog 
+{
+	user-select:none;
+	-webkit-user-select:none;
+}
+div.playit-video-data { }
+table.playit-video-navbar
+{
+	min-width:100px;
+	white-space:nowrap;
+	font-size:0.7em;
+	margin:auto;
+	margin-top: 20px;
+	position:relative;
+	bottom: 10px;
+}
+video.playit-video-tag 
+{
+	display:block;
+	background-color:transparent;
+	overflow:hidden !important;
+}
+iframe.playit-video-iframe
+{
+    vertical-align:middle;
+	border:none;
+	overflow:hidden;
+}
+div.playit-video-infodata
+{
+	display:none;
+	margin:0px 0px 10px -3px;
+	padding:8px;
+	box-shadow: 3px 3px 4px #999; 
+	-moz-box-shadow: 3px 3px 4px #999; 
+}
+
+
+/* ============================================================================
+IMAGE-PLAYER: 
+============================================================================ */
+div.playit-image-dialog 
+{
+	overflow:hidden !important;
+	user-select:none;
+	-webkit-user-select:none;
+}
+div.playit-image-active 
+{
+	margin:0px;
+	padding:0px;
+	display: table;
+	width: 100%;
+	outline: none;
+	ie-hideoutline: expression(this.hideFocus=true);
+}
+div.playit-image-active-cell
+{
+   text-align:center;
+   height:100%;
+   width:100%;
+   vertical-align: middle;
+   display: table-cell;
+}
+div.playit-image-active-cell *
+{
+   vertical-align: middle;
+}
+/* Mac CSS Hacks */
+/*\*//*/
+div.playit-image-active-cell
+{
+    display: block;
+}
+div.playit-image-active-cell span
+{
+    display: inline-block;
+    height: 100%;
+    width: 1px;
+}
+/**/
+div.playit-image-active-cell span
+{
+    *display: inline-block; /* IE7 Hack */
+    *height: 100%; /* IE7 Hack */
+}
+img.playit-image-thumb-active 
+{
+	height:40px;
+	width:40px;
+}
+/* Controls */
+div.playit-image-player
+{
+	position:absolute;
+	bottom:10px;
+	left: 50%;
+}
+div.playit-image-player table td 
+{
+	white-space:nowrap;
+	font-size:0.9em !important;
+}
+div.playit-image-player table td .ui-button
+{
+    *float: left; /*IE7*/
+    *margin-top: 0px; /*IE7*/
+}
+div.playit-image-player table td button span.ui-button-text
+{
+    *padding-top: 0.05em; /*IE7*/
+}
+div.playit-image-player-thumbs 
+{
+	overflow:hidden;
+	width: 312px;
+	*position: relative; /*IE 7 Hack*/
+}
+div.playit-image-player-thumbs-slider
+{
+	position: relative;
+}
+div.playit-image-player-thumbs img
+{
+	height:32px;
+	width:32px;
+	margin:3px 6px 3px 6px;
+	cursor:pointer;
+	box-shadow: 3px 3px 4px #999; 
+	-moz-box-shadow: 3px 3px 4px #999; 
+}
+div.playit-image-player-thumbs img.playit-image-player-thumbs-active
+{
+	border:2px solid;
+}
+div.playit-image-infodata {
+	margin:0px 0px 10px -3px;
+	padding:8px;
+	box-shadow: 3px 3px 4px #999; 
+	-moz-box-shadow: 3px 3px 4px #999; 
+}
+div.playit-image-progressbar 
+{
+	font-size:0.2em !important;
+	height:5px !important;
+}
+
+/*LINKS VIEW */
+div.playit-link-iframe
+{
+	display:none;
+	padding:8px;
+}
+.playit-browser-webkit-ipad .playit-link-iframe object,
+.playit-browser-webkit-ipod .playit-link-iframe object,
+.playit-browser-webkit-iphone .playit-link-iframe object
+{
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.playit-link-iframe-iosmsg
+{
+    background-color: #F7F3D9;
+    border: 1px solid silver !important;
+    height: 20px;
+    position: absolute;
+    bottom: 6px;
+    right: 10px;
+    padding: 10px;
+    display: block;
+}
+.playit-link-iframe-drag
+{
+	height:100%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	background-color: #fff;
+	filter:alpha(opacity=1);
+	opacity: 0.01;
+	-moz-opacity:0.01;
+}
+
+/* ------------------------------------
+INFOBOX:
+Used to style the XML CDATA content.
+----------------------------------- */
+div.playit-info-podcast {font-weight:normal;font-size:14px; line-height:18px;}
+div.playit-info-podcast p {margin:0px 0px 10px 0px;}
+div.playit-info-podcast i {font-size:11px}
+div.playit-info-podcast img {height:64px; width:64px; display:block; float:left; margin-right:7px;}
+
+div.playit-info-audio {text-align:center; line-height:16px }
+div.playit-info-audio {text-align:left; font-size:12px; }
+div.playit-info-audio img {height:250px; width:250px; box-shadow: 3px 3px 4px #999; float:left; margin-right:10px;}
+div.playit-info-audio a {font-size:16px; text-align:right }
+div.playit-info-audio i.credits, i.source a {font-size:11px !important;}
+
+div.playit-info-image {font-size:14px; }
+div.playit-info-image span.buy  {font-size:14px; float:left; margin-right:10px; }
+div.playit-info-image span.info {font-size:12px; text-align:justify}
+div.playit-info-image div.misc {padding:5px; border:1px solid silver; border-radius:5px; margin-top:8px; text-align:center;}
+div.playit-info-image a {text-decoration:underline !important; }
+
+div.playit-info-video {font-size:14px; }
+div.playit-info-video span.buy  {font-size:14px; float:left; margin-right:10px; }
+div.playit-info-video span.info {font-size:12px; text-align:justify}
+div.playit-info-video div.misc {padding:5px; border:1px solid silver; border-radius:5px; margin-top:8px; text-align:center;}

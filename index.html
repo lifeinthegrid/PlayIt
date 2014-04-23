@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PlayIt Main Menu - An HTML 5 Media Plugin.</title>
+	<meta name="description" content="Create or own media play center on your web site with PlayIt" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" /> 
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="source/jquery.playit.js" id="playit-source"></script>
+	<script type="text/javascript" src="config.js"></script>	
+	<script>
+		jQuery(document).ready(function($) {
+			jQuery(".link-button").hover(function(){$(this).addClass("link-button-on");  }, function(){$(this).removeClass("link-button-on");});
+			jQuery('#playit-version').html(PLAYIT_DETAILS);
+		});
+	</script>
+</head>
+<body>
+
+	<!-- ==============================================
+	TOP NAVIGATION -->
+	<table class="top-nav">
+		<tr>
+			<td class="column-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td class="column-1">
+				<h2>PlayIt!</h2>
+				<div>The Ultimate Web Player!</div>
+			</td>
+			<td class="column-2"></td>
+			<td class="column-3"><i>Start Page</i><br/><div id="playit-version-mode"></div></td>
+		</tr>
+	</table>
+	
+	
+	<div class="content-index-screen">
+		<table style="width:800px" border="0">
+			<tr>
+				<td width="500">
+					<h2>Overview</h2> <hr />
+					<div class="sub-title">
+						
+						<p><span style="font-size:24px">P</span>layIt is your ultimate media player!  Use PlayIt to organize all your media files into one central location.  To get started with PlayIt check out some of the demos. Please continue to check back frequently for more ideas and examples on how to implement PlayIt in your sites.</p>
+						
+					</div>
+				</td>
+				<td>&nbsp;&nbsp;&nbsp;</td>
+				<td width="300" valign="top">
+				
+					<div class="sub-title">
+						<br/>
+						<div style="width:250px; margin:auto; text-align:center">
+							
+							<div class="link-button" onclick="javascript:window.open('demo/index.html','_self')">
+								<img src="source/images/bundle-32.png"  />Demos
+							</div><br/>
+							
+							<div class="link-button" onclick="javascript:window.open('http://www.lifeinthegrid.com/playit/help','_blank')">
+								<img src="source/images/help-32.png"  />Documentation
+							</div><br/>
+							
+							<div class="link-button" onclick="javascript:window.open('http://www.lifeinthegrid.com/playit','_blank')">
+								<img src="source/images/play-32.png"  />PlayIt Home
+							</div>
+							
+						</div>
+					</div>				
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+
+
+</body>
+</html>

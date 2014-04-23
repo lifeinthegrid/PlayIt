@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>PlayIt - Globalization</title>
+	<meta name="description" content="Create powerful media displays with PlayIt. PlayIt is your ultimate web based media player." />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" href="../style.css" type="text/css" /> 
+
+	<!-- ==============================================
+	REQUIRED FOR PLAYIT: HTML 5 and Legacy support -->
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" id="playit-jquery-ui-css" type="text/css"/>
+	<link rel="stylesheet" href="../source/jquery.playit.css" type="text/css" /> 
+	<link rel="stylesheet" href="../lib/mediaelementjs/mediaelementplayer.css" type="text/css" /> 
+	<link rel="stylesheet" href="../lib/mediaelementjs/mejs-skins.css" type="text/css" /> 
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../source/jquery.playit.js" id="playit-source"></script>
+	<script type="text/javascript" src="../lib/mediaelementjs/mediaelement-and-player.min.js"></script>
+
+	<!-- Directly call the language you want
+	script type="text/javascript" src="../../source/lang/playit.en.js" id="playit-lang"></script-->
+	<!-- ============================================== -->
+	
+	<script type="text/javascript" src="../config.js"></script>
+	
+</head>
+<body>
+
+	<!-- ==============================================
+	TOP NAVIGATION -->
+	<table class="top-nav" border="0">
+		<tr>
+			<td class="column-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td class="column-1">
+				<h2>PlayIt - Globalization</h2>
+				<div>Localize your player in any language</div>
+			</td>
+			<td class="column-2">
+				<table align="center">
+					<tr>
+						<td>
+							ThemeRoller Ready!<br/>
+							<select id="theme" onchange="javascript:applyTheme(this.options[this.selectedIndex].text);">
+								<option>cupertino</option>
+								<option>black-tie</option>
+								<option>blitzer</option>
+								<option>excite-bike</option>
+								<option>flick</option>
+								<option>hot-sneaks</option>
+								<option>humanity</option>
+								<option>overcast</option>
+								<option>pepper-grinder</option>
+								<option>redmond</option>
+								<option selected="true">smoothness</option>
+								<option>south-street</option>
+								<option>start</option>
+								<option>sunny</option>
+								<option>ui-lightness</option>
+							</select>
+						</td>
+						<td>
+							Language Demo<br/>
+							<select id="language" onchange="javascript:switchLang();">
+								<option value="ZH">Chinese</option>
+								<option value="EN" selected="selected">English</option>
+								<option value="DE">German</option>
+								<option value="ES">Spanish</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td class="column-3">
+				<a href="../index.html">Start</a> |
+				<a href="index.html">Demos</a> |
+				<a href="localize-en.xml">XML</a><br/>
+				<div id="playit-version-mode"></div>
+			</td>
+		</tr>
+	</table>
+
+
+	<div class="content" style="margin:auto; width:980px">
+
+		<!-- ==============================================
+		REQUIRED FOR PLAYIT.  -->
+		<script type="text/javascript" id="playit-lang"></script>
+		<div id="player" style="width:960px; height:450px;"></div><br /><br />
+		
+		<script type="text/javascript">
+		    var _player    = null;
+
+            function switchLang()
+            {
+				var lang  = jQuery("#language").val();
+				var text  = jQuery("#language option[value='" + lang +"']").text();
+                window.location = "?lang=" + lang;
+            }
+
+            function applyTheme(theme)
+            {
+                if (_player)
+                {
+                    _player.each(function ()  {this.playit.applyTheme(theme);  return; });
+                }
+            }
+
+			jQuery(document).ready(function ()
+		    {
+				var xmlFile   = "localize-en.xml";
+				var langFile  = "playit.en.js";
+				var queryLang = PLAYIT.getParameterByName("lang") || "EN";
+					
+				switch (queryLang) {
+					case 'DE' : 
+						langFile = "playit.de.js";
+						xmlFile  = "localize-de.xml"
+						break;
+					case 'ZH' : 
+						langFile = "playit.zh.js";
+						xmlFile  = "localize-zh.xml"
+						break;	
+					case 'ES' : 
+						langFile = "playit.es.js";
+						xmlFile  = "localize-es.xml"
+						break;	
+				}
+				
+				jQuery("#playit-lang").attr("src", "../../source/lang/" + langFile);
+				jQuery("#language").val(queryLang);
+				
+				setTimeout(BuildDelay, 500);
+				function BuildDelay() {
+					_player = jQuery("#player").playit(
+					{
+						dataSourceOptions: { 
+							xmlConfig: xmlFile,
+							cacheXml: false
+						}
+					});
+				}
+            });
+		</script>
+		<!-- ============================================== -->
+		
+	</div>
+	
+</body>
+</html>

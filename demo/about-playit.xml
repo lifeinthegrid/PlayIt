@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playit  xmlns="http://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
+	
+	autofill="true"
+	accordion-animate="true"
+	accordion-autoselect="true"
+	accordion-minwidth="100"
+	toolbar-title="All About PlayIt"
+	toolbar-showsearch="true"
+	toolbar-searchtext="Search"
+	toolbar-searchwidth="auto"
+
+	view-default="list"
+	
+	audio-autoplay="false"
+	audio-info-enable="true"
+	audio-infobox-modal="true"
+	audio-infobox-height="350"
+	audio-infobox-width="600"
+	audio-infobox-resizable="true"
+	
+	image-autoplay="false"
+	image-dialog-height="500"
+	image-dialog-width="800"
+	image-info-enable="true"
+	image-slides-interval="5500"
+	
+	video-autoplay="false"
+	video-dialog-height="500"
+	video-dialog-width="800"
+	video-info-enable="true"
+	video-navbar-enable="true">
+
+    <!--  ===============================================================
+	PLAYIT SECTION
+	================================================================== -->
+    <section name="PlayIt"  isdefault="false">
+        <category type="link" name="Layout"		link-src="link/about-playit-help.html" ></category>
+        <category type="link" name="Toolbar" 		link-src="link/about-playit-help.html#playit-toolbar" ></category>
+        <category type="link" name="Navigation" 	link-src="link/about-playit-help.html#playit-navigation" ></category>
+        <category type="link" name="View Panel" 	link-src="link/about-playit-help.html#playit-viewpanel" ></category>
+        <category type="link" name="&#xA0;&#xA0; Category Views" 	link-src="link/about-playit-help.html#playit-viewtypes" ></category>
+        <category type="link" name="&#xA0;&#xA0; Category Types" link-src="link/about-playit-help.html#playit-dataelements" ></category>
+        <category type="link" name="&#xA0;&#xA0; &#xA0;&#xA0; Audio" link-src="link/about-playit-help.html#audio-overview" link-scroll="on" />
+        <category type="link" name="&#xA0;&#xA0; &#xA0;&#xA0; Images" link-src="link/about-playit-help.html#image-overview"></category>
+        <category type="link" name="&#xA0;&#xA0; &#xA0;&#xA0; Links" link-src="link/about-playit-help.html#link-overview"></category>
+        <category type="link" name="&#xA0;&#xA0; &#xA0;&#xA0; Videos" link-src="link/about-playit-help.html#video-overview"></category>
+		<category type="link" name="Documentation" 	 link-src="../docs/playit-user-guide-one-page.pdf" ></category>
+        <category type="link" name="Acknowledgments" link-src="link/about-playit-help.html#credits"></category>
+    </section>
+
+    <!--  ===============================================================
+	AUDIO SECTION
+	================================================================== -->
+    <section name="Audio" isdefault="false">
+
+        <category
+			type="Audio"
+			name="Examples"
+			view-default="grid"
+			isdefault="false">
+            <grid enable="true">
+                <fields sort-column="title" sort-direction="asc">
+                    <field match="title" display="Demo" />
+                    <field match="artist" display="Artist"/>
+                    <field match="album" display="Album"/>
+                </fields>
+            </grid>
+            <list>
+                <fields sort-column="artist" sort-direction="desc">
+                    <field match="title" display="" sort-display="Title"/>
+                    <field match="artist" display="Artist: " sort-display="Artist"/>
+                </fields>
+            </list>
+            <tile item-size="128"></tile>
+            <audio
+				title="Demo 01 - Audio Overview **"
+				src="audio/april-elsewhere.mp3"
+				artist="Orchestral movement of 1932"
+				album="Single 1"
+				info-enable="true">
+                <info>
+                    <![CDATA[
+					 <div class='playit-info-audio'>
+						 <span>
+							The audio features can be customized at the  &lt;playit&gt; tag level and the &lt;audio&gt; tag level. <br/><br/>
+							
+							For a full rundown of all settings see the online help section.  The audio source can be an internal or external source.  The audio player
+							will only playback audio that your browser supports.  It is recommended to stick with common formats like mp3 and mp4. <br/><br/>
+							
+							This information dialog itself is customizable and so are all the columns and meta data that you see within the audio layout.  By viewing the
+							configuration file you can see very quickly how PlayIt is constructed. <br/><br/>
+						
+						</span>
+					</div>
+					
+					]]>
+                </info>
+            </audio>
+            <audio
+				title="Demo 02 - Disable Info Button"
+				src="audio/bokumo.mp3"
+				artist="Orchestral movement of 1932"
+				album="Single 2"
+				info-enable="false" />
+            <audio
+				title="Demo 03 - Enable Info Button **"
+				src="audio/hakonesnow.mp3"
+				artist="Orchestral movement of 1932"
+				album="Single 3">
+                <info>
+                    <![CDATA[
+					 <div class='playit-info-audio'>
+						 <span>
+						  Even with data in the audio &lt;info&gt; tag you can disable the button in the audio player if needed.<br/><br/>
+							
+							Disable the info button by:<br/>
+							<ul>
+								<li>Setting the attribute audio@info-enable="false" on the audio tag</li>
+								<li>Leave the &lt;info&gt;&lt;/info&gt; tag blank </li> 
+							</ul>
+						</span>
+					</div>
+					]]>
+                </info>
+            </audio>
+            <audio
+				title="Demo 04 - Custom Thumbnail **"
+				src="audio/lostoncorners.mp3"
+				album="Single 4"
+				artist="Orchestral movement of 1932"
+				thumb="image/note-256.png">
+                <info>
+                    <![CDATA[
+					 <div class='playit-info-audio'>
+						<span>
+						Every audio tag is equipped with an attribute named "thumb".  The thumb attribute takes an image source and it will display in the following locations:<br/>
+						
+						<ul>
+							<li>Audio players active panel (displays at 32x32)</li>
+							<li>Main image in the list view (displays at 48x48)</li> 
+						</ul>
+						
+						The recommended size for the thumb is 48x48.  It will server up any image size passed to it.  For the best performance and visual 48x48 is highly
+						recommended.  If a thumb attribute is not give then the audio tag will attempt to look for a poster attribute image source.  If no poster is found then it will
+						use the internal PlayIt default image.<br/><br/>
+						
+						</span>
+					</div>
+					]]>
+                </info>
+            </audio>
+            <audio
+				title="Demo 05 - Custom Poster  **"
+				src="audio/share-numazu.mp3"
+				album="Single 5"
+				artist="Orchestral movement of 1932"
+				poster="image/note-256.png">
+                <info>
+                    <![CDATA[
+					 <div class='playit-info-audio'>
+						<span>
+						Every audio tag includes an attribute named "poster".  The poster attribute takes an image source and will display in the following locations:<br/>
+						
+						<ul>
+							<li>Tile view (displays between 64x64 to 256x256)</li>
+						</ul>
+						
+						The recommended size for the poster is 256x256.  It will server up any image size passed to it.  For the best performance and visual 256x256 is highly
+						recommended.  If no poster is found then it will use the internal PlayIt default image.<br/><br/>
+						
+						<i>Note the difference between Demo04 and Demo05 on the tile view.  The tile view only uses the poster attribute.</i><br/><br/>
+						
+						</span>
+					</div>
+					]]>
+                </info>
+            </audio>
+
+            <!-- ALBUM DEMOS -->
+            <audio
+				title="Demo 06 - Album Group 1: track 1  **"
+				src="audio/april-elsewhere.mp3"
+				artist="Orchestral movement of 1932"
+				album="Album 1"
+				track="1"
+				poster="image/piano-256.png">
+                <info>
+                    <![CDATA[
+					 <div class='playit-info-audio'>
+						 <span>
+						 When the <b>'artist'</b> and <b>'album'</b> attributes are identical across audio nodes then a unique key is formed for those audio tags to form an
+						 album group.  This grouping is best seen in the tile view.<br/><br/>
+						 
+						 By default the album group plays the audio file in the order they were placed in the configuration file.  To be sure the audio elements plays
+						 in the exact order you want, place a <b>'track'</b> attribute on every audio tag in the album group to order the album accordingly.
+						 </span>
+					</div>
+					]]>
+                </info>
+            </audio>
+            <audio
+				title="Demo 06 - Album Group 1: track 2"
+				src="audio/bokumo.mp3"
+				artist="Orchestral movement of 1932"
+				album="Album 1"
+				track="2"
+				info-enable="false"
+				poster="image/piano-256.png">
+            </audio>
+            <audio
+				title="Demo 06 - Album Group 1: track 3"
+				src="audio/hakonesnow.mp3"
+				artist="Orchestral movement of 1932"
+				album="Album 1"
+				track="3"
+				info-enable="false"
+				poster="image/piano-256.png">
+            </audio>
+            <audio
+				title="Demo 07 - Album Group 2: track 1" src="audio/lostoncorners.mp3" artist="Orchestral movement of 1932" album="Album 2" track="1" info-enable="false" poster="image/violin-256.png">
+            </audio>
+            <audio
+				title="Demo 07 - Album Group 2: track 2" src="audio/share-numazu.mp3" artist="Orchestral movement of 1932" album="Album 2" track="2" info-enable="false" poster="image/violin-256.png">
+            </audio>
+            <audio
+				src="foo"
+				album="Unknown"
+				title="Demo 08 - Unknown Album - Auto Skips"
+				artist="Unknown Artist"
+				size="0"
+				length="0">
+            </audio>
+        </category>
+
+        <!-- GRID VIEW ONLY -->
+        <category
+			type="Audio"
+			name="&#xA0;&#xA0; Grid View Only"
+			view-default="grid"
+			isdefault="false">
+            <grid>
+                <fields sort-column="title" sort-direction="asc">
+                    <field match="title" display="Demo" />
+                    <field match="artist" display="Artist"/>
+                    <field match="album" display="Album"/>
+                </fields>
+            </grid>
+            <list enable="false" />
+            <tile enable="false" />
+            <audio title="Demo 01 - Audio Overview" src="audio/april-elsewhere.mp3" artist="Orchestral movement of 1932" album="Single 1" />
+            <audio title="Demo 07 - Album Group 2: track 1" src="audio/lostoncorners.mp3" artist="Orchestral movement of 1932" album="Album 2" track="1" info-enable="false" poster="image/violin-256.png" />
+            <audio title="Demo 07 - Album Group 2: track 2" src="audio/share-numazu.mp3" artist="Orchestral movement of 1932" album="Album 2" track="2" info-enable="false" poster="image/violin-256.png" />
+        </category>
+
+        <!-- LIST VIEW ONLY -->
+        <category
+			type="Audio"
+			name="&#xA0;&#xA0; List View Only"
+			view-default="list"
+			isdefault="false">
+            <grid enable="false" />
+            <list>
+                <fields>
+                    <field match="title" display="" sort-display="Title"/>
+                    <field match="artist" display="Artist: " sort-display="Artist"/>
+                </fields>
+            </list>
+            <tile enable="false" />
+            <audio title="Demo 01 - Audio Overview" src="audio/april-elsewhere.mp3" artist="Orchestral movement of 1932" album="Single 1" />
+            <audio title="Demo 07 - Album Group 2: track 1" src="audio/lostoncorners.mp3" artist="Orchestral movement of 1932" album="Album 2" track="1" info-enable="false" poster="image/violin-256.png" />
+            <audio title="Demo 07 - Album Group 2: track 2" src="audio/share-numazu.mp3" artist="Orchestral movement of 1932" album="Album 2" track="2" info-enable="false" poster="image/violin-256.png" />
+        </category>
+
+        <!-- TILE VIEW ONLY -->
+        <category
+			type="Audio"
+			name="&#xA0;&#xA0; Tile View Only"
+			view-default="tile"
+			isdefault="false">
+            <grid enable="false" />
+            <list enable="false" />
+            <tile default-item-size="128"></tile>
+            <audio title="Demo 01 - Audio Overview" src="audio/april-elsewhere.mp3" artist="Orchestral movement of 1932" album="Single 1" />
+            <audio title="Demo 07 - Album Group 2: track 1" src="audio/lostoncorners.mp3" artist="Orchestral movement of 1932" album="Album 2" track="1" info-enable="false" poster="image/violin-256.png" />
+            <audio title="Demo 07 - Album Group 2: track 2" src="audio/share-numazu.mp3" artist="Orchestral movement of 1932" album="Album 2" track="2" info-enable="false" poster="image/violin-256.png" />
+        </category>
+    </section>
+
+
+    <!--  ===============================================================
+	IMAGE SECTION
+	================================================================== -->
+    <section name="Images"  isdefault="false">
+
+        <category
+			type="image"
+			name="Examples"
+			isdefault="false"
+			view-default="grid">
+            <grid>
+                <fields  sort-column="title" sort-direction="asc">
+                    <field match="title" display="Title" />
+                    <field match="desc" display="Location" />
+                    <field match="date" display="Date"  />
+                </fields>
+            </grid>
+            <list>
+                <fields  sort-column="title" sort-direction="asc">
+                    <field match="title" display="" sort-display="Title" />
+                    <field match="desc" display=""  sort-display="Location" />
+                    <field match="date" display=""  sort-display="Date" />
+                </fields>
+            </list>
+
+            <!-- California -->
+            <img
+				title="Demo 01 - Image Overview **"
+				src="image/pics/California01.jpg"
+				poster="image/pics/California01_poster.jpg"
+				thumb="image/pics/California01_thumb.jpg"
+				info-enable="true"
+				desc="California"
+				date="09/03/2011">
+                <info>
+                    <![CDATA[
+					 <div class='playit-info-image'>
+						 <span>
+							The image features can be customized at the &lt;playit&gt; tag level and the &lt;img&gt; tag level. <br/><br/>
+							
+							For a full rundown of all settings see the online help section.  The image source can be an internal or external source.  The image player
+							will only playback images that your browser supports.  It is recommended to stick with common formats like jpeg, png, gif. <br/><br/>
+							
+							For performance your images should be sized and compressed to an optional size for viewing. <br/><br/>
+						</span>
+					</div>
+					
+					]]>
+                </info>
+            </img>
+            <img
+				title="Demo 02 - Disable Info Button"
+				src="image/pics/California02.jpg"
+				poster="image/pics/California02_poster.jpg"
+				thumb="image/pics/California02_thumb.jpg"
+				info-enable="false"
+				desc="California"
+				date="09/03/2011" >
+                <info><![CDATA[ Even with data you can disable the information button ]]></info>
+            </img>
+            <img
+				title="Demo 03 - Enable Info Button **"
+				src="image/pics/California03.jpg"
+				poster="image/pics/California03_poster.jpg"
+				thumb="image/pics/California03_thumb.jpg"
+				info-enable="true"
+				desc="California"
+				date="09/03/2011" >
+                <info>
+                    <![CDATA[
+					 <div class='playit-info-image'>
+						<span>
+						  Even with data in the &lt;info&gt; tag you can disable the information button in the image player if needed.<br/><br/>
+							
+							Disable the info button by:<br/>
+							<ul>
+								<li>Setting the attribute img@info-enable="false" on the img tag</li>
+								<li>Leave the <b>&lt;info&gt;&lt;/info&gt;</b> tag blank </li> 
+							</ul>
+						</span>
+					</div>
+					]]>
+                </info>
+            </img>
+            <img title="Historic Park" desc="California" src="image/pics/California04.jpg" poster="image/pics/California04_poster.jpg" thumb="image/pics/California04_thumb.jpg" date="09/03/2011" />
+            <img title="Sunset" desc="California" src="image/pics/California05.jpg" poster="image/pics/California05_poster.jpg" thumb="image/pics/California05_thumb.jpg" date="09/03/2011" />
+            <img title="Sunset Ocean" desc="California" src="image/pics/California06.jpg" poster="image/pics/California06_poster.jpg" thumb="image/pics/California06_thumb.jpg" date="09/03/2011" />
+            <img title="Flowers" desc="California" src="image/pics/California07.jpg" poster="image/pics/California07_poster.jpg" thumb="image/pics/California07_thumb.jpg" date="09/03/2011" />
+
+            <!-- Kansas -->
+            <img title="Old Barn" desc="Kansas" src="image/pics/Kansas01.jpg" poster="image/pics/Kansas01_poster.jpg" thumb="image/pics/Kansas01_thumb.jpg" date="05/17/2011" />
+            <img title="Tree Sunset" desc="Kansas" src="image/pics/Kansas02.jpg"  poster="image/pics/Kansas02_poster.jpg" thumb="image/pics/Kansas02_thumb.jpg" date="05/17/2011" />
+            <img title="Fence Sunset" desc="Kansas" src="image/pics/Kansas03.jpg" poster="image/pics/Kansas03_poster.jpg" thumb="image/pics/Kansas03_thumb.jpg" date="05/17/2011" />
+            <img title="Red Barn" desc="Kansas" src="image/pics/Kansas04.jpg" poster="image/pics/Kansas04_poster.jpg" thumb="image/pics/Kansas04_thumb.jpg" date="05/17/2011" />
+            <img title="Fence Post" desc="Kansas" src="image/pics/Kansas05.jpg" poster="image/pics/Kansas05_poster.jpg" thumb="image/pics/Kansas05_thumb.jpg" date="05/17/2011" />
+            <img title="Windmill" desc="Kansas" src="image/pics/Kansas06.jpg" poster="image/pics/Kansas06_poster.jpg" thumb="image/pics/Kansas06_thumb.jpg" date="05/17/2011" />
+            <img title="Farm House" desc="Kansas" src="image/pics/Kansas07.jpg" poster="image/pics/Kansas07_poster.jpg" thumb="image/pics/Kansas07_thumb.jpg" date="05/17/2011" />
+
+            <!-- Mesa Arts Center -->
+            <img title="Stair Case" desc="Mesa Arts Center" src="image/pics/MesaArts01.jpg" poster="image/pics/MesaArts01_poster.jpg" thumb="image/pics/MesaArts01_thumb.jpg" date="10/03/2011" />
+            <img title="Water Fountain" desc="Mesa Arts Center" src="image/pics/MesaArts02.jpg" poster="image/pics/MesaArts02_poster.jpg" thumb="image/pics/MesaArts02_thumb.jpg" date="10/03/2011" />
+            <img title="Square Steps" desc="Mesa Arts Center" src="image/pics/MesaArts03.jpg" poster="image/pics/MesaArts03_poster.jpg" thumb="image/pics/MesaArts03_thumb.jpg" date="10/04/2011" />
+            <img title="Square Wall" desc="Mesa Arts Center" src="image/pics/MesaArts04.jpg" poster="image/pics/MesaArts04_poster.jpg" thumb="image/pics/MesaArts04_thumb.jpg" date="11/15/2011" />
+            <img title="Iron Plant" desc="Mesa Arts Center"	src="image/pics/MesaArts05.jpg" poster="image/pics/MesaArts05_poster.jpg" thumb="image/pics/MesaArts05_thumb.jpg" date="11/15/2011" />
+            <img title="Wild Cactus"	desc="Mesa Arts Center"	src="image/pics/MesaArts06.jpg" poster="image/pics/MesaArts06_poster.jpg" thumb="image/pics/MesaArts06_thumb.jpg" date="11/21/2011" />
+            <img title="Modern Lights" desc="Mesa Arts Center" src="image/pics/MesaArts07.jpg" poster="image/pics/MesaArts07_poster.jpg" thumb="image/pics/MesaArts07_thumb.jpg" date="11/22/2011" />
+
+            <!-- Zoo Images -->
+            <img title="Flamingos" desc="SanDiego Zoo" src="image/pics/zoo_1.jpg" poster="image/pics/zoo_1_poster.jpg" thumb="image/pics/zoo_1_thumb.jpg" date="02/03/2009" />
+            <img title="Giraffe" desc="SanDiego Zoo" src="image/pics/zoo_2.jpg" poster="image/pics/zoo_2_poster.jpg" thumb="image/pics/zoo_2_thumb.jpg" date="02/03/2009" />
+            <img title="Monkey" desc="SanDiego Zoo" src="image/pics/zoo_3.jpg" poster="image/pics/zoo_3_poster.jpg" thumb="image/pics/zoo_3_thumb.jpg" date="02/03/2009" />
+            <img title="Wild Birds" desc="SanDiego Zoo" src="image/pics/zoo_4.jpg" poster="image/pics/zoo_4_poster.jpg" thumb="image/pics/zoo_4_thumb.jpg" date="02/03/2009" />
+            <img title="Plant Life" desc="SanDiego Zoo" src="image/pics/zoo_5.jpg" poster="image/pics/zoo_5_poster.jpg" thumb="image/pics/zoo_5_thumb.jpg" date="02/03/2009" />
+            <img title="Wild Baboon" desc="SanDiego Zoo" src="image/pics/zoo_6.jpg" poster="image/pics/zoo_6_poster.jpg" thumb="image/pics/zoo_6_thumb.jpg" date="02/03/2009" />
+            <img title="Wart Hog" desc="SanDiego Zoo" src="image/pics/zoo_7.jpg" poster="image/pics/zoo_7_poster.jpg" thumb="image/pics/zoo_7_thumb.jpg" date="02/03/2009" />
+            <img title="Duck" desc="SanDiego Zoo" src="image/pics/zoo_8.jpg" poster="image/pics/zoo_8_poster.jpg" thumb="image/pics/zoo_8_thumb.jpg" date="02/03/2009" />
+            <img title="Elephant" desc="SanDiego Zoo" src="image/pics/zoo_9.jpg" poster="image/pics/zoo_9_poster.jpg" thumb="image/pics/zoo_9_thumb.jpg" date="02/03/2009" />
+			
+			
+        </category>
+
+        <category type="link" name="&#xA0;&#xA0; Direct Linking" link-src="image/pics/California07.jpg" link-scroll="no"></category>
+
+    </section>
+
+    <!--  ===============================================================
+	LINKS SECTION
+	================================================================== -->
+    <section name="Links" isdefault="false">
+
+        <category
+			type="link"
+			name="Examples"
+			isdefault="false"
+			view-default="grid">
+            <grid>
+                <fields>
+                    <field match="type" display="Demo" />
+                    <field match="title" display="Link" />
+                    <field match="desc" display="Description" />
+                </fields>
+            </grid>
+            <list>
+                <fields>
+                    <field match="title" sort-display="Link" />
+                    <field match="desc" sort-display="Description" />
+                </fields>
+            </list>
+            <link
+				src="http://validator.w3.org/#validate_by_input"
+				title="Markup Validation Service"
+				desc="Validate your XML Configuration File"
+				features="menubar=0,resizable=1,width=700,height=500"
+				target="PopUp"
+				type="Demo 01 - New Window 1">
+            </link>
+            <link
+				src="http://jsonviewer.stack.hu/"
+				title="JSON Viewer"
+				desc="Pretty Print your JSON Strings"
+				features="menubar=0,resizable=1,width=700,height=500"
+				target="PopUp"
+				type="Demo 02 - Same Window 1">
+            </link>
+            <link
+				src="http://code.google.com/apis/youtube/player_parameters.html"
+				title="YouTube Video Options"
+				desc="YouTube Parameter Setup"
+				features="resizable=1,width=1020,height=760"
+				target="PopUp1"
+				type="Demo 03 - Larger Window 2">
+            </link>
+            <link
+				src="video/playit-intro.mp4"
+				title="HTML 5 Video"
+				desc="HTML 5 Video (HTML 5 Browser required)"
+				features="menubar=0,resizable=0,width=1300,height=800"
+				thumb="image/grid-64.jpg"
+				poster="image/grid-256.jpg"
+				target="PopUp3"
+				type="Demo 04 - HTML 5 Video">
+            </link>
+            <link
+				src="http://www.lifeinthegrid.com"
+				title="LifeInTheGrid.com"
+				desc="Tools Tips &amp; Technology for Online Entrepreneurs"
+				thumb="image/grid-64.jpg"
+				poster="image/grid-256.jpg"
+				target="_self"
+				type="Demo 05 - Same Tab">
+            </link>
+            <link
+				src="http://lifeinthegrid.com/labs/playit/"
+				title="PlayIt Product Page"
+				desc="Landing Page for PlayIt"
+				thumb="image/grid-64.jpg"
+				poster="image/grid-256.jpg"
+				target="MyTab1"
+				type="Demo 06 - New Tab 1">
+            </link>
+        </category>
+
+        <category type="link" name="&#xA0;&#xA0; Direct Linking" 	link-src="http://validator.w3.org/#validate_by_input" ></category>
+
+    </section>
+
+    <!--  ===============================================================
+	VIDEO SECTION
+	================================================================== -->
+    <section name="Videos" isdefault="false">
+
+        <category
+			type="video"
+			name="Examples"
+			isdefault="false"
+			view-default="grid">
+            <grid>
+                <fields>
+                    <field match="title" display="Demo" />
+                    <field match="name" display="Name" />
+                    <field match="player" display="Type" />
+                    <field match="length" display="Length" />
+                </fields>
+            </grid>
+            <list>
+                <fields>
+                    <field match="title" display="Title: " />
+                    <field match="length" display="Length: " />
+                </fields>
+            </list>
+            <video
+				player="remote"
+				title="Demo 01 - Video Overview **"
+				src="http://www.youtube.com/embed/H2jlBCPbZUY?rel=0&amp;hd=1" 
+				name="PlayIt Trailer"
+				length="0:12"
+				info-enable="true">
+					<info>
+						<![CDATA[
+						 <div class='playit-info-video'>
+							 <span>
+								The video features can be customized at the  &lt;playit&gt; tag level and the &lt;video&gt; tag level. <br/><br/>
+								
+								For a full rundown of all settings see the online help section.  The video source can be an internal or external source.  When using the internal (player='local')
+								video player the player will only playback video that your browser supports.  It is recommended to stick with common formats like mp4 and mov. <br/><br/>
+								
+								This video information area is customizable with whatever data you want to provide.  By viewing the
+								configuration file you can see very quickly how PlayIt is constructed. <br/><br/>
+							
+							</span>
+						</div>
+						]]>
+					</info>
+            </video>
+            <video
+				player="remote"
+				title="Demo 02 - Enable info button **"
+				src="http://www.youtube.com/embed/H2jlBCPbZUY?rel=0&amp;hd=1" 
+				info-enable="true"
+				name="PlayIt Trailer"
+				length="0:12">
+					<info>
+						<![CDATA[
+						 <div class='playit-info-video'>
+							 <span>
+							  Even with data in the video &lt;info&gt; tag you can disable the button in the video information button.<br/><br/>
+								
+								Disable the info button by:<br/>
+								<ul>
+									<li>Setting the attribute video@info-enable="false" on the video tag</li>
+									<li>Leave the &lt;info&gt;&lt;/info&gt; tag blank </li> 
+								</ul>
+							</span>
+						</div>
+						]]>
+					</info>
+            </video>
+            <video
+				player="remote"
+				title="Demo 03 - Disable info button"
+				src="http://www.youtube.com/embed/H2jlBCPbZUY?rel=0&amp;hd=1" 
+				info-enable="false"
+				name="PlayIt Trailer"
+				length="0:12">
+					<info><![CDATA[ Even with info data we can disable the information button ]]></info>
+            </video>
+            <video player="remote" src="http://www.youtube.com/embed/2y_GZB8dqu8?rel=0&amp;hd=1" title="Demo 04 - Youtube"	name="Page Speed Analysis: Series 1" length="12:50" />
+            <video player="remote" src="http://www.youtube.com/embed/K4aSmzMsDtQ?rel=0&amp;hd=1&amp;autoplay=1" title="Demo 05 - Youtube AutoPlay" name="Page Speed Analysis: Series 2" length="14:29" />
+            <video player="remote" src="http://player.vimeo.com/video/26232472?title=0&amp;byline=0&amp;portrait=0" title="Demo 06 - Vimeo" name="Next Generation Website" length="1:22" >
+                <info>
+                    <![CDATA[
+					 <div class='playit-info-video'>
+						 <span>
+						 - YOUR CUSTOM HTML HERE -
+						</span>
+					</div>
+					]]>
+                </info>
+            </video>
+            <video player="remote" src="http://player.vimeo.com/video/26232472?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" title="Demo 07 - Vimeo AutoPlay" name="Next Generation Website" length="1:22" />
+			<video
+				player="local"
+				title="Demo 08 - External Source Video Tag Fallback"
+				info-enable="false"
+				name="Echo Conference"
+				length="0:41">			
+				<source src="http://www.mediaelementjs.com/media/echo-hereweare.mp4" type="video/mp4" />
+                <source src="http://www.mediaelementjs.com/media/echo-hereweare.webm" type="video/webm" />
+                <source src="http://www.mediaelementjs.com/media/echo-hereweare.ogv" type="video/ogg" />
+                <info><![CDATA[ Even with info data we can disable the information button ]]></info>
+            </video>
+			<!-- Flash Video -->
+			<!-- video
+				player="local"
+				title="Demo 09 - Local Video Served"
+				name="PlayIt Trailer"
+				length="0:12"
+				info-enable="true">
+					<source src="video/playit-intro.flv"  type="video/flv" />
+            </video -->
+        </category>
+
+        <!-- Some browser like Chrome will accept the direct video link such as: link-src="video/playit-intro.mp4"  -->
+        <category type="link" name="&#xA0;&#xA0; Direct Linking" link-src="link/video-link.html" link-scroll="no" link-iosiframeasobjectlink="false"></category>
+    </section>
+
+
+</playit>

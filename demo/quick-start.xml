@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playit  xmlns="http://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
+	accordion-animate="true"
+	accordion-autoselect="true"
+	accordion-minwidth="200"
+	accordion-maxwidth="400"
+	
+	toolbar-title="PlayIt - Quick Start"
+	toolbar-showsearch="true"
+	toolbar-searchtext="Search"
+	toolbar-searchwidth="auto"
+
+	view-default="grid"
+	
+	audio-autoplay="false"
+	audio-info-enable="true"
+	audio-infobox-modal="true"
+	audio-infobox-height="350"
+	audio-infobox-width="600"
+	audio-infobox-resizable="true"
+	
+	image-autoplay="true"
+	image-dialog-height="500"
+	image-dialog-width="800"
+	image-info-enable="true"
+	image-slides-interval="3000"
+	
+	video-autoplay="false"
+	video-dialog-height="400"
+	video-dialog-width="600"
+	video-info-enable="true"
+	video-navbar-enable="true">
+
+
+    <section name="Section 1" isdefault="true">
+        <category type="link" name="Quick Start" link-src="link/quick-start.html" ></category>
+    </section>
+
+	<section name="Section 2" isdefault="true">
+		<!--  ===============================================================
+		AUDIO
+		================================================================== -->
+		<category
+			type="Audio"
+			name="Audio Category">
+			<grid>
+				<fields sort-column="title" sort-direction="desc">
+					<field match="title" display="Name" />
+					<field match="artist" display="Artist"/>
+					<field match="album" display="Album"/>
+				</fields>
+			</grid>
+			<list>
+				<fields sort-column="artist" sort-direction="desc">
+					<field match="title" display="" sort-display="Title"/>
+					<field match="artist" display="Artist: " sort-display="Artist"/>
+				</fields>
+			</list>
+			<tile item-size="80"></tile>
+			<audio 
+                title="Single Demo"
+                src="audio/april-elsewhere.mp3"
+                artist="Orchestral movement of 1932" 
+                album="Single 1" 
+                info-enable="true" 
+                poster="" 
+                thumb=""
+                track="">
+				<info>
+                    <![CDATA[	 
+                    <div class='playit-info-audio'><span>	Your Custom Info </span></div> 
+                    <!--  -->
+                    ]]>
+               </info>
+			</audio>
+            
+			<audio title="Lost on Corners" artist="Orchestral movement of 1932" album="Album 1" src="audio/lostoncorners.mp3" track="1" info-enable="false" poster="image/violin-256.png" />
+			<audio title="Share Numazu"    artist="Orchestral movement of 1932" album="Album 1"  src="audio/share-numazu.mp3" track="2" info-enable="false" poster="image/violin-256.png" />
+		</category>
+
+		<!--  ===============================================================
+		IMAGE
+		================================================================== -->
+		<category
+			type="image"
+			name="Images Category" 
+            isdefault="true">
+			<grid>
+				<fields  sort-column="title" sort-direction="asc">
+					<field match="title" display="Title" />
+					<field match="desc" display="Location" />
+					<field match="date" display="Date"  />
+				</fields>
+			</grid>
+			<list>
+				<fields  sort-column="title" sort-direction="asc">
+					<field match="title" display="" sort-display="Title" />
+					<field match="desc" display=""  sort-display="Location" />
+					<field match="date" display=""  sort-display="Date" />
+				</fields>
+			</list>
+
+			<img  
+                title="Pelican"  
+                src="image/pics/California02.jpg" 
+                poster=""
+                thumb="image/pics/California02_thumb.jpg"
+                info-enable="true"
+                desc="California"
+                date="09/01/2011">
+			    <info><![CDATA[ Your Custom Info ]]></info>
+			</img>
+			<img title="Sunset"  src="image/pics/California05.jpg" thumb="image/pics/California05_thumb.jpg" desc="California" date="09/02/2011" />
+			<img title="Flowers" src="image/pics/California07.jpg" thumb="image/pics/California07_thumb.jpg" desc="California" date="09/03/2011" />
+
+		</category>
+
+		<!--  ===============================================================
+		LINK
+		================================================================== -->
+		<category
+			type="link"
+			name="Links Category"
+            isdefault="true">
+			<grid>
+				<fields>
+					<field match="title" display="Link" />
+					<field match="desc" display="Description" />
+				</fields>
+			</grid>
+			<list>
+				<fields>
+					<field match="title" sort-display="Link" />
+					<field match="desc" sort-display="Description" />
+				</fields>
+			</list>
+
+
+			<link 
+                title="Markup Validation Service" 
+                src="http://validator.w3.org/#validate_by_input" 
+                poster=""
+                thumb=""
+                features="menubar=0,resizable=1,width=800,height=600"
+                target="MyWindow"
+                desc="Validate your XML Configuration File" />
+
+
+		</category>
+
+		<!--  ===============================================================
+		VIDEO
+		================================================================== -->
+		<category
+			type="video"
+			name="Video Category" 
+            isdefault="true">
+			<grid>
+				<fields>
+					<field match="title" display="Title" />
+					<field match="length" display="Length" />
+				</fields>
+			</grid>
+			<list>
+				<fields>
+					<field match="title" display="Title: " />
+                    <field match="length" display="Length: " />
+                    <field match="size" display="My Size: " />
+				</fields>
+			</list>
+            
+			<video 
+                player="local" 
+                title="PlayIt Trailer" 
+                src="video/playit-intro.mp4"
+                poster=""
+                thumb=""
+                info-enable="true" 
+                length="0:12" size="10MB" >
+
+        <source src="video/playit-intro.webm" type="video/mp4" />
+				<source src="video/playit-intro.webm" type="video/webm" />
+				<source src="video/playit-intro.ogv" type="video/ogg" />
+        <source src="video/playit-intro.avi" type="video/avi" />
+        <source src="video/playit-intro.webm" type="video/flv" />
+				<info><![CDATA[ <div class='playit-info-video'><span>English Information Here</span></div> ]]></info>
+			</video>
+			<video player="remote" title="Next Generation Website" src="http://player.vimeo.com/video/26232472?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=false" length="1:22" />
+
+		</category>
+
+	</section>
+
+    
+</playit>

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>PlayIt - Media Player Demo</title>
+	<meta name="description" content="Create powerful media displays with PlayIt. PlayIt is your ultimate web based media player." />
+	<link rel="stylesheet" href="../style.css" type="text/css" /> 
+	
+	<!-- ==============================================
+	REQUIRED FOR PLAYIT: HTML 5 and Legacy support -->
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/flick/jquery-ui.css" id="playit-jquery-ui-css" />
+	<link rel="stylesheet" href="../source/jquery.playit.css" /> 
+	<link rel="stylesheet" href="../lib/mediaelementjs/mediaelementplayer.css" /> 
+	<link rel="stylesheet" href="../lib/mediaelementjs/mejs-skins.css" /> 
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../source/jquery.playit.js" id="playit-source"></script>
+	<script type="text/javascript" src="../lib/mediaelementjs/mediaelement-and-player.min.js"></script>
+	<!-- ============================================== -->
+	
+	<script type="text/javascript" src="../config.js"></script>
+	<style>
+		/*Set the accordian header smaller */
+		h3.ui-accordion-header
+		{
+			line-height:14px;
+		}
+		html, body
+        {
+            height: 100%;
+            margin: 0px;
+        }
+        div.content
+        {
+            height: 75%;
+            width: 95%;
+            margin: 0 auto;
+            text-align: left;
+        }
+	</style>
+</head>
+<body>
+
+	<table class="top-nav">
+		<tr>
+			<td class="column-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td class="column-1">
+				<h2>PlayIt - All About</h2>
+				<span>The flow and layout of the PlayIt media player</span>
+			</td>
+			<td class="column-2" style="text-align:center" align="center">
+			</td>
+			<td class="column-3">
+				<a href="../index.html">Start</a> |
+				<a href="index.html">Demos</a> |
+				<a href="about-playit.xml">XML</a><br/>
+				<div id="playit-version-mode"></div>
+			</td>
+		</tr>
+	</table>
+
+	<div class="content">
+
+		<div id="player" style="width:98%; height:100%;"></div><br /><br />
+		<script type="text/javascript">
+
+		    /* Construct the Player */
+		    jQuery(document).ready(function ()
+		    {
+		        jQuery("#player").playit(
+				{
+				    autoFill: true,
+                    viewDefault: "list",
+                    dataSource: playit.flickrDataSource,
+				    dataSourceOptions: {
+				        apiKey: "",
+				        userId: "",
+				        title: "My Flickr Stream"
+				    }
+				});
+		    });
+		</script>
+		
+	</div>
+	
+</body>
+</html>
