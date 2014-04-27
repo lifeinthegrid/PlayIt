@@ -19,6 +19,7 @@ div.content-index-screen {
 
 div.content {padding:10px; }
 div.content hr {color:#C0C0C0;}
+div.sales-text { font-size:22px; font-weight:bold;   text-align:center; color:#555}
 
 /*  --------------------------
 TOP NAVIGATION */
