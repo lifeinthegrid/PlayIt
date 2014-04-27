@@ -4,13 +4,7 @@ PLAYIT: Used for styling the demos it is not requried for PlayIt */
 @import url(http://fonts.googleapis.com/css?family=Iceland);
 
 /*GLOBAL TAGS */
-body
-{
-	height: 100%;
-	margin: 0px auto;
-	padding:0px;
-	font-family: Tahoma, Geneva, Verdana;
-}
+body{height: 100%; margin: 0px auto; padding:0px; font-family: Tahoma, Geneva, Verdana;}
 h2 	{margin: 0px 0px 0px 3px; font-size:1.3em; font-style:italic; }
 *:focus { outline: 0 none; }
 a {color:#000;}
@@ -96,17 +90,26 @@ div.figure-box  {
 	-moz-box-shadow: 3px 3px 4px #999;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#999999')";
 }
-div.figure-text {
-	margin-top:15px;
-	text-align:center;
-	color:#000;
-	font-style:italic;
-	font-size:12px;
-	line-height:14px;
-}
-div.sub-title  {
-	padding:5px 0px 0px 20px;
-	margin-bottom:30px;
+div.figure-text {margin-top:15px; text-align:center;color:#000; font-style:italic;font-size:12px;line-height:14px;}
+div.sub-title  {padding:5px 0px 0px 20px;margin-bottom:30px;}
+div#switcher a {padding-bottom:8px !important; white-space:nowrap !important; } 
+div.demo-links {border:1px solid silver; border-radius:5px;}
+div.demo-links a {text-decoration: underline}
+div.demo-links  table td {padding: 6px}
+
+
+.jumbotron, .gray-mix{
+	border-radius: 5px; text-align: center;	padding:10px; 
+	color:#000; text-shadow: #dfdfdf 0.1em 0.1em 0.2em; font-family: 'Ropa Sans', 'sans-serif';
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
 }
 
-div#switcher a {padding-bottom:8px !important; white-space:nowrap !important; } 
+/* Custom page header */
+.header h3 {padding-bottom: 19px; margin-top: 0; margin-bottom: 0; line-height: 40px;}
+div.content {padding:10px 50px; line-height:24px; width:800px; margin:auto}
