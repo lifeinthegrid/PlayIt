@@ -1,7 +1,7 @@
 /* ----------------------------------------------------------------------------
 PLAYIT: Used for styling the demos it is not requried for PlayIt */
 
-@import url(http://fonts.googleapis.com/css?family=Iceland);
+@import url(https://fonts.googleapis.com/css?family=Iceland);
 
 /*GLOBAL TAGS */
 body{height: 100%; margin: 0px auto; padding:0px; font-family: Tahoma, Geneva, Verdana;}
@@ -13,13 +13,14 @@ a, a:link, a:visited, a:hover, a:focus, a:active {outline:0 none; border-style:n
 
 
 div.content-index-screen {
-	padding:10px; margin:auto; margin-top:50px; width:800px; line-height:24px; 
-	border:1px solid silver; border-radius:5px; background-color:#F3F3F3; 
+	padding:10px; margin:auto; margin-top:50px; width:800px; line-height:24px;
+	border:1px solid silver; border-radius:5px; background-color:#F3F3F3;
 }
 
 div.content {padding:10px; }
 div.content hr {color:#C0C0C0;}
 div.sales-text { font-size:22px; font-weight:bold;   text-align:center; color:#555}
+div.footer-authors {font-size:0.8em; color:Gray}
 
 /*  --------------------------
 TOP NAVIGATION */
@@ -61,7 +62,7 @@ div.link-button {
 	padding:8px;
 	border-radius:5px;
 	font-size:24px;
-	
+
 	background: rgb(255,255,255); /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -93,14 +94,14 @@ div.figure-box  {
 }
 div.figure-text {margin-top:15px; text-align:center;color:#000; font-style:italic;font-size:12px;line-height:14px;}
 div.sub-title  {padding:5px 0px 0px 20px;margin-bottom:30px;}
-div#switcher a {padding-bottom:8px !important; white-space:nowrap !important; } 
-div.demo-links {border:1px solid silver; border-radius:5px;}
+div#switcher a {padding-bottom:8px !important; white-space:nowrap !important; }
+div.demo-links table {border:1px solid silver; border-radius:5px;}
 div.demo-links a {text-decoration: underline}
 div.demo-links  table td {padding: 6px}
 
 
 .jumbotron, .gray-mix{
-	border-radius: 5px; text-align: center;	padding:10px; 
+	border-radius: 5px; text-align: center;	padding:10px;
 	color:#000; text-shadow: #dfdfdf 0.1em 0.1em 0.2em; font-family: 'Ropa Sans', 'sans-serif';
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));

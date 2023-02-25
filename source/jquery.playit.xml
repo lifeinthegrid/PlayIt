@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--  ===============================================================
 This XML file contains the basic skeleton and default elements for PLAYIT
-For full details see: http://lifeinthegrid.com/playit
+For full details see: https://lifeinthegrid.com/playit
 ================================================================== -->
-<playit  xmlns="http://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
+<playit  xmlns="https://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
 	accordion-animate="true"
 	accordion-autoselect="true"
 	accordion-minwidth="200"
 	accordion-maxwidth="400"
 	autofill="false"
-	
+
 	toolbar-title="PlayIt - Quick Start"
 	toolbar-showsearch="true"
 	toolbar-searchtext="Search"
 	toolbar-searchwidth="auto"
 
 	view-default="grid"
-	
+
 	audio-autoplay="false"
 	audio-info-enable="true"
 	audio-infobox-modal="true"
 	audio-infobox-height="350"
 	audio-infobox-width="600"
 	audio-infobox-resizable="true"
-	
+
 	image-autoplay="true"
 	image-dialog-height="500"
 	image-dialog-width="800"
 	image-info-enable="true"
 	image-slides-interval="3000"
-	
+
 	video-autoplay="false"
 	video-dialog-height="400"
 	video-dialog-width="600"
@@ -66,7 +66,7 @@ For full details see: http://lifeinthegrid.com/playit
                     <![CDATA[	 ]]>
                </info>
 			</audio>
-            
+
 		</category>
 
 		<!--  ===============================================================
@@ -125,7 +125,7 @@ For full details see: http://lifeinthegrid.com/playit
 				</fields>
 			</list>
 			<tile item-size=""></tile>
-            
+
 			<video player="" title="" src="" poster="" thumb="" info-enable="" length="" size="" >
 				<info><![CDATA[  ]]></info>
 			</video>

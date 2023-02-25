@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<playit xmlns="http://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
+<playit xmlns="https://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
 	toolbar-title="Media Player Simulator"
 	toolbar-showsearch="true"
 	toolbar-searchtext="Search"
 	accordion-animate="true"
     accordion-autoselect="false"
 	view-default="list"
-    
+
 	audio-autoplay="false"
 	audio-info-enable="true"
 	audio-infobox-modal="true"
 	audio-infobox-resizable="true"
 	audio-infobox-height="250"
 	audio-infobox-width="500"
-	
+
 	image-autoplay="true"
 	image-info-enable="true"
 	image-slides-interval="7200"
-	
+
 	video-autoplay="false"
 	video-info-enable="true"
 	video-dialog-height="500"
 	video-dialog-width="700"
 	video-navbar-enable="true">
-	
+
 	<section name="Library">
-		
+
 		<!--  ===============================================================
 		MUSIC CATEGORY
 		================================================================== -->
@@ -63,7 +63,7 @@
 						 <span>
 						 When the <b>'artist'</b> and <b>'album'</b> attributes are identical across audio nodes then a unique key is formed for those audio tags to form an
 						 album group.  This grouping is best seen in the tile view.<br/><br/>
-						 
+
 						 By default the album group plays the audio file in the order they were placed in the configuration file.  To be sure the audio elements plays
 						 in the exact order you want, place a <b>'track'</b> attribute on every audio tag in the album group to order the album accordingly.
 						 </span>
@@ -90,29 +90,29 @@
 				poster="image/note-256.png">
             </audio>
             <audio
-				title="Lostoncorners" 
-				src="audio/lostoncorners.mp3" 
-				artist="Orchestral movement of 1932" 
-				album="Album 2" 
-				track="1" 
-				info-enable="false" 
+				title="Lostoncorners"
+				src="audio/lostoncorners.mp3"
+				artist="Orchestral movement of 1932"
+				album="Album 2"
+				track="1"
+				info-enable="false"
 				poster="image/note-256.png">
             </audio>
             <audio
-				title="Share-Numazu" 
-				src="audio/share-numazu.mp3" 
-				artist="Orchestral movement of 1932" 
-				album="Album 2" 
-				track="2" 
-				info-enable="false" 
+				title="Share-Numazu"
+				src="audio/share-numazu.mp3"
+				artist="Orchestral movement of 1932"
+				album="Album 2"
+				track="2"
+				info-enable="false"
 				poster="image/note-256.png">
             </audio>
 
         </category>
-		
+
 		<!--  ===============================================================
 		PICTURES CATEGORY
-		================================================================== -->		
+		================================================================== -->
 		<category
 			type="Image"
 			name="Pictures"
@@ -129,263 +129,263 @@
 					<field match="title" display="" sort-display="Title" />
 					<field match="desc" display=""  sort-display="Desciption" />
 				</fields>
-			</list>		
+			</list>
 			<img
 				title="Yangshuo climber"
 				desc="Yangshuo China"
-				src="http://farm6.static.flickr.com/5295/5470771768_0800b7887a_z.jpg"
-				poster="http://farm6.static.flickr.com/5295/5470771768_0800b7887a_m.jpg"
-				thumb="http://farm6.static.flickr.com/5295/5470771768_0800b7887a_s.jpg">
+				src="https://farm6.static.flickr.com/5295/5470771768_0800b7887a_z.jpg"
+				poster="https://farm6.static.flickr.com/5295/5470771768_0800b7887a_m.jpg"
+				thumb="https://farm6.static.flickr.com/5295/5470771768_0800b7887a_s.jpg">
 				<info>
 				    <![CDATA[
-                    <div class='playit-info-image'>					
+                    <div class='playit-info-image'>
 						<span>
-							<a href="http://www.flickr.com/photos/samgellman/5470771768/in/pool-80641914@N00/" target="_blank">Yangshuo climber 2</a> <br/>
+							<a href="https://www.flickr.com/photos/samgellman/5470771768/in/pool-80641914@N00/" target="_blank">Yangshuo climber 2</a> <br/>
 							Twitter: @SamGellman <br/>
 							Taken at Moon Mountain, in Yangshuo China.<br/>
 							Picture source: Flickr.com <br/>
-							http://www.flickr.com/photos/samgellman/5470771768/in/pool-80641914@N00/
+							https://www.flickr.com/photos/samgellman/5470771768/in/pool-80641914@N00/
 						</span>
                     </div>
-                    ]]>	
-				</info>				
+                    ]]>
+				</info>
 			</img>
 			<img
 				title="Roppongi Rain"
 				desc="A rainy night in Tokyo, Japan."
-				src="http://farm4.static.flickr.com/3501/3745733679_c0d1fea58e_z.jpg"
-				poster="http://farm4.static.flickr.com/3501/3745733679_c0d1fea58e_m.jpg"
-				thumb="http://farm4.static.flickr.com/3501/3745733679_c0d1fea58e_s.jpg">
+				src="https://farm4.static.flickr.com/3501/3745733679_c0d1fea58e_z.jpg"
+				poster="https://farm4.static.flickr.com/3501/3745733679_c0d1fea58e_m.jpg"
+				thumb="https://farm4.static.flickr.com/3501/3745733679_c0d1fea58e_s.jpg">
 				<info>
 				    <![CDATA[
-                    <div class='playit-info-image'>					
+                    <div class='playit-info-image'>
 						<span>
-							<a href="http://www.flickr.com/photos/samgellman/3745733679/in/pool-80641914@N00/" target="_blank">Roppongi Rain</a> <br/>
+							<a href="https://www.flickr.com/photos/samgellman/3745733679/in/pool-80641914@N00/" target="_blank">Roppongi Rain</a> <br/>
 							A rainy night in Tokyo, Japan<br/>
 							@SamGellman on Twitter <br/>
 							Picture source: Flickr.com <br/>
-							http://www.flickr.com/photos/samgellman/3745733679/in/pool-80641914@N00/
+							https://www.flickr.com/photos/samgellman/3745733679/in/pool-80641914@N00/
 						</span>
                     </div>
-                    ]]>	
-				</info>					
+                    ]]>
+				</info>
 			</img>
 			<img
 				title="Toronto Transit"
 				desc="Canada, 2008"
-				src="http://farm3.static.flickr.com/2310/2168398358_2855cb718f_z.jpg?zz=1"
-				poster="http://farm3.static.flickr.com/2310/2168398358_2855cb718f_m.jpg?zz=1"
-				thumb="http://farm3.static.flickr.com/2310/2168398358_2855cb718f_s.jpg">
+				src="https://farm3.static.flickr.com/2310/2168398358_2855cb718f_z.jpg?zz=1"
+				poster="https://farm3.static.flickr.com/2310/2168398358_2855cb718f_m.jpg?zz=1"
+				thumb="https://farm3.static.flickr.com/2310/2168398358_2855cb718f_s.jpg">
 				<info>
 				    <![CDATA[
-                    <div class='playit-info-image'>					
-						<span><a href="http://www.flickr.com/photos/35summicron/2168398358/in/pool-80641914@N00/" target="_blank">Toronto Transit, Canada, 2008</a> <br/></span>
+                    <div class='playit-info-image'>
+						<span><a href="https://www.flickr.com/photos/35summicron/2168398358/in/pool-80641914@N00/" target="_blank">Toronto Transit, Canada, 2008</a> <br/></span>
 						Picture source: Flickr.com <br/>
-						http://www.flickr.com/photos/35summicron/2168398358/in/pool-80641914@N00/
+						https://www.flickr.com/photos/35summicron/2168398358/in/pool-80641914@N00/
                     </div>
-                    ]]>	
-				</info>					
-			</img>	
+                    ]]>
+				</info>
+			</img>
 			<img
 				title="Three generations"
 				desc="Three kind of thoughts"
-				src="http://farm3.static.flickr.com/2021/5765345816_9ab67a8d60_z.jpg"
-				poster="http://farm3.static.flickr.com/2021/5765345816_9ab67a8d60_m.jpg"
-				thumb="http://farm3.static.flickr.com/2021/5765345816_9ab67a8d60_s.jpg">
+				src="https://farm3.static.flickr.com/2021/5765345816_9ab67a8d60_z.jpg"
+				poster="https://farm3.static.flickr.com/2021/5765345816_9ab67a8d60_m.jpg"
+				thumb="https://farm3.static.flickr.com/2021/5765345816_9ab67a8d60_s.jpg">
 				<info>
 				    <![CDATA[
-                    <div class='playit-info-image'>					
-						<span><a href="http://www.flickr.com/photos/babairan/5765345816/in/pool-80641914@N00/" target="_blank">Three generations</a> <br/></span>
+                    <div class='playit-info-image'>
+						<span><a href="https://www.flickr.com/photos/babairan/5765345816/in/pool-80641914@N00/" target="_blank">Three generations</a> <br/></span>
 						Picture source: Flickr.com <br/>
-						http://www.flickr.com/photos/babairan/5765345816/in/pool-80641914@N00/
+						https://www.flickr.com/photos/babairan/5765345816/in/pool-80641914@N00/
                     </div>
-                    ]]>	
-				</info>					
-			</img>				
+                    ]]>
+				</info>
+			</img>
 			<img
 				title="Into The Blue"
 				desc="60 meter high tower of De Inktpot"
-				src="http://farm2.static.flickr.com/1086/1346376587_a019f30778_z.jpg"
-				poster="http://farm2.static.flickr.com/1086/1346376587_a019f30778_m.jpg"
-				thumb="http://farm2.static.flickr.com/1086/1346376587_a019f30778_s.jpg">
+				src="https://farm2.static.flickr.com/1086/1346376587_a019f30778_z.jpg"
+				poster="https://farm2.static.flickr.com/1086/1346376587_a019f30778_m.jpg"
+				thumb="https://farm2.static.flickr.com/1086/1346376587_a019f30778_s.jpg">
 				<info>
 				    <![CDATA[
-                    <div class='playit-info-image'>					
-						<span><a href="http://www.flickr.com/photos/erikvanhannen/1346376587/in/pool-80641914@N00/" target="_blank">Into The Blue</a> <br/></span>
+                    <div class='playit-info-image'>
+						<span><a href="https://www.flickr.com/photos/erikvanhannen/1346376587/in/pool-80641914@N00/" target="_blank">Into The Blue</a> <br/></span>
 						Picture source: Flickr.com <br/>
-						http://www.flickr.com/photos/erikvanhannen/1346376587/in/pool-80641914@N00/
+						https://www.flickr.com/photos/erikvanhannen/1346376587/in/pool-80641914@N00/
                     </div>
-                    ]]>	
-				</info>					
-			</img>	
+                    ]]>
+				</info>
+			</img>
 			<img
 				title="Antelope Eyes"
 				desc="Kevin Pieper Photography"
-				src="http://farm1.static.flickr.com/185/395479773_ed627cd033_z.jpg?zz=1"
-				poster="http://farm1.static.flickr.com/185/395479773_ed627cd033_m.jpg?zz=1"
-				thumb="http://farm1.static.flickr.com/185/395479773_ed627cd033_s.jpg">
+				src="https://farm1.static.flickr.com/185/395479773_ed627cd033_z.jpg?zz=1"
+				poster="https://farm1.static.flickr.com/185/395479773_ed627cd033_m.jpg?zz=1"
+				thumb="https://farm1.static.flickr.com/185/395479773_ed627cd033_s.jpg">
 				<info>
 				    <![CDATA[
-                    <div class='playit-info-image'>					
-						<span><a href="http://www.flickr.com/photos/kpieperphotography/395479773/in/pool-80641914@N00/" target="_blank"></a> <br/></span>
+                    <div class='playit-info-image'>
+						<span><a href="https://www.flickr.com/photos/kpieperphotography/395479773/in/pool-80641914@N00/" target="_blank"></a> <br/></span>
 						Picture source: Flickr.com <br/>
-						http://www.flickr.com/photos/kpieperphotography/395479773/in/pool-80641914@N00/
+						https://www.flickr.com/photos/kpieperphotography/395479773/in/pool-80641914@N00/
                     </div>
-                    ]]>	
-				</info>					
-			</img>				
+                    ]]>
+				</info>
+			</img>
 			<img
 				title="Against all odds"
 				desc="Adverse circumstances"
-				src="http://farm1.static.flickr.com/196/508321367_ce200a509d_o.jpg"
-				poster="http://farm1.static.flickr.com/196/508321367_ce200a509d_o.jpg"
-				thumb="http://farm1.static.flickr.com/196/508321367_ea11d66751_s.jpg">
+				src="https://farm1.static.flickr.com/196/508321367_ce200a509d_o.jpg"
+				poster="https://farm1.static.flickr.com/196/508321367_ce200a509d_o.jpg"
+				thumb="https://farm1.static.flickr.com/196/508321367_ea11d66751_s.jpg">
 				<info>
 				    <![CDATA[
-                    <div class='playit-info-image'>					
-						<span><a href="http://www.flickr.com/photos/photoimage/508321367/in/pool-80641914@N00/" target="_blank">Against all odds</a> <br/></span>
+                    <div class='playit-info-image'>
+						<span><a href="https://www.flickr.com/photos/photoimage/508321367/in/pool-80641914@N00/" target="_blank">Against all odds</a> <br/></span>
 						Picture source: Flickr.com <br/>
-						http://www.flickr.com/photos/photoimage/508321367/in/pool-80641914@N00/
+						https://www.flickr.com/photos/photoimage/508321367/in/pool-80641914@N00/
                     </div>
-                    ]]>	
-				</info>					
-			</img>	
+                    ]]>
+				</info>
+			</img>
 			<img
 				title="Internal Voices"
 				desc="Ocean Sunset"
-				src="http://farm7.static.flickr.com/6107/6258179416_f3f7dcf4b4_z.jpg"
-				poster="http://farm7.static.flickr.com/6107/6258179416_f3f7dcf4b4_m.jpg"
-				thumb="http://farm7.static.flickr.com/6107/6258179416_f3f7dcf4b4_s.jpg">
+				src="https://farm7.static.flickr.com/6107/6258179416_f3f7dcf4b4_z.jpg"
+				poster="https://farm7.static.flickr.com/6107/6258179416_f3f7dcf4b4_m.jpg"
+				thumb="https://farm7.static.flickr.com/6107/6258179416_f3f7dcf4b4_s.jpg">
 				<info>
 				    <![CDATA[
-                    <div class='playit-info-image'>					
-						<span><a href="http://www.flickr.com/photos/photoimage/6258179416/in/photostream" target="_blank">Internal Voices</a> <br/></span>
+                    <div class='playit-info-image'>
+						<span><a href="https://www.flickr.com/photos/photoimage/6258179416/in/photostream" target="_blank">Internal Voices</a> <br/></span>
 						Picture source: Flickr.com <br/>
-						http://www.flickr.com/photos/photoimage/6258179416/in/photostream
+						https://www.flickr.com/photos/photoimage/6258179416/in/photostream
                     </div>
-                    ]]>	
-				</info>					
-			</img>	
+                    ]]>
+				</info>
+			</img>
 			<img
 				title="Moving In Familiar Water"
 				desc="Extensive range of colour"
-				src="http://farm4.static.flickr.com/3146/3026304327_9667b98637_z.jpg?zz=1"
-				poster="http://farm4.static.flickr.com/3146/3026304327_9667b98637_m.jpg?zz=1"
-				thumb="http://farm4.static.flickr.com/3146/3026304327_9667b98637_s.jpg">
+				src="https://farm4.static.flickr.com/3146/3026304327_9667b98637_z.jpg?zz=1"
+				poster="https://farm4.static.flickr.com/3146/3026304327_9667b98637_m.jpg?zz=1"
+				thumb="https://farm4.static.flickr.com/3146/3026304327_9667b98637_s.jpg">
 				<info>
 				    <![CDATA[
-                    <div class='playit-info-image'>					
-						<span><a href="http://www.flickr.com/photos/photoimage/3026304327/in/pool-80641914@N00/" target="_blank">Moving In Familiar Water</a> <br/></span>
+                    <div class='playit-info-image'>
+						<span><a href="https://www.flickr.com/photos/photoimage/3026304327/in/pool-80641914@N00/" target="_blank">Moving In Familiar Water</a> <br/></span>
 						Picture source: Flickr.com <br/>
-						http://www.flickr.com/photos/photoimage/3026304327/in/pool-80641914@N00/
+						https://www.flickr.com/photos/photoimage/3026304327/in/pool-80641914@N00/
                     </div>
-                    ]]>	
-				</info>					
-			</img>	
+                    ]]>
+				</info>
+			</img>
 			<img
 				title="Clasp"
 				desc="Underwater Diver"
-				src="http://farm1.static.flickr.com/53/118207652_abd471189c_z.jpg?zz=1"
-				poster="http://farm1.static.flickr.com/53/118207652_abd471189c_m.jpg?zz=1"
-				thumb="http://farm1.static.flickr.com/53/118207652_abd471189c_s.jpg">
+				src="https://farm1.static.flickr.com/53/118207652_abd471189c_z.jpg?zz=1"
+				poster="https://farm1.static.flickr.com/53/118207652_abd471189c_m.jpg?zz=1"
+				thumb="https://farm1.static.flickr.com/53/118207652_abd471189c_s.jpg">
 				<info>
 				    <![CDATA[
-                    <div class='playit-info-image'>					
-						<span><a href="http://www.flickr.com/photos/tobyloc/118207652/in/pool-80641914@N00/" target="_blank">Clasp</a> <br/></span>
+                    <div class='playit-info-image'>
+						<span><a href="https://www.flickr.com/photos/tobyloc/118207652/in/pool-80641914@N00/" target="_blank">Clasp</a> <br/></span>
 						Picture source: Flickr.com <br/>
-						http://www.flickr.com/photos/tobyloc/118207652/in/pool-80641914@N00/
+						https://www.flickr.com/photos/tobyloc/118207652/in/pool-80641914@N00/
                     </div>
-                    ]]>	
-				</info>					
+                    ]]>
+				</info>
 			</img>
 			<img
 				title="The Bubble Magician"
 				desc="Reiver Effects"
-				src="http://farm1.static.flickr.com/21/33221790_34991fbf8c_z.jpg"
-				poster="http://farm1.static.flickr.com/21/33221790_34991fbf8c_m.jpg"
-				thumb="http://farm1.static.flickr.com/21/33221790_34991fbf8c_s.jpg">
+				src="https://farm1.static.flickr.com/21/33221790_34991fbf8c_z.jpg"
+				poster="https://farm1.static.flickr.com/21/33221790_34991fbf8c_m.jpg"
+				thumb="https://farm1.static.flickr.com/21/33221790_34991fbf8c_s.jpg">
 				<info>
 				    <![CDATA[
-                    <div class='playit-info-image'>					
-						<span><a href="http://www.flickr.com/photos/tjt195/33221790/in/pool-80641914@N00/" target="_blank">The Bubble Magician</a> <br/></span>
+                    <div class='playit-info-image'>
+						<span><a href="https://www.flickr.com/photos/tjt195/33221790/in/pool-80641914@N00/" target="_blank">The Bubble Magician</a> <br/></span>
 						Picture source: Flickr.com <br/>
-						http://www.flickr.com/photos/tjt195/33221790/in/pool-80641914@N00/
+						https://www.flickr.com/photos/tjt195/33221790/in/pool-80641914@N00/
                     </div>
-                    ]]>	
-				</info>					
+                    ]]>
+				</info>
 			</img>
 			<img
 				title="Kermit"
 				desc="The Frog"
-				src="http://farm1.static.flickr.com/24/44766786_1238bebc2f_z.jpg?zz=1"
-				poster="http://farm1.static.flickr.com/24/44766786_1238bebc2f_m.jpg?zz=1"
-				thumb="http://farm1.static.flickr.com/24/44766786_1238bebc2f_s.jpg">
+				src="https://farm1.static.flickr.com/24/44766786_1238bebc2f_z.jpg?zz=1"
+				poster="https://farm1.static.flickr.com/24/44766786_1238bebc2f_m.jpg?zz=1"
+				thumb="https://farm1.static.flickr.com/24/44766786_1238bebc2f_s.jpg">
 				<info>
 				    <![CDATA[
-                    <div class='playit-info-image'>					
-						<span><a href="http://www.flickr.com/photos/truebavarian/44766786/in/pool-80641914@N00/" target="_blank">Kermit</a> <br/></span>
+                    <div class='playit-info-image'>
+						<span><a href="https://www.flickr.com/photos/truebavarian/44766786/in/pool-80641914@N00/" target="_blank">Kermit</a> <br/></span>
 						Picture source: Flickr.com <br/>
-						http://www.flickr.com/photos/truebavarian/44766786/in/pool-80641914@N00/
+						https://www.flickr.com/photos/truebavarian/44766786/in/pool-80641914@N00/
                     </div>
-                    ]]>	
-				</info>					
+                    ]]>
+				</info>
 			</img>
 			<img
 				title="Mountain Range"
 				desc="Rothorn Range near Brienz"
-				src="http://farm5.static.flickr.com/4146/4954771360_7665a9ae97_z.jpg"
-				poster="http://farm5.static.flickr.com/4146/4954771360_7665a9ae97_m.jpg"
-				thumb="http://farm5.static.flickr.com/4146/4954771360_7665a9ae97_s.jpg">
+				src="https://farm5.static.flickr.com/4146/4954771360_7665a9ae97_z.jpg"
+				poster="https://farm5.static.flickr.com/4146/4954771360_7665a9ae97_m.jpg"
+				thumb="https://farm5.static.flickr.com/4146/4954771360_7665a9ae97_s.jpg">
 				<info>
 				    <![CDATA[
-                    <div class='playit-info-image'>					
-						<span><a href="http://www.flickr.com/photos/wildpics1337/4954771360/" target="_blank">Mountain Range</a> <br/></span>
+                    <div class='playit-info-image'>
+						<span><a href="https://www.flickr.com/photos/wildpics1337/4954771360/" target="_blank">Mountain Range</a> <br/></span>
 						Picture source: Flickr.com <br/>
-						http://www.flickr.com/photos/wildpics1337/4954771360/
+						https://www.flickr.com/photos/wildpics1337/4954771360/
                     </div>
-                    ]]>	
-				</info>					
+                    ]]>
+				</info>
 			</img>
 			<img
 				title="Concentrating on the face"
 				desc="Gotta get that smily face right"
-				src="http://farm1.static.flickr.com/184/386900206_7d7fcf8e3f_z.jpg?zz=1"
-				poster="http://farm1.static.flickr.com/184/386900206_7d7fcf8e3f_m.jpg?zz=1"
-				thumb="http://farm1.static.flickr.com/184/386900206_7d7fcf8e3f_s.jpg">
+				src="https://farm1.static.flickr.com/184/386900206_7d7fcf8e3f_z.jpg?zz=1"
+				poster="https://farm1.static.flickr.com/184/386900206_7d7fcf8e3f_m.jpg?zz=1"
+				thumb="https://farm1.static.flickr.com/184/386900206_7d7fcf8e3f_s.jpg">
 				<info>
 				    <![CDATA[
-                    <div class='playit-info-image'>					
-						<span><a href="http://www.flickr.com/photos/tobyloc/386900206/" target="_blank">Concentrating on the face</a> <br/></span>
+                    <div class='playit-info-image'>
+						<span><a href="https://www.flickr.com/photos/tobyloc/386900206/" target="_blank">Concentrating on the face</a> <br/></span>
 						Picture source: Flickr.com <br/>
-						http://www.flickr.com/photos/tobyloc/386900206/
+						https://www.flickr.com/photos/tobyloc/386900206/
                     </div>
-                    ]]>	
-				</info>					
-			</img>		
+                    ]]>
+				</info>
+			</img>
 			<img
 				title="Beach Sunrise"
 				desc="Catherine Hill Bay, Central Coast, Australia"
-				src="http://farm5.static.flickr.com/4062/4549173563_cefd8b1e13_z.jpg"
-				poster="http://farm5.static.flickr.com/4062/4549173563_cefd8b1e13_m.jpg"
-				thumb="http://farm5.static.flickr.com/4062/4549173563_cefd8b1e13_s.jpg">
+				src="https://farm5.static.flickr.com/4062/4549173563_cefd8b1e13_z.jpg"
+				poster="https://farm5.static.flickr.com/4062/4549173563_cefd8b1e13_m.jpg"
+				thumb="https://farm5.static.flickr.com/4062/4549173563_cefd8b1e13_s.jpg">
 				<info>
 				    <![CDATA[
-                    <div class='playit-info-image'>					
-						<span><a href="http://www.flickr.com/photos/yury-prokopenko/4549173563/" target="_blank">Beach Sunrise</a> <br/></span>
+                    <div class='playit-info-image'>
+						<span><a href="https://www.flickr.com/photos/yury-prokopenko/4549173563/" target="_blank">Beach Sunrise</a> <br/></span>
 						Picture source: Flickr.com <br/>
-						http://www.flickr.com/photos/yury-prokopenko/4549173563/
+						https://www.flickr.com/photos/yury-prokopenko/4549173563/
                     </div>
-                    ]]>	
-				</info>					
-			</img>	
-			
+                    ]]>
+				</info>
+			</img>
+
 		</category>
-		
-	
+
+
 		<!--  ===============================================================
 		MOVIES CATEGORY
-		================================================================== -->	
-		<category 
+		================================================================== -->
+		<category
 			type="Video"
 			name="Movies"
 			view-default="grid"
@@ -404,26 +404,26 @@
 					<field match="artist" sort-display="Description" />
 				</fields>
 			</list>
-			
+
 			<!-- YOU TUBE -->
 			<video
 				player="remote"
 				artist="Warner Brothers"
-				src="http://www.youtube.com/embed/SrC9V2PlVjI?autoplay=1"
+				src="https://www.youtube.com/embed/SrC9V2PlVjI?autoplay=1"
 				title="The Matrix"
 				length="2:31"
-				poster="http://www.seagullbook.com/mm5/graphics/00000001/youtube.png"
+				poster="https://www.seagullbook.com/mm5/graphics/00000001/youtube.png"
 				thumb="video/thumb/youtube.png"
 				info-enable="true"
 				provider="YouTube">
-			</video>	
+			</video>
 			<video
 				player="remote"
 				artist="Warner Brothers"
-				src="http://www.youtube.com/embed/KrIiYSdEe4E?autoplay=1"
+				src="https://www.youtube.com/embed/KrIiYSdEe4E?autoplay=1"
 				title="Sucker Punch Trailer"
 				length="2:34"
-				poster="http://www.seagullbook.com/mm5/graphics/00000001/youtube.png"
+				poster="https://www.seagullbook.com/mm5/graphics/00000001/youtube.png"
 				thumb="video/thumb/youtube.png"
 				info-enable="true"
 				provider="YouTube">
@@ -431,18 +431,18 @@
 				<![CDATA[
 				<div class='playit-info-video'>
 					<span class='buy'>
-						<iframe src="http://rcm.amazon.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&npa=1&bg1=FFFFFF&fc1=000000&lc1=377EFF&t=thegrid-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B004EPYZU8" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+						<iframe src="https://rcm.amazon.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&npa=1&bg1=FFFFFF&fc1=000000&lc1=377EFF&t=thegrid-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B004EPYZU8" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 					</span>
 					<span class='info'>
 						<b>Overview:</b><br/>
 						Aenean convallis justo eget nisl tincidunt auctor. Aliquam non placerat lectus. Aenean lacinia massa eros. Nam luctus ligula sed erat semper sed blandit elit cursus. Nunc scelerisque commodo tellus, id tincidunt eros aliquet ac. Etiam semper, sem at pellentesque lacinia, dolor augue iaculis diam, eu molestie lacus arcu vel magna. Quisque quis blandit diam. Etiam non mi ut quam porttitor eleifend. Nullam facilisis, justo in faucibus semper, lorem tellus euismod ligula, in pulvinar nisi erat ac nibh. Aliquam et massa dolor. Phasellus consectetur condimentum cursus.
 					</span><br style='clear:both'/>
-					
+
 					<div class='misc'>
 						<b>Related Videos</b><br/><br/>
-						<iframe width="300" height="182" src="http://www.youtube.com/embed/G68fHZig9nA?rel=0&amp;hd=1&amp;autohide=1" frameborder="0" allowfullscreen></iframe> &nbsp; &nbsp; &nbsp; &nbsp;
-						<iframe width="300" height="182" src="http://www.youtube.com/embed/nSG-6xc-T4U?rel=0&amp;hd=1&amp;autohide=1" frameborder="0" allowfullscreen></iframe>
-					</div>					
+						<iframe width="300" height="182" src="https://www.youtube.com/embed/G68fHZig9nA?rel=0&amp;hd=1&amp;autohide=1" frameborder="0" allowfullscreen></iframe> &nbsp; &nbsp; &nbsp; &nbsp;
+						<iframe width="300" height="182" src="https://www.youtube.com/embed/nSG-6xc-T4U?rel=0&amp;hd=1&amp;autohide=1" frameborder="0" allowfullscreen></iframe>
+					</div>
 				</div>
                 ]]>
 				</info>
@@ -450,133 +450,133 @@
 			<video
 				player="remote"
 				artist="Universal"
-				src="http://www.youtube.com/embed/2tqK_3mKQUw?autoplay=1"
+				src="https://www.youtube.com/embed/2tqK_3mKQUw?autoplay=1"
 				title="The Bourne Identity"
 				length="2:08"
-				poster="http://www.seagullbook.com/mm5/graphics/00000001/youtube.png"
+				poster="https://www.seagullbook.com/mm5/graphics/00000001/youtube.png"
 				thumb="video/thumb/youtube.png"
 				provider="YouTube">
 				<info>
 				<![CDATA[
 				<div class='playit-info-video'>
 					<span class='buy'>
-						<iframe src="http://rcm.amazon.com/e/cm?t=thegrid-20&o=1&p=8&l=as1&asins=B000Q79HTC&ref=tf_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=377EFF&bc1=FFFFFF&bg1=FFFFFF&npa=1&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+						<iframe src="https://rcm.amazon.com/e/cm?t=thegrid-20&o=1&p=8&l=as1&asins=B000Q79HTC&ref=tf_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=377EFF&bc1=FFFFFF&bg1=FFFFFF&npa=1&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 					</span>
 					<span class='info'>
 						<b>Overview:</b><br/>
 						Aenean convallis justo eget nisl tincidunt auctor. Aliquam non placerat lectus. Aenean lacinia massa eros. Nam luctus ligula sed erat semper sed blandit elit cursus. Nunc scelerisque commodo tellus, id tincidunt eros aliquet ac. Etiam semper, sem at pellentesque lacinia, dolor augue iaculis diam, eu molestie lacus arcu vel magna. Quisque quis blandit diam. Etiam non mi ut quam porttitor eleifend. Nullam facilisis, justo in faucibus semper, lorem tellus euismod ligula, in pulvinar nisi erat ac nibh. Aliquam et massa dolor. Phasellus consectetur condimentum cursus.
 					</span><br style='clear:both'/>
-									
+
 				</div>
-                ]]>	
+                ]]>
 				</info>
 			</video>
 			<video
 				player="remote"
 				artist="Sumit Entertainment"
-				src="http://www.youtube.com/embed/mQd3MwT2fAM?rel=0&amp;hd=1&amp;autoplay=1"
+				src="https://www.youtube.com/embed/mQd3MwT2fAM?rel=0&amp;hd=1&amp;autoplay=1"
 				title="The Three Musketeers 3D (2011)"
 				length="1:25"
-				poster="http://www.seagullbook.com/mm5/graphics/00000001/youtube.png"
+				poster="https://www.seagullbook.com/mm5/graphics/00000001/youtube.png"
 				thumb="video/thumb/youtube.png"
 				provider="YouTube">
 				<info>
 				    <![CDATA[
 				<div class='playit-info-video'>
 					<span class='buy'>
-						<iframe src="http://rcm.amazon.com/e/cm?t=thegrid-20&o=1&p=8&l=as1&asins=B0029JE8V2&ref=tf_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=377EFF&bc1=FFFFFF&bg1=FFFFFF&npa=1&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+						<iframe src="https://rcm.amazon.com/e/cm?t=thegrid-20&o=1&p=8&l=as1&asins=B0029JE8V2&ref=tf_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=377EFF&bc1=FFFFFF&bg1=FFFFFF&npa=1&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 					</span>
 					<span class='info'>
 						<b>Overview:</b><br/>
 						Aenean convallis justo eget nisl tincidunt auctor. Aliquam non placerat lectus. Aenean lacinia massa eros. Nam luctus ligula sed erat semper sed blandit elit cursus. Nunc scelerisque commodo tellus, id tincidunt eros aliquet ac. Etiam semper, sem at pellentesque lacinia, dolor augue iaculis diam, eu molestie lacus arcu vel magna. Quisque quis blandit diam. Etiam non mi ut quam porttitor eleifend. Nullam facilisis, justo in faucibus semper, lorem tellus euismod ligula, in pulvinar nisi erat ac nibh. Aliquam et massa dolor. Phasellus consectetur condimentum cursus.
-					</span><br style='clear:both'/>									
+					</span><br style='clear:both'/>
 				</div>
                 ]]>
 				</info>
 			</video>
-			
+
 			<!-- VIMEO -->
 			<video
 				player="remote"
-				src="http://player.vimeo.com/video/24456787"
+				src="https://player.vimeo.com/video/24456787"
 				title="The Arctic Light"
 				artist="TSO Photography"
 				length="3:23"
-				poster="http://www.crotchedmountain.com/userfiles/4470259502_b3630b7358_o(1).png"
+				poster="https://www.crotchedmountain.com/userfiles/4470259502_b3630b7358_o(1).png"
 				thumb="video/thumb/vimeo.png"
 				provider="Vimeo">
 				<info>
 				    <![CDATA[
                     <div class='playit-info-video'>
 					<span class='buy'>
-						<iframe src="http://rcm.amazon.com/e/cm?t=thegrid-20&o=1&p=8&l=as1&asins=032147404X&ref=tf_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=377EFF&bc1=FFFFFF&bg1=FFFFFF&npa=1&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+						<iframe src="https://rcm.amazon.com/e/cm?t=thegrid-20&o=1&p=8&l=as1&asins=032147404X&ref=tf_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=377EFF&bc1=FFFFFF&bg1=FFFFFF&npa=1&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 					</span>
 					<span class='info'>
 						<b>Overview:</b><br/>
 						This was filmed between 29th April and 10th May 2011 in the Arctic, on the archipelago Lofoten in Norway.
-					</span><br style='clear:both'/>									
+					</span><br style='clear:both'/>
 				</div>
                 ]]>
-				</info>				
+				</info>
 			</video>
 			<video
 				player="remote"
-				src="http://player.vimeo.com/video/29017795?title=0&amp;byline=0&amp;portrait=0"
+				src="https://player.vimeo.com/video/29017795?title=0&amp;byline=0&amp;portrait=0"
 				title="Experience Zero Gravity"
 				artist="Betty Wants In"
 				length="2:54"
-				poster="http://www.crotchedmountain.com/userfiles/4470259502_b3630b7358_o(1).png"
+				poster="https://www.crotchedmountain.com/userfiles/4470259502_b3630b7358_o(1).png"
 				thumb="video/thumb/vimeo.png"
 				provider="Vimeo">
 				<info>
 				    <![CDATA[
                     <div class='playit-info-video'>
 					<span class='buy'>
-						<iframe src="http://rcm.amazon.com/e/cm?t=thegrid-20&o=1&p=8&l=as1&asins=0970776306&ref=tf_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=377EFF&bc1=FFFFFF&bg1=FFFFFF&npa=1&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+						<iframe src="https://rcm.amazon.com/e/cm?t=thegrid-20&o=1&p=8&l=as1&asins=0970776306&ref=tf_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=377EFF&bc1=FFFFFF&bg1=FFFFFF&npa=1&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 					</span>
 					<span class='info'>
 						<b>Overview:</b><br/>
 						Aenean convallis justo eget nisl tincidunt auctor. Aliquam non placerat lectus. Aenean lacinia massa eros. Nam luctus ligula sed erat semper sed blandit elit cursus. Nunc scelerisque commodo tellus, id tincidunt eros aliquet ac. Etiam semper, sem at pellentesque lacinia, dolor augue iaculis diam, eu molestie lacus arcu vel magna. Quisque quis blandit diam. Etiam non mi ut quam porttitor eleifend. Nullam facilisis, justo in faucibus semper, lorem tellus euismod ligula, in pulvinar nisi erat ac nibh. Aliquam et massa dolor. Phasellus consectetur condimentum cursus.
-					</span><br style='clear:both'/>									
+					</span><br style='clear:both'/>
 				</div>
                 ]]>
 				</info>
 			</video>
-			
+
 			<video
 				player="remote"
-				src="http://blip.tv/play/hcgrgsGvOQI.html"
+				src="https://blip.tv/play/hcgrgsGvOQI.html"
 				title="2011 Porsche Cayenne S Hybrid HD Video Review"
 				artist="Driven Car Reviews"
 				length="6:22"
-				poster="http://farm4.static.flickr.com/3381/3341867384_ec03fb5944.jpg"
+				poster="https://farm4.static.flickr.com/3381/3341867384_ec03fb5944.jpg"
 				thumb="video/thumb/bliptv.png"
 				provider="Blip.tv">
 			</video>
-			
+
 			<video
 				player="remote"
-				src="http://www.hulu.com/embed/J9YX_sf28B7Qq9GK_glscg"
+				src="https://www.hulu.com/embed/J9YX_sf28B7Qq9GK_glscg"
 				title="Grey's Anatomy"
 				artist="ABC"
 				length="40:01"
-				poster="http://i1-news.softpedia-static.com/images/news2/Hulu-Desktop-Released-for-Mac-and-PC-Download-Here-2.jpg"
-				thumb="http://mpsharp.com/blog/wp-content/uploads/2011/01/HuluLogo_Color.png"
+				poster="https://i1-news.softpedia-static.com/images/news2/Hulu-Desktop-Released-for-Mac-and-PC-Download-Here-2.jpg"
+				thumb="https://mpsharp.com/blog/wp-content/uploads/2011/01/HuluLogo_Color.png"
 				provider="Hulu">
 			</video>
-			
+
 			<video
 				player="remote"
-				src="http://www.hulu.com/embed/1Kku9nVdEMgshc9caP4r7Q"
+				src="https://www.hulu.com/embed/1Kku9nVdEMgshc9caP4r7Q"
 				title="The Office"
 				artist="NBC"
 				length="22:27"
-				poster="http://i1-news.softpedia-static.com/images/news2/Hulu-Desktop-Released-for-Mac-and-PC-Download-Here-2.jpg"				
-				thumb="http://mpsharp.com/blog/wp-content/uploads/2011/01/HuluLogo_Color.png"
+				poster="https://i1-news.softpedia-static.com/images/news2/Hulu-Desktop-Released-for-Mac-and-PC-Download-Here-2.jpg"
+				thumb="https://mpsharp.com/blog/wp-content/uploads/2011/01/HuluLogo_Color.png"
 				provider="Hulu">
-			</video>			
-			
-			
+			</video>
+
+
 			<video
 				player="local"
 				album="Album"
@@ -584,16 +584,16 @@
 				artist="Echo Conference"
 				length="0:45"
 				provider="mediaelementjs">
-                <source src="http://www.mediaelementjs.com/media/echo-hereweare.mp4" type="video/mp4" />
-                <source src="http://www.mediaelementjs.com/media/echo-hereweare.webm" type="video/webm" />
-                <source src="http://www.mediaelementjs.com/media/echo-hereweare.ogv" type="video/ogg" />
+                <source src="https://www.mediaelementjs.com/media/echo-hereweare.mp4" type="video/mp4" />
+                <source src="https://www.mediaelementjs.com/media/echo-hereweare.webm" type="video/webm" />
+                <source src="https://www.mediaelementjs.com/media/echo-hereweare.ogv" type="video/ogg" />
 				<info>
 					 <![CDATA[
 					 <div class='playit-info-video'>
 					<h3>Usage  Overview</h3>
 					<span class='info'>
-					This sample demonstrates how to use multiple source implementation for fallback capabilities.  
-					Some browsers only support certain file formats, therefore you have the option to provide different 
+					This sample demonstrates how to use multiple source implementation for fallback capabilities.
+					Some browsers only support certain file formats, therefore you have the option to provide different
 					media formats in case a browser doesn't support the first format give.<br/><br/>
 
 					This works great if you want to use the more highly compressed formats first, and then continue to degrade
@@ -604,7 +604,7 @@
 					 ]]>
 				</info>
             </video>
-	
+
 			<!--video
 				player="local"
 				src="video/playit-intro.mp4"
@@ -618,8 +618,8 @@
                 <source src="../video/playit-intro.webm" type="video/webm" />
                 <source src="../video/playit-intro.mp4" type="video/ogg" />
 			</video-->
-		</category>		
-		
+		</category>
+
 		<!--  ===============================================================
 		PODCAST CATEGORY
 		================================================================== -->
@@ -639,43 +639,43 @@
 				<fields>
 					<field match="artist" display="Artist: " sort-display="Artist"/>
 					<field match="title" display="" sort-display="Title"/>
-					
+
 				</fields>
 			</list>
 			<tile enable="true" item-size="128"></tile>
-			
-			
-			
+
+
+
 			<!-- TWIT PODCASTS-->
 			<audio
 				title="The Tech Guy 1076"
 				album="Interviews"
 				artist="Twit TV - Leo Laporte"
-				src="http://twit.cachefly.net/audio/ttg/ttg1076/ttg1076.mp3"	
-				length="115:14"			
-				thumb="http://twit.tv/files/imagecache/coverart-feed/coverart/ttg600_0.jpg"
-				poster="http://twit.tv/files/imagecache/coverart-feed/coverart/ttg600_0.jpg">
-				<info> <![CDATA[ source:  http://twit.tv/ ]]></info>
+				src="https://twit.cachefly.net/audio/ttg/ttg1076/ttg1076.mp3"
+				length="115:14"
+				thumb="https://twit.tv/files/imagecache/coverart-feed/coverart/ttg600_0.jpg"
+				poster="https://twit.tv/files/imagecache/coverart-feed/coverart/ttg600_0.jpg">
+				<info> <![CDATA[ source:  https://twit.tv/ ]]></info>
 			</audio>
 			<audio
 				title="The Tech Guy 1075"
 				album="Interviews"
 				artist="Twit TV - Leo Laporte"
-				src="http://twit.cachefly.net/audio/ttg/ttg1075/ttg1075.mp3"	
-				length="112:00"			
-				thumb="http://twit.tv/files/imagecache/coverart-feed/coverart/ttg600_0.jpg"
-				poster="http://twit.tv/files/imagecache/coverart-feed/coverart/ttg600_0.jpg">
-				<info> <![CDATA[ source: http://twit.tv/  ]]></info>
+				src="https://twit.cachefly.net/audio/ttg/ttg1075/ttg1075.mp3"
+				length="112:00"
+				thumb="https://twit.tv/files/imagecache/coverart-feed/coverart/ttg600_0.jpg"
+				poster="https://twit.tv/files/imagecache/coverart-feed/coverart/ttg600_0.jpg">
+				<info> <![CDATA[ source: https://twit.tv/  ]]></info>
 			</audio>
 			<audio
 				title="The Tech Guy 1047"
 				album="Interviews"
 				artist="Twit TV - Leo Laporte"
-				src="http://twit.cachefly.net/audio/ttg/ttg1074/ttg1074.mp3"	
-				length="116:56"			
-				thumb="http://twit.tv/files/imagecache/coverart-feed/coverart/ttg600_0.jpg"
-				poster="http://twit.tv/files/imagecache/coverart-feed/coverart/ttg600_0.jpg">
-				<info> <![CDATA[ source: http://twit.tv/  ]]></info>
+				src="https://twit.cachefly.net/audio/ttg/ttg1074/ttg1074.mp3"
+				length="116:56"
+				thumb="https://twit.tv/files/imagecache/coverart-feed/coverart/ttg600_0.jpg"
+				poster="https://twit.tv/files/imagecache/coverart-feed/coverart/ttg600_0.jpg">
+				<info> <![CDATA[ source: https://twit.tv/  ]]></info>
 			</audio>
 
 
@@ -684,54 +684,54 @@
 				title="101 BTW -  New iOS And More"
 				album="News"
 				artist="Business Tech Weekly"
-				src="http://traffic.libsyn.com/gspn/BTW101-NewiOSAndMore.mp3"	
+				src="https://traffic.libsyn.com/gspn/BTW101-NewiOSAndMore.mp3"
 				length="50:25"
 				track="1"
-				thumb="http://c0203501.cdn.cloudfiles.rackspacecloud.com/7a1af10074907b6a25f8d2ddfb1d7a1ad08dbc25ca53410076fdadc4j.jpg"
-				poster="http://gspn.tv/wp-content/uploads/2009/09/BusinessTechWeekly.jpg">
-				<info> <![CDATA[ source: http://gspn.tv/category/all-shows/technology/bustech/  ]]></info>
+				thumb="https://c0203501.cdn.cloudfiles.rackspacecloud.com/7a1af10074907b6a25f8d2ddfb1d7a1ad08dbc25ca53410076fdadc4j.jpg"
+				poster="https://gspn.tv/wp-content/uploads/2009/09/BusinessTechWeekly.jpg">
+				<info> <![CDATA[ source: https://gspn.tv/category/all-shows/technology/bustech/  ]]></info>
 			</audio>
 			<audio
 				title="102 BTW - Total Finder – Mailing Lists – And More"
 				album="News"
 				artist="Business Tech Weekly"
-				src="http://traffic.libsyn.com/generallyspeaking/BTW102-TotalFinder-MailingLists-AndMore.mp3"	
-				length="65:18"			
+				src="https://traffic.libsyn.com/generallyspeaking/BTW102-TotalFinder-MailingLists-AndMore.mp3"
+				length="65:18"
 				track="2"
-				thumb="http://c0203501.cdn.cloudfiles.rackspacecloud.com/7a1af10074907b6a25f8d2ddfb1d7a1ad08dbc25ca53410076fdadc4j.jpg"
-				poster="http://gspn.tv/wp-content/uploads/2009/09/BusinessTechWeekly.jpg">
-				<info> <![CDATA[ source:  http://gspn.tv/category/all-shows/technology/bustech/ ]]></info>
+				thumb="https://c0203501.cdn.cloudfiles.rackspacecloud.com/7a1af10074907b6a25f8d2ddfb1d7a1ad08dbc25ca53410076fdadc4j.jpg"
+				poster="https://gspn.tv/wp-content/uploads/2009/09/BusinessTechWeekly.jpg">
+				<info> <![CDATA[ source:  https://gspn.tv/category/all-shows/technology/bustech/ ]]></info>
 			</audio>
 			<audio
 				title="103 BTW - Dynamic Widgets and more"
 				album="News"
 				artist="Business Tech Weekly"
-				src="http://traffic.libsyn.com/generallyspeaking/BTW103-DynamicWidgetsAndMore.mp3"	
-				length="54:10"			
+				src="https://traffic.libsyn.com/generallyspeaking/BTW103-DynamicWidgetsAndMore.mp3"
+				length="54:10"
 				track="3"
-				thumb="http://c0203501.cdn.cloudfiles.rackspacecloud.com/7a1af10074907b6a25f8d2ddfb1d7a1ad08dbc25ca53410076fdadc4j.jpg"
-				poster="http://gspn.tv/wp-content/uploads/2009/09/BusinessTechWeekly.jpg">
-				<info> <![CDATA[ source: http://gspn.tv/category/all-shows/technology/bustech/  ]]></info>
+				thumb="https://c0203501.cdn.cloudfiles.rackspacecloud.com/7a1af10074907b6a25f8d2ddfb1d7a1ad08dbc25ca53410076fdadc4j.jpg"
+				poster="https://gspn.tv/wp-content/uploads/2009/09/BusinessTechWeekly.jpg">
+				<info> <![CDATA[ source: https://gspn.tv/category/all-shows/technology/bustech/  ]]></info>
 			</audio>
 
 		</category>
 	</section>
-	
+
 	<!-- STORE LINK -->
 	<section name="Store">
-		
-		<category type="link" name="Books" link-src="http://astore.amazon.com/thegrid-playit-20?_encoding=UTF8&amp;node=9" ></category>
-		<category type="link" name="MP3 Downloads" link-src="http://astore.amazon.com/thegrid-playit-20?_encoding=UTF8&amp;node=1" ></category>
-		<category type="link" name="Music" link-src="http://astore.amazon.com/thegrid-playit-20?_encoding=UTF8&amp;node=40"></category>		
-		<category type="link" name="Software" link-src="http://astore.amazon.com/thegrid-playit-20?_encoding=UTF8&amp;node=62" ></category>
-		<category type="link" name="Video Games" link-src="http://astore.amazon.com/thegrid-playit-20?_encoding=UTF8&amp;node=81" ></category>
+
+		<category type="link" name="Books" link-src="https://astore.amazon.com/thegrid-playit-20?_encoding=UTF8&amp;node=9" ></category>
+		<category type="link" name="MP3 Downloads" link-src="https://astore.amazon.com/thegrid-playit-20?_encoding=UTF8&amp;node=1" ></category>
+		<category type="link" name="Music" link-src="https://astore.amazon.com/thegrid-playit-20?_encoding=UTF8&amp;node=40"></category>
+		<category type="link" name="Software" link-src="https://astore.amazon.com/thegrid-playit-20?_encoding=UTF8&amp;node=62" ></category>
+		<category type="link" name="Video Games" link-src="https://astore.amazon.com/thegrid-playit-20?_encoding=UTF8&amp;node=81" ></category>
 
 	</section>
-	
-	
+
+
 	<!-- PLAYLIST -->
 	<section name="PlayList">
-		<category 
+		<category
 			type="audio"
 			name="List 1">
 			<grid>
@@ -764,7 +764,7 @@
 						 <span>
 						 When the <b>'artist'</b> and <b>'album'</b> attributes are identical across audio nodes then a unique key is formed for those audio tags to form an
 						 album group.  This grouping is best seen in the tile view.<br/><br/>
-						 
+
 						 By default the album group plays the audio file in the order they were placed in the configuration file.  To be sure the audio elements plays
 						 in the exact order you want, place a <b>'track'</b> attribute on every audio tag in the album group to order the album accordingly.
 						 </span>
@@ -790,10 +790,10 @@
 				info-enable="false"
 				poster="image/note-256.png">
             </audio>
-		
-				
+
+
 		</category>
-		
+
 		<category
 			type="audio"
 			name="List 2">
@@ -817,24 +817,24 @@
 
 
             <audio
-				title="Lostoncorners" 
-				src="audio/lostoncorners.mp3" 
-				artist="Orchestral movement of 1932" 
-				album="Album 2" 
-				track="1" 
-				info-enable="false" 
+				title="Lostoncorners"
+				src="audio/lostoncorners.mp3"
+				artist="Orchestral movement of 1932"
+				album="Album 2"
+				track="1"
+				info-enable="false"
 				poster="image/note-256.png">
             </audio>
             <audio
-				title="Share-Numazu" 
-				src="audio/share-numazu.mp3" 
-				artist="Orchestral movement of 1932" 
-				album="Album 2" 
-				track="2" 
-				info-enable="false" 
+				title="Share-Numazu"
+				src="audio/share-numazu.mp3"
+				artist="Orchestral movement of 1932"
+				album="Album 2"
+				track="2"
+				info-enable="false"
 				poster="image/note-256.png">
             </audio>
 
-		</category>		
+		</category>
 	</section>
 </playit>

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="jquery.playit"
-    targetNamespace="http://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
+    targetNamespace="https://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
     elementFormDefault="qualified"
-    xmlns="http://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    xmlns="https://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
+    xmlns:xs="https://www.w3.org/2001/XMLSchema">
     <xs:element name="playit">
         <xs:complexType>
             <xs:sequence>
@@ -96,7 +96,7 @@
                                                 <xs:attribute name="height" type="xs:unsignedByte" use="optional" />
                                                 <xs:attribute name="width" type="xs:unsignedByte" use="optional" />
                                                 <xs:attribute name="info-enable" type="xs:boolean" use="optional" />
-                         
+
                                             </xs:complexType>
                                         </xs:element>
                                         <xs:element minOccurs="0" name="tile">

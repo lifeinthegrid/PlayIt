@@ -3,36 +3,36 @@
 <head>
 	<title>PlayIt - Web Service Data Source Demo</title>
 	<meta name="description" content="Demonstrates how to hook up the media player to an ASP.NET ASMX web service" />
-	<link rel="stylesheet" href="../style.css" type="text/css" /> 
+	<link rel="stylesheet" href="../style.css" type="text/css" />
 
 	<!-- ==============================================
 	REQUIRED FOR PLAYIT: HTML 5 and Legacy support -->
-	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/sunny/jquery-ui.css" id="playit-jquery-ui-css" type="text/css"/>
-	<link rel="stylesheet" href="../source/jquery.playit.css" type="text/css" /> 
-	<link rel="stylesheet" href="../lib/mediaelementjs/mediaelementplayer.css" type="text/css" /> 
-	<link rel="stylesheet" href="../lib/mediaelementjs/mejs-skins.css" type="text/css" /> 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/sunny/jquery-ui.css" id="playit-jquery-ui-css" type="text/css"/>
+	<link rel="stylesheet" href="../source/jquery.playit.css" type="text/css" />
+	<link rel="stylesheet" href="../lib/mediaelementjs/mediaelementplayer.css" type="text/css" />
+	<link rel="stylesheet" href="../lib/mediaelementjs/mejs-skins.css" type="text/css" />
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="../source/jquery.playit.js" id="playit-source"></script>
 	<script type="text/javascript" src="../lib/mediaelementjs/mediaelement-and-player.min.js"></script>
 	<!-- ============================================== -->
-	
+
 	<!-- ==============================================
-	REQUIRED FOR PLAYIT: HTML 5 Only Support 
-	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" id="playit-jquery-ui-css" type="text/css"/>
-	<link rel="stylesheet" href="../source/jquery.playit.css" type="text/css" /> 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	REQUIRED FOR PLAYIT: HTML 5 Only Support
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" id="playit-jquery-ui-css" type="text/css"/>
+	<link rel="stylesheet" href="../source/jquery.playit.css" type="text/css" />
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="../source/jquery.playit.js" id="playit-source"></script>
 	<!-- ============================================== -->
-	
+
 	<style type="text/css">
-		div.playit-files-content table tbody tr:nth-child(even) td    
-		{ 
+		div.playit-files-content table tbody tr:nth-child(even) td
+		{
 			border-top:1px solid #dfdfdf;
 			border-bottom:1px solid #dfdfdf;
 		}
-		div.playit-all 
+		div.playit-all
 		{
 		     background-color:#fff;
 		}
@@ -81,18 +81,18 @@
 
 	<div class="content">
 
-			
+
 		<!-- ==============================================
 		REQUIRED FOR PLAYIT. -->
 
 		<div id="player" style="width:100%; height:600px;"></div><br /><br />
-		
+
 		<script type="text/javascript">
 
 		    jQuery(document).ready(function ()
 		    {
 		        player = jQuery("#player").playit(
-				{	
+				{
 					cacheXml: false,
                     dataSource: playit.webServiceDataSource,
                     dataSourceOptions: {
@@ -159,7 +159,7 @@
             {
                 return { fields: null, enable: true, itemSize: 64, sortColumn: null, sortDirection: null };
             }
-			
+
 			function applyTheme(theme)
             {
                 if (player)
@@ -169,8 +169,8 @@
             }
 		</script>
 		<!-- ============================================== -->
-		
+
 	</div>
-	
+
 </body>
 </html>

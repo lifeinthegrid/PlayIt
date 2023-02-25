@@ -1,12 +1,12 @@
 ﻿/// <reference path="../lib/jquery/jquery-1.7.1.min.js" />
 /**
-* PlayIt Jquery Plugin 
-* version: 1.0.0 11-11-2011 
+* PlayIt Jquery Plugin
+* version: 1.0.0 11-11-2011
 * @requires jQuery v1.6.4 or later
 * @requires jQuery v1.8.12 or later
-* 
+*
 * Documentation:
-* http://www.lifeinthegrid.com/playit
+* https://www.lifeinthegrid.com/playit
 *
 *
 * LIB: JQUERY LICENSE
@@ -14,7 +14,7 @@
 * Released under the MIT, BSD, and GPL Licenses.
 *
 * LIB: MEDIAELEMENT.JS
-* Copyright 2010-2011, John Dyer (http://j.hn)
+* Copyright 2010-2011, John Dyer (https://j.hn)
 * Dual licensed under the MIT or GPL Version 2 licenses.
 *
 */
@@ -45,7 +45,7 @@ playit = function (options)
         themeUseCDN: false,
         themeName: "smoothness",
         themeVersion: "1.8.16",
-        themeUrl: "http://ajax.googleapis.com/ajax/libs/jqueryui/{0}/themes/{1}/jquery-ui.css",
+        themeUrl: "//ajax.googleapis.com/ajax/libs/jqueryui/{0}/themes/{1}/jquery-ui.css",
         viewDefault: "grid",
         autoFill: false,
 
@@ -304,7 +304,7 @@ playit = function (options)
             var currentView = _currentCategory.get_currentView();
             switch (currentView)
             {
-                //GRID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                //GRID
                 case playit.view.grid:
 
                     var nodeElement = (node == null) ? jQuery("#" + controlIds.filesViewId + " table tbody tr").get(0) || null : node;
@@ -316,7 +316,7 @@ playit = function (options)
 
                     break;
 
-                //LIST                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+                //LIST
                 case playit.view.list:
 
                     var nodeElement = (node == null) ? jQuery("#" + controlIds.filesViewId + " div div.playit-list-item").get(0) : node;
@@ -328,7 +328,7 @@ playit = function (options)
 
                     break;
 
-                //TILE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                //TILE
                 case playit.view.tile:
 
                     var $allTileItems = jQuery("#" + controlIds.filesViewId).children("div.playit-tile").children("div");
@@ -503,7 +503,7 @@ playit = function (options)
         {
             // hide/show the audio panel
             // we pause the music for consistency with Mozilla based browsers
-            // http://stackoverflow.com/questions/298342/firefox-restarts-flash-movie-if-enclosing-div-properties-change
+            // https://stackoverflow.com/questions/298342/firefox-restarts-flash-movie-if-enclosing-div-properties-change
 
             var $audioPanel = jGet(controlIds.audioPanelId);
 
@@ -869,7 +869,7 @@ playit = function (options)
 
     //========================================================================
     //VIDEO PLAYER
-    //======================================================================== 
+    //========================================================================
     //#region Video Player
     this.video = {
 
@@ -1258,7 +1258,7 @@ playit = function (options)
 
     //========================================================================
     //IMAGE PLAYER
-    //======================================================================== 
+    //========================================================================
     //#region Image Player
     this.image = {
 
@@ -1858,7 +1858,7 @@ playit = function (options)
 
     //========================================================================
     //GRID VIEWS
-    //========================================================================	
+    //========================================================================
     //#region Grid Views
     var createGridHeader = function (category)
     {
@@ -1932,7 +1932,7 @@ playit = function (options)
         contentContainer.appendChild(rowContainer);
         contentContainer.className = "playit-grid ui-widget-content";
 
-        //BUILD ITEMS 
+        //BUILD ITEMS
         for (var i = 0; i < files.length; i++)
         {
             if (matchesSearch(files[i]))
@@ -1984,7 +1984,7 @@ playit = function (options)
         contentContainer.appendChild(rowContainer);
         contentContainer.className = "playit-grid ui-widget-content ui-corner-all";
 
-        //BUILD ITEMS 
+        //BUILD ITEMS
         for (var i = 0; i < files.length; i++)
         {
             file = files[i];
@@ -2031,7 +2031,7 @@ playit = function (options)
 
     //========================================================================
     //LIST VIEWS
-    //========================================================================	
+    //========================================================================
     //#region List Views
     var toggleListSort = function (button)
     {
@@ -2094,7 +2094,7 @@ playit = function (options)
         var sortBar = createListSortBar();
         contentContainer.appendChild(sortBar);
 
-        //BUILD ITEMS 
+        //BUILD ITEMS
         for (var i = 0; i < files.length; i++)
         {
             if (matchesSearch(files[i]))
@@ -2243,7 +2243,7 @@ playit = function (options)
 
     //========================================================================
     //TILE VIEWS
-    //========================================================================	
+    //========================================================================
     //#region Tile Views
     var toggleTileSort = function (button)
     {
@@ -2316,7 +2316,7 @@ playit = function (options)
         //SORTBAR
         createTileSortBar();
 
-        //BUILD ITEMS 
+        //BUILD ITEMS
         var searchResultCount = 0;
         var contentContainer = document.createElement("div");
         contentContainer.className = "playit-tile";
@@ -2366,7 +2366,7 @@ playit = function (options)
         //SORT BAR
         createTileSortBar();
 
-        //BUILD ITEMS 
+        //BUILD ITEMS
         var searchResultCount = 0;
         var contentContainer = document.createElement("div");
         var catSort = _data._getCategorySort(_currentCategory);
@@ -2836,7 +2836,7 @@ playit = function (options)
             $srchInput.addClass("playit-search-text-disable");
             $srchBox.addClass("playit-search-text-disable");
         }
-        else if ($srchBox.hasClass("playit-search-text-disable")) // only reset it if is disabled otherwise it looses focus in IE   
+        else if ($srchBox.hasClass("playit-search-text-disable")) // only reset it if is disabled otherwise it looses focus in IE
         {
             $srchInput.removeAttr("disabled");
             $srchInput.removeClass("playit-search-text-disable");
@@ -3283,7 +3283,7 @@ playit = function (options)
 
                         switch (currentView)
                         {
-                            //GRID LOOP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                            //GRID LOOP
                             case playit.view.grid:
 
                                 var files = sortGenericFiles(files);
@@ -3297,7 +3297,7 @@ playit = function (options)
                                 }
                                 break;
 
-                            //LIST LOOP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                            //LIST LOOP
                             case playit.view.list:
 
                                 var files = sortGenericFiles(files);
@@ -3311,9 +3311,9 @@ playit = function (options)
                                 }
                                 break;
 
-                            //TILE LOOP:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                            //TILE LOOP:
                             case playit.view.tile:
-                                //Sorting is perfomed in View   
+                                //Sorting is perfomed in View
                                 switch (_currentCategory.get_type())
                                 {
                                     case playit.type.audio: createTileAudioView(files); break;
@@ -3323,7 +3323,7 @@ playit = function (options)
                                 }
                                 break;
 
-                            //NO VIEW SET                                                                                                                                                                                                                                                                                                                                             
+                            //NO VIEW SET
                             default:
                                 showConfigMessage(playit.lang.msg_no_views_enabled);
                                 break;
@@ -3331,7 +3331,7 @@ playit = function (options)
 
                         switch (_currentCategory.get_type())
                         {
-                            //AUDIO                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                            //AUDIO
                             case playit.type.audio:
                                 _this.audio._toggleAudioPanel(true);
                                 jQuery("#" + controlIds.filesViewId).show().height(_controlHeight - 113);
@@ -3345,7 +3345,7 @@ playit = function (options)
                                 }
                                 break;
 
-                            //IMAGE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                            //IMAGE
                             case playit.type.image:
                                 //LINK
                             case playit.type.link:
@@ -3612,7 +3612,7 @@ playit = function (options)
 
     //========================================================================
     //PUBLIC METHODS
-    //========================================================================	
+    //========================================================================
     //#region Public Methods
     this.init = function (container)
     {
@@ -3678,9 +3678,9 @@ playit = function (options)
 
 //========================================================================
 //ENTITY MODLES
-//========================================================================	
+//========================================================================
 //#region Entity Models
-playit.view = 
+playit.view =
 {
 	none: 0,
     grid: 1,
@@ -3688,7 +3688,7 @@ playit.view =
     tile: 3,
 	link: 4
 };
-playit.type = 
+playit.type =
 {
 	empty: 0,
 	separator: 1,
@@ -3700,7 +3700,7 @@ playit.type =
 	//map: 7
 };
 
-playit.log = 
+playit.log =
 {
 	msg: function (type, errMsg)
     {
@@ -4025,12 +4025,12 @@ playit.audioAlbum = function ()
 	var tracks = [];
 	var album;
 	var artist;
-	
+
 	this.get_id = function ()
     {
         return id;
     };
-	
+
 	this.addTrack = function (file)
     {
         tracks.push(file);
@@ -4041,7 +4041,7 @@ playit.audioAlbum = function ()
     {
 		tracks.sort(function sortTracks(file1,file2) {	return file1.get_track() - file2.get_track(); });
         return tracks;
-    };	
+    };
 	this.get_album = function ()
     {
 		return album;
@@ -4049,12 +4049,12 @@ playit.audioAlbum = function ()
 	this.get_artist = function ()
     {
 		return artist;
-    };	
+    };
 	this.get_trackByIndexId = function (id)
     {
         return (tracks) ? tracks[id] : null;
-    };	
-	
+    };
+
 	//#region Public Methods
     this.init = function (albumId)
     {
@@ -4606,7 +4606,7 @@ playit.videoFile = function ()
     this.set_infoEnable = function (val)
     {
         this.setProperty("infoEnable", val);
-    };	
+    };
     this.get_poster = function ()
     {
         return this.getProperty("poster");
@@ -4759,7 +4759,7 @@ playit.xmlDataSource = function (playitObj, options)
         _opts.viewDefault = (playitNode.attr("view-default") || _opts.viewDefault).toLowerCase();
         _opts.autoFill = playit.utils.parseBool(playitNode.attr("autofill"), _opts.autoFill);
 
-        //AUDIO	
+        //AUDIO
         _opts.audioAutoPlay = playit.utils.parseBool(playitNode.attr("audio-autoplay"), _opts.audioAutoPlay);
         _opts.audioInfoEnable = playit.utils.parseBool(playitNode.attr("audio-info-enable"), _opts.audioInfoEnable);
         _opts.audioInfoBoxHeight = playit.utils.parseInt(playitNode.attr("audio-infobox-height"), _opts.audioInfoBoxHeight);
@@ -5331,7 +5331,7 @@ playit.flickrDataSource = function (playitObj, options)
 
         jQuery.each(data.photoset.photo, function (i, photo)
         {
-            var squareUrl = 'http://farm' + photo.farm + '.static.flickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_s.jpg';
+            var squareUrl = 'https://farm' + photo.farm + '.static.flickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_s.jpg';
             var mediumUrl = squareUrl.replace("_s.jpg", "_m.jpg");
             var largeUrl = squareUrl.replace("_s.jpg", "_b.jpg");
 
@@ -5370,7 +5370,7 @@ playit.flickrDataSource = function (playitObj, options)
         jQuery.ajax({
             cache: false,
             type: "POST",
-            url: "http://api.flickr.com/services/rest/?&method=flickr.photosets.getList&api_key=" + _dataSourceOpts.apiKey + "&user_id=" + _dataSourceOpts.userId + "&format=json&jsoncallback=?",
+            url: "https://api.flickr.com/services/rest/?&method=flickr.photosets.getList&api_key=" + _dataSourceOpts.apiKey + "&user_id=" + _dataSourceOpts.userId + "&format=json&jsoncallback=?",
             data: {},
             dataType: "json",
             contentType: "application/json; charset=utf-8",
@@ -5385,7 +5385,7 @@ playit.flickrDataSource = function (playitObj, options)
         jQuery.ajax({
             cache: false,
             type: "POST",
-            url: "http://api.flickr.com/services/rest/?&method=flickr.photosets.getPhotos&api_key=" + _dataSourceOpts.apiKey + "&user_id=" + _dataSourceOpts.userId + "&photoset_id=" + category.get_id() + "&format=json&jsoncallback=?",
+            url: "https://api.flickr.com/services/rest/?&method=flickr.photosets.getPhotos&api_key=" + _dataSourceOpts.apiKey + "&user_id=" + _dataSourceOpts.userId + "&photoset_id=" + category.get_id() + "&format=json&jsoncallback=?",
             data: {},
             dataType: "json",
             contentType: "application/json; charset=utf-8",
@@ -5647,12 +5647,12 @@ playit.lang = {
 	Unkonwn_Album: "Unknown Album",
 	Volume: "Volume",
 	Loading_dots: "Loading...",
-	
+
 	//OBJECTS
 	obj_audio_info: "Now Playing...",
 	obj_image_info: "Now Showing...",
 	obj_video_info: "Video Info..",
-	
+
 	//MESSAGES
 	msg_nosearch_results:"No results found for '%s' in %s.",
 	msg_select_to_play: "Please select an item to play!",

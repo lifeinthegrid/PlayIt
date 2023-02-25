@@ -1,39 +1,39 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<playit 
+<playit
 	accordion-animate="true"
 	accordion-autoselect="true"
 
 	toolbar-title="Lokalisieren PlayIt"
 	toolbar-showsearch="true"
 	toolbar-searchtext="Suche"
-	toolbar-searchwidth="auto"	
+	toolbar-searchwidth="auto"
 
-	view-default="list"	
-	
+	view-default="list"
+
 	audio-autoplay="false"
 	audio-info-enable="true"
 	audio-infobox-modal="true"
 	audio-infobox-height="350"
 	audio-infobox-width="600"
 	audio-infobox-resizable="true"
-	
+
 	image-autoplay="false"
 	image-dialog-height="500"
 	image-dialog-width="800"
 	image-info-enable="false"
 	image-slides-interval="5500"
-	
+
 	video-autoplay="false"
 	video-dialog-height="500"
 	video-dialog-width="800"
 	video-info-enable="true"
 	video-navbar-enable="true">
-	
+
 
 	<section name="Lokalisierung">
 		<category type="link" name="Überblick" link-src="link/localize-help.html#German" ></category>
-		
-	
+
+
 		<!--  ===============================================================
 		AUDIO
 		================================================================== -->
@@ -56,17 +56,17 @@
 			<tile item-size="80"></tile>
 			<audio title="Einzel-Demo"  artist="Orchestral Bewegung von 1932" album="Einzelzimmer 1" src="audio/april-elsewhere.mp3">
 				<info><![CDATA[	 <div class='playit-info-audio'><span>	English Information Data </span></div> ]]></info>
-			</audio>	
+			</audio>
 			<audio title="Lost on Corners" artist="Orchestral Bewegung von 1932" album="Album 1" src="audio/lostoncorners.mp3" track="1" info-enable="false" poster="image/violin-256.png" />
-			<audio title="Share Numazu" artist="Orchestral Bewegung von 1932" album="Album 1"  src="audio/share-numazu.mp3" track="2" info-enable="false" poster="image/violin-256.png" />	
+			<audio title="Share Numazu" artist="Orchestral Bewegung von 1932" album="Album 1"  src="audio/share-numazu.mp3" track="2" info-enable="false" poster="image/violin-256.png" />
 		</category>
-		
+
 		<!--  ===============================================================
 		IMAGE
-		================================================================== -->		
-		<category 
+		================================================================== -->
+		<category
 			type="image"
-			name="Bilder">	
+			name="Bilder">
             <grid>
 				<fields  sort-column="title" sort-direction="asc">
 					<field match="title" display="Titel" />
@@ -81,19 +81,19 @@
 					<field match="date" display=""  sort-display="Datum" />
 				</fields>
 			</list>
-			<img title="Pelican"  desc="Kalifornien" date="2011.09.30" src="image/pics/California02.jpg" thumb="image/pics/California02_thumb.jpg">	
-				<info><![CDATA[ Deutschland Informationen  ]]></info>						
+			<img title="Pelican"  desc="Kalifornien" date="2011.09.30" src="image/pics/California02.jpg" thumb="image/pics/California02_thumb.jpg">
+				<info><![CDATA[ Deutschland Informationen  ]]></info>
 			</img>
-			<img title="Sonnenuntergang" desc="Kalifornien" date="2011.09.30" src="image/pics/California05.jpg" thumb="image/pics/California05_thumb.jpg" />	
-			<img title="Blumen" desc="Kalifornien" date="2011.09.30" src="image/pics/California07.jpg" thumb="image/pics/California07_thumb.jpg" />	
+			<img title="Sonnenuntergang" desc="Kalifornien" date="2011.09.30" src="image/pics/California05.jpg" thumb="image/pics/California05_thumb.jpg" />
+			<img title="Blumen" desc="Kalifornien" date="2011.09.30" src="image/pics/California07.jpg" thumb="image/pics/California07_thumb.jpg" />
 		</category>
 
 		<!--  ===============================================================
 		LINK
-		================================================================== -->	
-		<category 
+		================================================================== -->
+		<category
 			type="link"
-			name="Links">	
+			name="Links">
 			<grid>
 				<fields>
 					<field match="title" display="Link" />
@@ -105,15 +105,15 @@
 					<field match="title" sort-display="Link" />
 					<field match="desc" sort-display="Beschreibung" />
 				</fields>
-            </list>	
+            </list>
 		</category>
 
 		<!--  ===============================================================
 		VIDEO
-		================================================================== -->	
-		<category 
+		================================================================== -->
+		<category
 			type="video"
-			name="Video">	
+			name="Video">
 			<grid>
 				<fields>
 					<field match="title" display="Titel" />
@@ -125,12 +125,12 @@
 					<field match="title" display="Titel: " />
 					<field match="length" display="Lange: " />
 				</fields>
-            </list>			
+            </list>
 			<video player="local" title="PlayIt Trailer" length="0.41" src="video/playit-intro.mp4">
 				<info><![CDATA[ <div class='playit-info-video'><span>Deutschland Informationen</span></div> ]]></info>
 			</video>
-			<video player="remote" title="Next Generation Website" length="01.22" src="http://player.vimeo.com/video/26232472?title=0&amp;byline=0&amp;portrait=0" />
-		</category>	
+			<video player="remote" title="Next Generation Website" length="01.22" src="https://player.vimeo.com/video/26232472?title=0&amp;byline=0&amp;portrait=0" />
+		</category>
 
 	</section>
 </playit>

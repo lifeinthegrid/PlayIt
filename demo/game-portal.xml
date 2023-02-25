@@ -3,9 +3,9 @@
 	toolbar-title="Gamers Guru Portal"
     autofill="true"
 	accordion-animate="true">
-	
+
 	<!--  ===============================================================
-	XBOX 360 SECTION 
+	XBOX 360 SECTION
 	================================================================== -->
 	<section name="XBOX 360">
 		<category
@@ -27,17 +27,17 @@
 			</list>
 			<audio
 				title="Show 411: Deus Ex, Gears of War 3 and more"
-				src="http://traffic.libsyn.com/majornelson/mnr-411-DeusExGOW3andmore.mp3"
+				src="https://traffic.libsyn.com/majornelson/mnr-411-DeusExGOW3andmore.mp3"
 				artist="Major Nelson"
 				album="XBox360"
 				length="99:27"
                 date="09/18/11"
-				poster="http://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png">
+				poster="https://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png">
 					<info>
 				    <![CDATA[
                     <div class='playit-info-podcast'>
 						<div>
-							<i>Host: <a href="http://en.wikipedia.org/wiki/Larry_Hryb" target="_blank">Larry Hryb</a>, Xbox LIVE's Major Nelson</i><br/>
+							<i>Host: <a href="https://en.wikipedia.org/wiki/Larry_Hryb" target="_blank">Larry Hryb</a>, Xbox LIVE's Major Nelson</i><br/>
 						</div><br/>
                         <div>
                             <div>Guests:</div>
@@ -51,25 +51,25 @@
                             <div>and just a little more....</div>
                         </div>
                         <br/>
-						<a href="http://majornelson.com/cast/2011/09/18/show-411-deus-ex-gears-of-war-3-and-more/" target="_blank">More</a> <br/>
-						<a href="http://majornelson.com/" target="_blank">Visit MajorNelson.com </a>
+						<a href="https://majornelson.com/cast/2011/09/18/show-411-deus-ex-gears-of-war-3-and-more/" target="_blank">More</a> <br/>
+						<a href="https://majornelson.com/" target="_blank">Visit MajorNelson.com </a>
                     </div>
                     ]]>
 					</info>
 			</audio>
             <audio
 				title="Show 410: PAX Prime and COD XP recap"
-				src="http://traffic.libsyn.com/majornelson/mnr-410-CODXP-PAX-DeusExandalittlemore.mp3"
+				src="https://traffic.libsyn.com/majornelson/mnr-410-CODXP-PAX-DeusExandalittlemore.mp3"
 				artist="Major Nelson"
 				album="XBox360"
 				length="75:52"
                 date="09/11/11"
-				poster="http://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png">
+				poster="https://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png">
                 <info>
                     <![CDATA[
                     <div class='playit-info-podcast'>
 						<div>
-							<i>Host: <a href="http://en.wikipedia.org/wiki/Larry_Hryb" target="_blank">Larry Hryb</a>, Xbox LIVE's Major Nelson</i><br/>
+							<i>Host: <a href="https://en.wikipedia.org/wiki/Larry_Hryb" target="_blank">Larry Hryb</a>, Xbox LIVE's Major Nelson</i><br/>
 						</div><br/>
                         <div>
                             <div>Guests:</div>
@@ -82,50 +82,50 @@
                             <div>and just a little more....</div>
                         </div>
                         <br/>
-						<a href="http://majornelson.com/cast/2011/09/11/show-410-pax-prime-and-cod-xp-recap/" target="_blank">More</a> <br/>
-						<a href="http://majornelson.com/" target="_blank">Visit MajorNelson.com </a>
+						<a href="https://majornelson.com/cast/2011/09/11/show-410-pax-prime-and-cod-xp-recap/" target="_blank">More</a> <br/>
+						<a href="https://majornelson.com/" target="_blank">Visit MajorNelson.com </a>
                     </div>
                     ]]>
                 </info>
             </audio>
             <audio
 				title="Show 409: PAX Prime 2011 Podcast"
-				src="http://traffic.libsyn.com/majornelson/PAXPrime2011Show-409-EQ.mp3"
+				src="https://traffic.libsyn.com/majornelson/PAXPrime2011Show-409-EQ.mp3"
 				artist="Major Nelson"
 				album="XBox360"
 				length="56:38"
                 date="08/29/11"
-				poster="http://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png">
+				poster="https://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png">
                 <info>
                     <![CDATA[
                     <div class='playit-info-podcast'>
 						<div>
-							<i>Host: <a href="http://en.wikipedia.org/wiki/Larry_Hryb" target="_blank">Larry Hryb</a>, Xbox LIVE's Major Nelson</i><br/>
+							<i>Host: <a href="https://en.wikipedia.org/wiki/Larry_Hryb" target="_blank">Larry Hryb</a>, Xbox LIVE's Major Nelson</i><br/>
 						</div><br/>
                         <div>
                             <div>Guests:</div>
                             <div>R2D2 and C-3PO/div>
                         </div>
                         <br/>
-						<a href="http://majornelson.com/cast/2011/08/29/show-409-pax-prime-2011-podcast/" target="_blank">More</a> <br/>
-						<a href="http://majornelson.com/" target="_blank">Visit MajorNelson.com </a>
+						<a href="https://majornelson.com/cast/2011/08/29/show-409-pax-prime-2011-podcast/" target="_blank">More</a> <br/>
+						<a href="https://majornelson.com/" target="_blank">Visit MajorNelson.com </a>
                     </div>
                     ]]>
                 </info>
             </audio>
             <audio
 				title="Show 408: Pre-Pax, Cake and more"
-				src="http://traffic.libsyn.com/majornelson/mnr-408-aoeonlinePAXetc.mp3"
+				src="https://traffic.libsyn.com/majornelson/mnr-408-aoeonlinePAXetc.mp3"
 				artist="Major Nelson"
 				album="XBox360"
 				length="69:42"
                 date="08/21/11"
-				poster="http://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png">
+				poster="https://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png">
                 <info>
                     <![CDATA[
                     <div class='playit-info-podcast'>
 						<div>
-							<i>Host: <a href="http://en.wikipedia.org/wiki/Larry_Hryb" target="_blank">Larry Hryb</a>, Xbox LIVE's Major Nelson</i><br/>
+							<i>Host: <a href="https://en.wikipedia.org/wiki/Larry_Hryb" target="_blank">Larry Hryb</a>, Xbox LIVE's Major Nelson</i><br/>
 						</div><br/>
                         <div>
                             <div>Guests:</div>
@@ -138,25 +138,25 @@
                             <div>and just a little more....</div>
                         </div>
                         <br/>
-						<a href="http://majornelson.com/cast/2011/08/21/show-408-pre-pax-cake-and-more/" target="_blank">More</a> <br/>
-						<a href="http://majornelson.com/" target="_blank">Visit MajorNelson.com </a>
+						<a href="https://majornelson.com/cast/2011/08/21/show-408-pre-pax-cake-and-more/" target="_blank">More</a> <br/>
+						<a href="https://majornelson.com/" target="_blank">Visit MajorNelson.com </a>
                     </div>
                     ]]>
                 </info>
             </audio>
             <audio
 				title="Show 407: Halo Fest and more"
-				src="http://traffic.libsyn.com/majornelson/mnr-407-halofestatpax.mp3"
+				src="https://traffic.libsyn.com/majornelson/mnr-407-halofestatpax.mp3"
 				artist="Major Nelson"
 				album="XBox360"
 				length="79:38"
                 date="08/14/11"
-				poster="http://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png">
+				poster="https://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png">
                 <info>
                     <![CDATA[
                     <div class='playit-info-podcast'>
 						<div>
-							<i>Host: <a href="http://en.wikipedia.org/wiki/Larry_Hryb" target="_blank">Larry Hryb</a>, Xbox LIVE's Major Nelson</i><br/>
+							<i>Host: <a href="https://en.wikipedia.org/wiki/Larry_Hryb" target="_blank">Larry Hryb</a>, Xbox LIVE's Major Nelson</i><br/>
 						</div><br/>
                         <div>
                             <div>Guests:</div>
@@ -169,25 +169,25 @@
                             <div>and just a little more....</div>
                         </div>
                         <br/>
-						<a href="http://majornelson.com/cast/2011/08/14/show-407-halo-fest-and-more/" target="_blank">More</a> <br/>
-						<a href="http://majornelson.com/" target="_blank">Visit MajorNelson.com </a>
+						<a href="https://majornelson.com/cast/2011/08/14/show-407-halo-fest-and-more/" target="_blank">More</a> <br/>
+						<a href="https://majornelson.com/" target="_blank">Visit MajorNelson.com </a>
                     </div>
                     ]]>
                 </info>
             </audio>
             <audio
 				title="Show 406: What we’re playing and more"
-				src="http://traffic.libsyn.com/majornelson/mnr-406-whyIdislikeclowns.mp3"
+				src="https://traffic.libsyn.com/majornelson/mnr-406-whyIdislikeclowns.mp3"
 				artist="Major Nelson"
 				album="XBox360"
 				length="75:16"
                 date="08/05/11"
-				poster="http://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png">
+				poster="https://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png">
                 <info>
                     <![CDATA[
                     <div class='playit-info-podcast'>
 						<div>
-							<i>Host: <a href="http://en.wikipedia.org/wiki/Larry_Hryb" target="_blank">Larry Hryb</a>, Xbox LIVE's Major Nelson</i><br/>
+							<i>Host: <a href="https://en.wikipedia.org/wiki/Larry_Hryb" target="_blank">Larry Hryb</a>, Xbox LIVE's Major Nelson</i><br/>
 						</div><br/>
                         <div>
                             <div>Topics:</div>
@@ -197,25 +197,25 @@
                             <div>and just a little more....</div>
                         </div>
                         <br/>
-						<a href="http://majornelson.com/cast/2011/08/05/show-406-what-were-playing-and-more/" target="_blank">More</a> <br/>
-						<a href="http://majornelson.com/" target="_blank">Visit MajorNelson.com </a>
+						<a href="https://majornelson.com/cast/2011/08/05/show-406-what-were-playing-and-more/" target="_blank">More</a> <br/>
+						<a href="https://majornelson.com/" target="_blank">Visit MajorNelson.com </a>
                     </div>
                     ]]>
                 </info>
             </audio>
             <audio
 				title="Show 405: Comic Con and Felicia Day"
-				src="http://traffic.libsyn.com/majornelson/mnr-405-Comic-Con-FeliciaDay-PAXandmore.mp3"
+				src="https://traffic.libsyn.com/majornelson/mnr-405-Comic-Con-FeliciaDay-PAXandmore.mp3"
 				artist="Major Nelson"
 				album="XBox360"
 				length="114:39"
                 date="07/31/11"
-				poster="http://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png">
+				poster="https://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png">
                 <info>
                     <![CDATA[
                     <div class='playit-info-podcast'>
 						<div>
-							<i>Host: <a href="http://en.wikipedia.org/wiki/Larry_Hryb" target="_blank">Larry Hryb</a>, Xbox LIVE's Major Nelson</i><br/>
+							<i>Host: <a href="https://en.wikipedia.org/wiki/Larry_Hryb" target="_blank">Larry Hryb</a>, Xbox LIVE's Major Nelson</i><br/>
 						</div><br/>
                         <div>
                             <div>Guests:</div>
@@ -228,25 +228,25 @@
                             <div>and just a little more....</div>
                         </div>
                         <br/>
-						<a href="http://majornelson.com/cast/2011/08/14/show-407-halo-fest-and-more/" target="_blank">More</a> <br/>
-						<a href="http://majornelson.com/" target="_blank">Visit MajorNelson.com </a>
+						<a href="https://majornelson.com/cast/2011/08/14/show-407-halo-fest-and-more/" target="_blank">More</a> <br/>
+						<a href="https://majornelson.com/" target="_blank">Visit MajorNelson.com </a>
                     </div>
                     ]]>
                 </info>
             </audio>
             <audio
 				title="Show 404: Deus Ex: Human Revolution &amp; Zachary Levi"
-				src="http://traffic.libsyn.com/majornelson/mnr-404-DeusExComiCon.mp3"
+				src="https://traffic.libsyn.com/majornelson/mnr-404-DeusExComiCon.mp3"
 				artist="Major Nelson"
 				album="XBox360"
 				length="141:15"
                 date="07/15/11"
-				poster="http://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png">
+				poster="https://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png">
                 <info>
                     <![CDATA[
                     <div class='playit-info-podcast'>
 						<div>
-							<i>Host: <a href="http://en.wikipedia.org/wiki/Larry_Hryb" target="_blank">Larry Hryb</a>, Xbox LIVE's Major Nelson</i><br/>
+							<i>Host: <a href="https://en.wikipedia.org/wiki/Larry_Hryb" target="_blank">Larry Hryb</a>, Xbox LIVE's Major Nelson</i><br/>
 						</div><br/>
                         <div>
                             <div>Guests:</div>
@@ -258,8 +258,8 @@
                             <div>and just a little more....</div>
                         </div>
                         <br/>
-						<a href="http://majornelson.com/cast/2011/07/15/show-404-deus-ex-human-revolution-zachary-levi/" target="_blank">More</a> <br/>
-						<a href="http://majornelson.com/" target="_blank">Visit MajorNelson.com </a>
+						<a href="https://majornelson.com/cast/2011/07/15/show-404-deus-ex-human-revolution-zachary-levi/" target="_blank">More</a> <br/>
+						<a href="https://majornelson.com/" target="_blank">Visit MajorNelson.com </a>
                     </div>
                     ]]>
                 </info>
@@ -285,7 +285,7 @@
             <video
 				player="remote"
 				artist="EPIC Games"
-				src="http://www.youtube.com/embed/2KtTp_eFpwU?rel=0&amp;hd=1&amp;autoplay=1"
+				src="https://www.youtube.com/embed/2KtTp_eFpwU?rel=0&amp;hd=1&amp;autoplay=1"
 				title="Gears of War 3 Inversion Trailer"
 				length="0:30"
 				thumb="video/thumb/youtube.png"
@@ -295,7 +295,7 @@
                     <![CDATA[
 				    <div class='playit-info-video'>
 					    <span class='buy'>
-						    <iframe src="http://rcm.amazon.com/e/cm?lt1=_blank&bc1=transparent&IS2=1&npa=1&bg1=transparent&fc1=ffffff&lc1=ffffff&t=thegrid-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B002I0H79C" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+						    <iframe src="https://rcm.amazon.com/e/cm?lt1=_blank&bc1=transparent&IS2=1&npa=1&bg1=transparent&fc1=ffffff&lc1=ffffff&t=thegrid-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B002I0H79C" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 					    </span>
 					    <span class='info'>
                             <div>
@@ -304,14 +304,14 @@
 					        </div>
                             <div style='margin-top:10px;'>
                                 <div id="fb-gears3"></div>
-                                <script type="text/javascript">createLikeButton("fb-gears3", "http://www.youtube.com/watch?v=2KtTp_eFpwU");</script>
+                                <script type="text/javascript">createLikeButton("fb-gears3", "https://www.youtube.com/watch?v=2KtTp_eFpwU");</script>
                             </div>
-                        </span><br style='clear:both'/>			
+                        </span><br style='clear:both'/>
 					    <div class='misc'>
 						    <b>Related Videos</b><br/><br/>
-						    <iframe width="300" height="182" src="http://www.youtube.com/embed/86QvTlQ5ziY?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe> &nbsp; &nbsp; &nbsp; &nbsp;
-						    <iframe width="300" height="182" src="http://www.youtube.com/embed/n7Te5fcnrUA?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe>
-					    </div>					
+						    <iframe width="300" height="182" src="https://www.youtube.com/embed/86QvTlQ5ziY?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe> &nbsp; &nbsp; &nbsp; &nbsp;
+						    <iframe width="300" height="182" src="https://www.youtube.com/embed/n7Te5fcnrUA?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe>
+					    </div>
 				    </div>
                     ]]>
                 </info>
@@ -319,7 +319,7 @@
             <video
 				player="remote"
 				artist="Microsoft"
-				src="http://www.youtube.com/embed/vFJsQwivltQ?rel=0&amp;hd=1&amp;autoplay=1"
+				src="https://www.youtube.com/embed/vFJsQwivltQ?rel=0&amp;hd=1&amp;autoplay=1"
 				title="Halo 4 Trailer"
 				length="0:30"
 				thumb="video/thumb/youtube.png"
@@ -329,7 +329,7 @@
                     <![CDATA[
 				    <div class='playit-info-video'>
 					    <span class='buy'>
-						    <iframe src="http://rcm.amazon.com/e/cm?lt1=_blank&bc1=transparent&IS2=1&npa=1&bg1=transparent&fc1=ffffff&lc1=ffffff&t=thegrid-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B0050SYX8W" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+						    <iframe src="https://rcm.amazon.com/e/cm?lt1=_blank&bc1=transparent&IS2=1&npa=1&bg1=transparent&fc1=ffffff&lc1=ffffff&t=thegrid-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B0050SYX8W" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 					    </span>
 					    <span class='info'>
                             <div>
@@ -338,14 +338,14 @@
 					        </div>
                             <div style='margin-top:10px;'>
                                 <div id="fb-halo4"></div>
-                                <script type="text/javascript">createLikeButton("fb-halo4", "http://www.youtube.com/watch?v=vFJsQwivltQ");</script>
+                                <script type="text/javascript">createLikeButton("fb-halo4", "https://www.youtube.com/watch?v=vFJsQwivltQ");</script>
                             </div>
-                        </span><br style='clear:both'/>			
+                        </span><br style='clear:both'/>
 					    <div class='misc'>
 						    <b>Related Videos</b><br/><br/>
-						    <iframe width="300" height="182" src="http://www.youtube.com/embed/vAKmu2yn3Fk?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe> &nbsp; &nbsp; &nbsp; &nbsp;
-						    <iframe width="300" height="182" src="http://www.youtube.com/embed/nVTEQoXzMo8?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe>
-					    </div>					
+						    <iframe width="300" height="182" src="https://www.youtube.com/embed/vAKmu2yn3Fk?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe> &nbsp; &nbsp; &nbsp; &nbsp;
+						    <iframe width="300" height="182" src="https://www.youtube.com/embed/nVTEQoXzMo8?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe>
+					    </div>
 				    </div>
                     ]]>
                 </info>
@@ -353,7 +353,7 @@
             <video
 				player="remote"
 				artist="UBI Soft"
-				src="http://www.youtube.com/embed/se5kWgtB2Qg?rel=0&amp;hd=1&amp;autoplay=1"
+				src="https://www.youtube.com/embed/se5kWgtB2Qg?rel=0&amp;hd=1&amp;autoplay=1"
 				title="Assassin's Creed: Revelations Trailer"
 				length="2:06"
 				thumb="video/thumb/youtube.png"
@@ -363,7 +363,7 @@
                     <![CDATA[
 				    <div class='playit-info-video'>
 					    <span class='buy'>
-						    <iframe src="http://rcm.amazon.com/e/cm?lt1=_blank&bc1=transparent&IS2=1&npa=1&bg1=transparent&fc1=ffffff&lc1=ffffff&t=thegrid-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B002I08RA0" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+						    <iframe src="https://rcm.amazon.com/e/cm?lt1=_blank&bc1=transparent&IS2=1&npa=1&bg1=transparent&fc1=ffffff&lc1=ffffff&t=thegrid-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B002I08RA0" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 					    </span>
 					    <span class='info'>
                             <div>
@@ -372,14 +372,14 @@
 					        </div>
                             <div style='margin-top:10px;'>
                                 <div id="fb-ascreedrev"></div>
-                                <script type="text/javascript">createLikeButton("fb-ascreedrev", "http://www.youtube.com/watch?v=Zw7xXpY4_LI");</script>
+                                <script type="text/javascript">createLikeButton("fb-ascreedrev", "https://www.youtube.com/watch?v=Zw7xXpY4_LI");</script>
                             </div>
-                        </span><br style='clear:both'/>			
+                        </span><br style='clear:both'/>
 					    <div class='misc'>
 						    <b>Related Videos</b><br/><br/>
-						    <iframe width="300" height="182" src="http://www.youtube.com/embed/3SwRQGQMNN8?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe> &nbsp; &nbsp; &nbsp; &nbsp;
-						    <iframe width="300" height="182" src="http://www.youtube.com/embed/Zw7xXpY4_LI?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe>
-					    </div>					
+						    <iframe width="300" height="182" src="https://www.youtube.com/embed/3SwRQGQMNN8?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe> &nbsp; &nbsp; &nbsp; &nbsp;
+						    <iframe width="300" height="182" src="https://www.youtube.com/embed/Zw7xXpY4_LI?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe>
+					    </div>
 				    </div>
                     ]]>
                 </info>
@@ -387,7 +387,7 @@
             <video
 				player="remote"
 				artist="Activision"
-				src="http://www.youtube.com/embed/NLmsiaN5dZM?rel=0&amp;hd=1&amp;autoplay=1"
+				src="https://www.youtube.com/embed/NLmsiaN5dZM?rel=0&amp;hd=1&amp;autoplay=1"
 				title="Modern Warfare 3 Trailer"
 				length="2:35"
 				thumb="video/thumb/youtube.png"
@@ -397,7 +397,7 @@
                     <![CDATA[
 				    <div class='playit-info-video'>
 					    <span class='buy'>
-						    <iframe src="http://rcm.amazon.com/e/cm?lt1=_blank&bc1=transparent&IS2=1&npa=1&bg1=transparent&fc1=ffffff&lc1=ffffff&t=thegrid-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B00503E8S2" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+						    <iframe src="https://rcm.amazon.com/e/cm?lt1=_blank&bc1=transparent&IS2=1&npa=1&bg1=transparent&fc1=ffffff&lc1=ffffff&t=thegrid-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B00503E8S2" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 					    </span>
 					    <span class='info'>
                             <div>
@@ -406,14 +406,14 @@
 					        </div>
                             <div style='margin-top:10px;'>
                                 <div id="fb-mw3"></div>
-                                <script type="text/javascript">createLikeButton("fb-mw3", "http://www.youtube.com/watch?v=NLmsiaN5dZM");</script>
+                                <script type="text/javascript">createLikeButton("fb-mw3", "https://www.youtube.com/watch?v=NLmsiaN5dZM");</script>
                             </div>
-                        </span><br style='clear:both'/>			
+                        </span><br style='clear:both'/>
 					    <div class='misc'>
 						    <b>Related Videos</b><br/><br/>
-						    <iframe width="300" height="182" src="http://www.youtube.com/embed/jNjCv9OIF-M?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe> &nbsp; &nbsp; &nbsp; &nbsp;
-						    <iframe width="300" height="182" src="http://www.youtube.com/embed/T2SnVjGEQ6E?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe>
-					    </div>					
+						    <iframe width="300" height="182" src="https://www.youtube.com/embed/jNjCv9OIF-M?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe> &nbsp; &nbsp; &nbsp; &nbsp;
+						    <iframe width="300" height="182" src="https://www.youtube.com/embed/T2SnVjGEQ6E?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe>
+					    </div>
 				    </div>
                     ]]>
                 </info>
@@ -421,7 +421,7 @@
             <video
 				player="remote"
 				artist="WB Games"
-				src="http://www.youtube.com/embed/dVYTlPgKsAI?rel=0&amp;hd=1&amp;autoplay=1"
+				src="https://www.youtube.com/embed/dVYTlPgKsAI?rel=0&amp;hd=1&amp;autoplay=1"
 				title="Batman Arkham City Trailer"
 				length="2:17"
 				thumb="video/thumb/youtube.png"
@@ -431,7 +431,7 @@
                     <![CDATA[
 				    <div class='playit-info-video'>
 					    <span class='buy'>
-						    <iframe src="http://rcm.amazon.com/e/cm?lt1=_blank&bc1=transparent&IS2=1&npa=1&bg1=transparent&fc1=ffffff&lc1=ffffff&t=thegrid-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B002I0JAVK" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+						    <iframe src="https://rcm.amazon.com/e/cm?lt1=_blank&bc1=transparent&IS2=1&npa=1&bg1=transparent&fc1=ffffff&lc1=ffffff&t=thegrid-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B002I0JAVK" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 					    </span>
 					    <span class='info'>
                             <div>
@@ -440,14 +440,14 @@
 					        </div>
                             <div style='margin-top:10px;'>
                                 <div id="fb-mw3"></div>
-                                <script type="text/javascript">createLikeButton("fb-mw3", "http://www.youtube.com/watch?v=dVYTlPgKsAI");</script>
+                                <script type="text/javascript">createLikeButton("fb-mw3", "https://www.youtube.com/watch?v=dVYTlPgKsAI");</script>
                             </div>
-                        </span><br style='clear:both'/>			
+                        </span><br style='clear:both'/>
 					    <div class='misc'>
 						    <b>Related Videos</b><br/><br/>
-						    <iframe width="300" height="182" src="http://www.youtube.com/embed/HXQWUfeGFR0?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe> &nbsp; &nbsp; &nbsp; &nbsp;
-						    <iframe width="300" height="182" src="http://www.youtube.com/embed/18LSLIbFV80?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe>
-					    </div>					
+						    <iframe width="300" height="182" src="https://www.youtube.com/embed/HXQWUfeGFR0?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe> &nbsp; &nbsp; &nbsp; &nbsp;
+						    <iframe width="300" height="182" src="https://www.youtube.com/embed/18LSLIbFV80?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe>
+					    </div>
 				    </div>
                     ]]>
                 </info>
@@ -455,7 +455,7 @@
             <video
 				player="remote"
 				artist="Electronic Arts"
-				src="http://www.youtube.com/embed/vLB9TEy58ho?rel=0&amp;hd=1&amp;autoplay=1"
+				src="https://www.youtube.com/embed/vLB9TEy58ho?rel=0&amp;hd=1&amp;autoplay=1"
 				title="Battlefield 3 Trailer"
 				length="2:17"
 				thumb="video/thumb/youtube.png"
@@ -465,7 +465,7 @@
                     <![CDATA[
 				    <div class='playit-info-video'>
 					    <span class='buy'>
-						    <iframe src="http://rcm.amazon.com/e/cm?lt1=_blank&bc1=transparent&IS2=1&npa=1&bg1=transparent&fc1=ffffff&lc1=ffffff&t=thegrid-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B003O6G5TW" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+						    <iframe src="https://rcm.amazon.com/e/cm?lt1=_blank&bc1=transparent&IS2=1&npa=1&bg1=transparent&fc1=ffffff&lc1=ffffff&t=thegrid-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B003O6G5TW" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 					    </span>
 					    <span class='info'>
                             <div>
@@ -474,14 +474,14 @@
 					        </div>
                             <div style='margin-top:10px;'>
                                 <div id="fb-mw3"></div>
-                                <script type="text/javascript">createLikeButton("fb-mw3", "http://www.youtube.com/watch?v=vLB9TEy58ho");</script>
+                                <script type="text/javascript">createLikeButton("fb-mw3", "https://www.youtube.com/watch?v=vLB9TEy58ho");</script>
                             </div>
-                        </span><br style='clear:both'/>			
+                        </span><br style='clear:both'/>
 					    <div class='misc'>
 						    <b>Related Videos</b><br/><br/>
-						    <iframe width="300" height="182" src="http://www.youtube.com/embed/rMbI5TX4C9s?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe> &nbsp; &nbsp; &nbsp; &nbsp;
-						    <iframe width="300" height="182" src="http://www.youtube.com/embed/oNgqYFdEkIA?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe>
-					    </div>					
+						    <iframe width="300" height="182" src="https://www.youtube.com/embed/rMbI5TX4C9s?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe> &nbsp; &nbsp; &nbsp; &nbsp;
+						    <iframe width="300" height="182" src="https://www.youtube.com/embed/oNgqYFdEkIA?rel=0&amp;hd=1&amp;autohide=1&amp;wmode=transparent" wmode="Opaque" frameborder="0" allowfullscreen></iframe>
+					    </div>
 				    </div>
                     ]]>
                 </info>
@@ -490,21 +490,20 @@
 		<category
 			type="Video"
 			name="Walkthroughs" >
-			
-		</category>		
+
+		</category>
 		<category
 			type="link"
 			name="Cheet Sheets">
 
 		</category>
 
-	
+
 	</section>
-	
+
 	<!--  ===============================================================
-	PC SECTION 
+	PC SECTION
 	================================================================== -->
 
 	<section name="PC Gamer"></section>
 </playit>
-	

@@ -3,31 +3,31 @@
 <head>
 	<title>PlayIt - Media Player</title>
 	<meta name="description" content="Create powerful media displays with PlayIt. PlayIt is your ultimate web based media player." />
-	
-	<link rel="stylesheet" href="../style.css" type="text/css" /> 
-	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" id="playit-jquery-ui-css" type="text/css"/>
-	<link rel="stylesheet" href="../source/jquery.playit.css" type="text/css" /> 
-	<link rel="stylesheet" href="../lib/mediaelementjs/mediaelementplayer.css" type="text/css" /> 
-	<link rel="stylesheet" href="../lib/mediaelementjs/mejs-skins.css" type="text/css" /> 
+
+	<link rel="stylesheet" href="../style.css" type="text/css" />
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" id="playit-jquery-ui-css" type="text/css"/>
+	<link rel="stylesheet" href="../source/jquery.playit.css" type="text/css" />
+	<link rel="stylesheet" href="../lib/mediaelementjs/mediaelementplayer.css" type="text/css" />
+	<link rel="stylesheet" href="../lib/mediaelementjs/mejs-skins.css" type="text/css" />
 	<style type="text/css">
-		div.playit-files-content table tbody tr:nth-child(even) td    
-		{ 
+		div.playit-files-content table tbody tr:nth-child(even) td
+		{
 			border-top:1px solid #dfdfdf;
 			border-bottom:1px solid #dfdfdf;
-		} 
+		}
 		body {
 			user-select:none;
 			-webkit-user-select:none;
 		}
 	</style>
-	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="../source/jquery.playit.js" id="playit-source"></script>
 	<script type="text/javascript" src="../lib/mediaelementjs/mediaelement-and-player.min.js"></script>
-	<script type="text/javascript" src="http://jqueryui.com/themeroller/themeswitchertool/"></script>
+	<script type="text/javascript" src="https://jqueryui.com/themeroller/themeswitchertool/"></script>
 	<script type="text/javascript" src="../config.js"></script>
-	
+
 </head>
 <body>
 
@@ -76,7 +76,7 @@
 		REQUIRED FOR PLAYIT. -->
 
 		<div id="player" style="width:90%; height:470px; margin:auto"></div><br /><br />
-		
+
 		<script type="text/javascript">
 		    var player = null;
 
@@ -92,7 +92,7 @@
 				    }
 				});
 		    });
-			
+
 			function applyTheme(theme)
             {
                 if (player)
@@ -100,11 +100,11 @@
                     player.each(function ()  {this.playit.applyTheme(theme);  return; });
                 }
             }
-			
+
 		</script>
 		<!-- ============================================== -->
-		
+
 	</div>
-	
+
 </body>
 </html>

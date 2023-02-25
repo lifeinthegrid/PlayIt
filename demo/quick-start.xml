@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<playit  xmlns="http://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
+<playit  xmlns="https://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
 	accordion-animate="true"
 	accordion-autoselect="true"
 	accordion-minwidth="200"
 	accordion-maxwidth="400"
-	
+
 	toolbar-title="PlayIt - Quick Start"
 	toolbar-showsearch="true"
 	toolbar-searchtext="Search"
 	toolbar-searchwidth="auto"
 
 	view-default="grid"
-	
+
 	audio-autoplay="false"
 	audio-info-enable="true"
 	audio-infobox-modal="true"
 	audio-infobox-height="350"
 	audio-infobox-width="600"
 	audio-infobox-resizable="true"
-	
+
 	image-autoplay="true"
 	image-dialog-height="500"
 	image-dialog-width="800"
 	image-info-enable="true"
 	image-slides-interval="3000"
-	
+
 	video-autoplay="false"
 	video-dialog-height="400"
 	video-dialog-width="600"
@@ -57,23 +57,23 @@
 				</fields>
 			</list>
 			<tile item-size="80"></tile>
-			<audio 
+			<audio
                 title="Single Demo"
                 src="audio/april-elsewhere.mp3"
-                artist="Orchestral movement of 1932" 
-                album="Single 1" 
-                info-enable="true" 
-                poster="" 
+                artist="Orchestral movement of 1932"
+                album="Single 1"
+                info-enable="true"
+                poster=""
                 thumb=""
                 track="">
 				<info>
-                    <![CDATA[	 
-                    <div class='playit-info-audio'><span>	Your Custom Info </span></div> 
+                    <![CDATA[
+                    <div class='playit-info-audio'><span>	Your Custom Info </span></div>
                     <!--  -->
                     ]]>
                </info>
 			</audio>
-            
+
 			<audio title="Lost on Corners" artist="Orchestral movement of 1932" album="Album 1" src="audio/lostoncorners.mp3" track="1" info-enable="false" poster="image/violin-256.png" />
 			<audio title="Share Numazu"    artist="Orchestral movement of 1932" album="Album 1"  src="audio/share-numazu.mp3" track="2" info-enable="false" poster="image/violin-256.png" />
 		</category>
@@ -83,7 +83,7 @@
 		================================================================== -->
 		<category
 			type="image"
-			name="Images Category" 
+			name="Images Category"
             isdefault="true">
 			<grid>
 				<fields  sort-column="title" sort-direction="asc">
@@ -100,9 +100,9 @@
 				</fields>
 			</list>
 
-			<img  
-                title="Pelican"  
-                src="image/pics/California02.jpg" 
+			<img
+                title="Pelican"
+                src="image/pics/California02.jpg"
                 poster=""
                 thumb="image/pics/California02_thumb.jpg"
                 info-enable="true"
@@ -136,9 +136,9 @@
 			</list>
 
 
-			<link 
-                title="Markup Validation Service" 
-                src="http://validator.w3.org/#validate_by_input" 
+			<link
+                title="Markup Validation Service"
+                src="https://validator.w3.org/#validate_by_input"
                 poster=""
                 thumb=""
                 features="menubar=0,resizable=1,width=800,height=600"
@@ -153,7 +153,7 @@
 		================================================================== -->
 		<category
 			type="video"
-			name="Video Category" 
+			name="Video Category"
             isdefault="true">
 			<grid>
 				<fields>
@@ -168,14 +168,14 @@
                     <field match="size" display="My Size: " />
 				</fields>
 			</list>
-            
-			<video 
-                player="local" 
-                title="PlayIt Trailer" 
+
+			<video
+                player="local"
+                title="PlayIt Trailer"
                 src="video/playit-intro.mp4"
                 poster=""
                 thumb=""
-                info-enable="true" 
+                info-enable="true"
                 length="0:12" size="10MB" >
 
         <source src="video/playit-intro.webm" type="video/mp4" />
@@ -185,11 +185,11 @@
         <source src="video/playit-intro.webm" type="video/flv" />
 				<info><![CDATA[ <div class='playit-info-video'><span>English Information Here</span></div> ]]></info>
 			</video>
-			<video player="remote" title="Next Generation Website" src="http://player.vimeo.com/video/26232472?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=false" length="1:22" />
+			<video player="remote" title="Next Generation Website" src="https://player.vimeo.com/video/26232472?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=false" length="1:22" />
 
 		</category>
 
 	</section>
 
-    
+
 </playit>

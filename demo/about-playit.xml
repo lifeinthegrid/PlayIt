@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<playit  xmlns="http://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
-	
+<playit  xmlns="https://schemas.lifeinthegrid.com/playit/2011/11/jquery.playit.xsd"
+
 	autofill="true"
 	accordion-animate="true"
 	accordion-autoselect="true"
@@ -11,20 +11,20 @@
 	toolbar-searchwidth="auto"
 
 	view-default="list"
-	
+
 	audio-autoplay="false"
 	audio-info-enable="true"
 	audio-infobox-modal="true"
 	audio-infobox-height="350"
 	audio-infobox-width="600"
 	audio-infobox-resizable="true"
-	
+
 	image-autoplay="false"
 	image-dialog-height="500"
 	image-dialog-width="800"
 	image-info-enable="true"
 	image-slides-interval="5500"
-	
+
 	video-autoplay="false"
 	video-dialog-height="500"
 	video-dialog-width="800"
@@ -84,16 +84,16 @@
 					 <div class='playit-info-audio'>
 						 <span>
 							The audio features can be customized at the  &lt;playit&gt; tag level and the &lt;audio&gt; tag level. <br/><br/>
-							
+
 							For a full rundown of all settings see the online help section.  The audio source can be an internal or external source.  The audio player
 							will only playback audio that your browser supports.  It is recommended to stick with common formats like mp3 and mp4. <br/><br/>
-							
+
 							This information dialog itself is customizable and so are all the columns and meta data that you see within the audio layout.  By viewing the
 							configuration file you can see very quickly how PlayIt is constructed. <br/><br/>
-						
+
 						</span>
 					</div>
-					
+
 					]]>
                 </info>
             </audio>
@@ -113,11 +113,11 @@
 					 <div class='playit-info-audio'>
 						 <span>
 						  Even with data in the audio &lt;info&gt; tag you can disable the button in the audio player if needed.<br/><br/>
-							
+
 							Disable the info button by:<br/>
 							<ul>
 								<li>Setting the attribute audio@info-enable="false" on the audio tag</li>
-								<li>Leave the &lt;info&gt;&lt;/info&gt; tag blank </li> 
+								<li>Leave the &lt;info&gt;&lt;/info&gt; tag blank </li>
 							</ul>
 						</span>
 					</div>
@@ -135,16 +135,16 @@
 					 <div class='playit-info-audio'>
 						<span>
 						Every audio tag is equipped with an attribute named "thumb".  The thumb attribute takes an image source and it will display in the following locations:<br/>
-						
+
 						<ul>
 							<li>Audio players active panel (displays at 32x32)</li>
-							<li>Main image in the list view (displays at 48x48)</li> 
+							<li>Main image in the list view (displays at 48x48)</li>
 						</ul>
-						
+
 						The recommended size for the thumb is 48x48.  It will server up any image size passed to it.  For the best performance and visual 48x48 is highly
 						recommended.  If a thumb attribute is not give then the audio tag will attempt to look for a poster attribute image source.  If no poster is found then it will
 						use the internal PlayIt default image.<br/><br/>
-						
+
 						</span>
 					</div>
 					]]>
@@ -161,16 +161,16 @@
 					 <div class='playit-info-audio'>
 						<span>
 						Every audio tag includes an attribute named "poster".  The poster attribute takes an image source and will display in the following locations:<br/>
-						
+
 						<ul>
 							<li>Tile view (displays between 64x64 to 256x256)</li>
 						</ul>
-						
+
 						The recommended size for the poster is 256x256.  It will server up any image size passed to it.  For the best performance and visual 256x256 is highly
 						recommended.  If no poster is found then it will use the internal PlayIt default image.<br/><br/>
-						
+
 						<i>Note the difference between Demo04 and Demo05 on the tile view.  The tile view only uses the poster attribute.</i><br/><br/>
-						
+
 						</span>
 					</div>
 					]]>
@@ -191,7 +191,7 @@
 						 <span>
 						 When the <b>'artist'</b> and <b>'album'</b> attributes are identical across audio nodes then a unique key is formed for those audio tags to form an
 						 album group.  This grouping is best seen in the tile view.<br/><br/>
-						 
+
 						 By default the album group plays the audio file in the order they were placed in the configuration file.  To be sure the audio elements plays
 						 in the exact order you want, place a <b>'track'</b> attribute on every audio tag in the album group to order the album accordingly.
 						 </span>
@@ -327,14 +327,14 @@
 					 <div class='playit-info-image'>
 						 <span>
 							The image features can be customized at the &lt;playit&gt; tag level and the &lt;img&gt; tag level. <br/><br/>
-							
+
 							For a full rundown of all settings see the online help section.  The image source can be an internal or external source.  The image player
 							will only playback images that your browser supports.  It is recommended to stick with common formats like jpeg, png, gif. <br/><br/>
-							
+
 							For performance your images should be sized and compressed to an optional size for viewing. <br/><br/>
 						</span>
 					</div>
-					
+
 					]]>
                 </info>
             </img>
@@ -361,11 +361,11 @@
 					 <div class='playit-info-image'>
 						<span>
 						  Even with data in the &lt;info&gt; tag you can disable the information button in the image player if needed.<br/><br/>
-							
+
 							Disable the info button by:<br/>
 							<ul>
 								<li>Setting the attribute img@info-enable="false" on the img tag</li>
-								<li>Leave the <b>&lt;info&gt;&lt;/info&gt;</b> tag blank </li> 
+								<li>Leave the <b>&lt;info&gt;&lt;/info&gt;</b> tag blank </li>
 							</ul>
 						</span>
 					</div>
@@ -405,8 +405,8 @@
             <img title="Wart Hog" desc="SanDiego Zoo" src="image/pics/zoo_7.jpg" poster="image/pics/zoo_7_poster.jpg" thumb="image/pics/zoo_7_thumb.jpg" date="02/03/2009" />
             <img title="Duck" desc="SanDiego Zoo" src="image/pics/zoo_8.jpg" poster="image/pics/zoo_8_poster.jpg" thumb="image/pics/zoo_8_thumb.jpg" date="02/03/2009" />
             <img title="Elephant" desc="SanDiego Zoo" src="image/pics/zoo_9.jpg" poster="image/pics/zoo_9_poster.jpg" thumb="image/pics/zoo_9_thumb.jpg" date="02/03/2009" />
-			
-			
+
+
         </category>
 
         <category type="link" name="&#xA0;&#xA0; Direct Linking" link-src="image/pics/California07.jpg" link-scroll="no"></category>
@@ -437,7 +437,7 @@
                 </fields>
             </list>
             <link
-				src="http://validator.w3.org/#validate_by_input"
+				src="https://validator.w3.org/#validate_by_input"
 				title="Markup Validation Service"
 				desc="Validate your XML Configuration File"
 				features="menubar=0,resizable=1,width=700,height=500"
@@ -445,7 +445,7 @@
 				type="Demo 01 - New Window 1">
             </link>
             <link
-				src="http://jsonviewer.stack.hu/"
+				src="https://jsonviewer.stack.hu/"
 				title="JSON Viewer"
 				desc="Pretty Print your JSON Strings"
 				features="menubar=0,resizable=1,width=700,height=500"
@@ -453,7 +453,7 @@
 				type="Demo 02 - Same Window 1">
             </link>
             <link
-				src="http://code.google.com/apis/youtube/player_parameters.html"
+				src="https://code.google.com/apis/youtube/player_parameters.html"
 				title="YouTube Video Options"
 				desc="YouTube Parameter Setup"
 				features="resizable=1,width=1020,height=760"
@@ -471,7 +471,7 @@
 				type="Demo 04 - HTML 5 Video">
             </link>
             <link
-				src="http://www.lifeinthegrid.com"
+				src="https://www.lifeinthegrid.com"
 				title="LifeInTheGrid.com"
 				desc="Tools Tips &amp; Technology for Online Entrepreneurs"
 				thumb="image/grid-64.jpg"
@@ -480,7 +480,7 @@
 				type="Demo 05 - Same Tab">
             </link>
             <link
-				src="http://lifeinthegrid.com/labs/playit/"
+				src="https://lifeinthegrid.com/labs/playit/"
 				title="PlayIt Product Page"
 				desc="Landing Page for PlayIt"
 				thumb="image/grid-64.jpg"
@@ -490,7 +490,7 @@
             </link>
         </category>
 
-        <category type="link" name="&#xA0;&#xA0; Direct Linking" 	link-src="http://validator.w3.org/#validate_by_input" ></category>
+        <category type="link" name="&#xA0;&#xA0; Direct Linking" 	link-src="https://validator.w3.org/#validate_by_input" ></category>
 
     </section>
 
@@ -521,7 +521,7 @@
             <video
 				player="remote"
 				title="Demo 01 - Video Overview **"
-				src="http://www.youtube.com/embed/H2jlBCPbZUY?rel=0&amp;hd=1" 
+				src="https://www.youtube.com/embed/H2jlBCPbZUY?rel=0&amp;hd=1"
 				name="PlayIt Trailer"
 				length="0:12"
 				info-enable="true">
@@ -530,13 +530,13 @@
 						 <div class='playit-info-video'>
 							 <span>
 								The video features can be customized at the  &lt;playit&gt; tag level and the &lt;video&gt; tag level. <br/><br/>
-								
+
 								For a full rundown of all settings see the online help section.  The video source can be an internal or external source.  When using the internal (player='local')
 								video player the player will only playback video that your browser supports.  It is recommended to stick with common formats like mp4 and mov. <br/><br/>
-								
+
 								This video information area is customizable with whatever data you want to provide.  By viewing the
 								configuration file you can see very quickly how PlayIt is constructed. <br/><br/>
-							
+
 							</span>
 						</div>
 						]]>
@@ -545,7 +545,7 @@
             <video
 				player="remote"
 				title="Demo 02 - Enable info button **"
-				src="http://www.youtube.com/embed/H2jlBCPbZUY?rel=0&amp;hd=1" 
+				src="https://www.youtube.com/embed/H2jlBCPbZUY?rel=0&amp;hd=1"
 				info-enable="true"
 				name="PlayIt Trailer"
 				length="0:12">
@@ -554,11 +554,11 @@
 						 <div class='playit-info-video'>
 							 <span>
 							  Even with data in the video &lt;info&gt; tag you can disable the button in the video information button.<br/><br/>
-								
+
 								Disable the info button by:<br/>
 								<ul>
 									<li>Setting the attribute video@info-enable="false" on the video tag</li>
-									<li>Leave the &lt;info&gt;&lt;/info&gt; tag blank </li> 
+									<li>Leave the &lt;info&gt;&lt;/info&gt; tag blank </li>
 								</ul>
 							</span>
 						</div>
@@ -568,15 +568,15 @@
             <video
 				player="remote"
 				title="Demo 03 - Disable info button"
-				src="http://www.youtube.com/embed/H2jlBCPbZUY?rel=0&amp;hd=1" 
+				src="https://www.youtube.com/embed/H2jlBCPbZUY?rel=0&amp;hd=1"
 				info-enable="false"
 				name="PlayIt Trailer"
 				length="0:12">
 					<info><![CDATA[ Even with info data we can disable the information button ]]></info>
             </video>
-            <video player="remote" src="http://www.youtube.com/embed/2y_GZB8dqu8?rel=0&amp;hd=1" title="Demo 04 - Youtube"	name="Page Speed Analysis: Series 1" length="12:50" />
-            <video player="remote" src="http://www.youtube.com/embed/K4aSmzMsDtQ?rel=0&amp;hd=1&amp;autoplay=1" title="Demo 05 - Youtube AutoPlay" name="Page Speed Analysis: Series 2" length="14:29" />
-            <video player="remote" src="http://player.vimeo.com/video/26232472?title=0&amp;byline=0&amp;portrait=0" title="Demo 06 - Vimeo" name="Next Generation Website" length="1:22" >
+            <video player="remote" src="https://www.youtube.com/embed/2y_GZB8dqu8?rel=0&amp;hd=1" title="Demo 04 - Youtube"	name="Page Speed Analysis: Series 1" length="12:50" />
+            <video player="remote" src="https://www.youtube.com/embed/K4aSmzMsDtQ?rel=0&amp;hd=1&amp;autoplay=1" title="Demo 05 - Youtube AutoPlay" name="Page Speed Analysis: Series 2" length="14:29" />
+            <video player="remote" src="https://player.vimeo.com/video/26232472?title=0&amp;byline=0&amp;portrait=0" title="Demo 06 - Vimeo" name="Next Generation Website" length="1:22" >
                 <info>
                     <![CDATA[
 					 <div class='playit-info-video'>
@@ -587,16 +587,16 @@
 					]]>
                 </info>
             </video>
-            <video player="remote" src="http://player.vimeo.com/video/26232472?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" title="Demo 07 - Vimeo AutoPlay" name="Next Generation Website" length="1:22" />
+            <video player="remote" src="https://player.vimeo.com/video/26232472?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" title="Demo 07 - Vimeo AutoPlay" name="Next Generation Website" length="1:22" />
 			<video
 				player="local"
 				title="Demo 08 - External Source Video Tag Fallback"
 				info-enable="false"
 				name="Echo Conference"
-				length="0:41">			
-				<source src="http://www.mediaelementjs.com/media/echo-hereweare.mp4" type="video/mp4" />
-                <source src="http://www.mediaelementjs.com/media/echo-hereweare.webm" type="video/webm" />
-                <source src="http://www.mediaelementjs.com/media/echo-hereweare.ogv" type="video/ogg" />
+				length="0:41">
+				<source src="https://www.mediaelementjs.com/media/echo-hereweare.mp4" type="video/mp4" />
+                <source src="https://www.mediaelementjs.com/media/echo-hereweare.webm" type="video/webm" />
+                <source src="https://www.mediaelementjs.com/media/echo-hereweare.ogv" type="video/ogg" />
                 <info><![CDATA[ Even with info data we can disable the information button ]]></info>
             </video>
 			<!-- Flash Video -->

@@ -1,23 +1,23 @@
-#[PlayIt 2.0](http://lifeinthegrid.com/playit)
+#[PlayIt 2.0](https://lifeinthegrid.com/playit)
 ##Your Ultimate Web Player
 
-PlayIt is your 100% free ultimate web media player! Use PlayIt to organize all your media files into one central location. 
-To get started with PlayIt check out some of the demos. Please continue to check back frequently for more ideas and examples on how to implement PlayIt in your sites. 
+PlayIt is your 100% free ultimate web media player! Use PlayIt to organize all your media files into one central location.
+To get started with PlayIt check out some of the demos. Please continue to check back frequently for more ideas and examples on how to implement PlayIt in your sites.
 
-**Start Here:** [http://lifeinthegrid.com/playit](http://lifeinthegrid.com/playit)  
-**Demos Here:** [http://lifeinthegrid.github.io/demos/playit](http://lifeinthegrid.github.io/demos/playit)
+**Start Here:** [https://lifeinthegrid.com/playit](https://lifeinthegrid.com/playit)
+**Demos Here:** [https://lifeinthegrid.github.io/demos/playit](https://lifeinthegrid.github.io/demos/playit)
 
 ##License
 - PlayIt is licensed under the GPLv2 or later:
-  - http://www.gnu.org/licenses/gpl-2.0.html
+  - https://www.gnu.org/licenses/gpl-2.0.html
 - Attribution is required for PlayIt, and very much appreciated:
-  - Please use: `PlayIt - http://lifeinthegrid.com/playit`
+  - Please use: `PlayIt - https://lifeinthegrid.com/playit`
 
 ##Usage
 
-PlayIt will only work from an  "http(s)://" path.  Do **not** try "file:///"  
-To use plugin extract the zip file to your web server then browse to index.html  
-The demos make references to Google's CDN network which requires internet access  
+PlayIt will only work from an  "http(s)://" path.  Do **not** try "file:///"
+To use plugin extract the zip file to your web server then browse to index.html
+The demos make references to Google's CDN network which requires internet access
 
 1. To get started copy an existing demo and then modify. Fastest starts find quick-start.html.
 2. Move the source code to the location on your web server.
@@ -38,7 +38,7 @@ And constructed with the following guidelines:
 * Bug fixes and misc changes and small features bumps the patch
 
 ##Author
-- Twitter: http://twitter.com/lifeinthegrid
+- Twitter: https://twitter.com/lifeinthegrid
 - GitHub: https://github.com/lifeinthegrid
 - By: Ryan Heideman, Cory Lamle
 

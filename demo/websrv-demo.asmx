@@ -12,7 +12,7 @@ using System.Runtime.Serialization;
 using System.Web.UI.WebControls;
 using System.IO;
 
-[WebService(Namespace = "http://tempuri.org/")]
+[WebService(Namespace = "https://tempuri.org/")]
 [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
 [ScriptService]
 public class WebServiceExample  : WebService
@@ -21,7 +21,7 @@ public class WebServiceExample  : WebService
     public Collection<Section> GetSections()
     {
         Collection<Section> sections = new Collection<Section>();
-        
+
         Section section = new Section();
         section.id = 1;
         section.name = "My Media";
@@ -29,13 +29,13 @@ public class WebServiceExample  : WebService
 
         return sections;
     }
-	
+
     [WebMethod]
     public Collection<Category> GetCategories(object sectionId)
     {
 		//Progress Bar Testing
 		//System.Threading.Thread.Sleep(5000);
-		
+
         Collection<Category> categories = new Collection<Category>();
 
 		//MUSIC
@@ -51,7 +51,7 @@ public class WebServiceExample  : WebService
         category.name = "Pictures";
         category.type = 4;
         categories.Add(category);
-		
+
 		//VIDEOS
 		category = new Category();
 		category.id = "Videos";
@@ -61,7 +61,7 @@ public class WebServiceExample  : WebService
 
         return categories;
     }
-	
+
     [WebMethod]
     public Collection<MediaFile> GetMediaFiles(string categoryId)
     {
@@ -114,7 +114,7 @@ public class WebServiceExample  : WebService
                 }
 
                 break;
-				
+
 			case "Videos":
 
 				mediaFileFolder = Server.MapPath("~/demo/video/");
@@ -134,7 +134,7 @@ public class WebServiceExample  : WebService
 					mediaFiles.Add(videoFile);
 				}
 
-				break;				
+				break;
         }
 
         return mediaFiles;
