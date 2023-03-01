@@ -417,7 +417,7 @@
 				info-enable="true"
 				provider="YouTube">
 			</video>
-			<video
+			<!-- <video
 				player="remote"
 				artist="Warner Brothers"
 				src="https://www.youtube.com/embed/KrIiYSdEe4E?autoplay=1"
@@ -446,7 +446,7 @@
 				</div>
                 ]]>
 				</info>
-			</video>
+			</video> -->
 			<video
 				player="remote"
 				artist="Universal"

@@ -576,7 +576,7 @@
             </video>
             <video player="remote" src="https://www.youtube.com/embed/2y_GZB8dqu8?rel=0&amp;hd=1" title="Demo 04 - Youtube"	name="Page Speed Analysis: Series 1" length="12:50" />
             <video player="remote" src="https://www.youtube.com/embed/K4aSmzMsDtQ?rel=0&amp;hd=1&amp;autoplay=1" title="Demo 05 - Youtube AutoPlay" name="Page Speed Analysis: Series 2" length="14:29" />
-            <video player="remote" src="https://player.vimeo.com/video/26232472?title=0&amp;byline=0&amp;portrait=0" title="Demo 06 - Vimeo" name="Next Generation Website" length="1:22" >
+            <!--video player="remote" src="https://player.vimeo.com/video/26232472?title=0&amp;byline=0&amp;portrait=0" title="Demo 06 - Vimeo" name="Next Generation Website" length="1:22" >
                 <info>
                     <![CDATA[
 					 <div class='playit-info-video'>
@@ -598,7 +598,7 @@
                 <source src="https://www.mediaelementjs.com/media/echo-hereweare.webm" type="video/webm" />
                 <source src="https://www.mediaelementjs.com/media/echo-hereweare.ogv" type="video/ogg" />
                 <info><![CDATA[ Even with info data we can disable the information button ]]></info>
-            </video>
+            </video-->
 			<!-- Flash Video -->
 			<!-- video
 				player="local"
