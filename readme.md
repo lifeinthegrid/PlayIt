@@ -4,8 +4,7 @@
 PlayIt is your 100% free ultimate web media player! Use PlayIt to organize all your media files into one central location.
 To get started with PlayIt check out some of the demos. Please continue to check back frequently for more ideas and examples on how to implement PlayIt in your sites.
 
-**Start Here:** [https://lifeinthegrid.com/playit](https://lifeinthegrid.com/playit)
-**Demos Here:** [https://lifeinthegrid.github.io/demos/playit](https://lifeinthegrid.github.io/demos/playit)
+**Demos Here:** [https://lifeinthegrid.com/playit](https://lifeinthegrid.com/playit/index.html)
 
 ##License
 - PlayIt is licensed under the GPLv2 or later:
