@@ -24,22 +24,21 @@
 	<script type="text/javascript" src="../config.js"></script>
 
 </head>
-<body>
+<body class="demo">
 
 	<!-- ==============================================
 	TOP NAVIGATION -->
 	<table class="top-nav" border="0">
 		<tr>
-			<td class="column-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 			<td class="column-1">
-				<h2>PlayIt - Globalization</h2>
+				<h2><img src="../source/images/play-32.png" alt="play-it">PlayIt - Globalization</h2>
 				<div>Localize your player in any language</div>
 			</td>
 			<td class="column-2">
 				<table align="center">
 					<tr>
 						<td>
-							ThemeRoller Ready!<br/>
+							ThemeRoller:<br/>
 							<select id="theme" onchange="javascript:applyTheme(this.options[this.selectedIndex].text);">
 								<option>cupertino</option>
 								<option>black-tie</option>
@@ -59,7 +58,7 @@
 							</select>
 						</td>
 						<td>
-							Language Demo<br/>
+							Language:<br/>
 							<select id="language" onchange="javascript:switchLang();">
 								<option value="ZH">Chinese</option>
 								<option value="EN" selected="selected">English</option>
@@ -71,9 +70,8 @@
 				</table>
 			</td>
 			<td class="column-3">
-				<a href="../index.html">Start</a> |
-				<a href="index.html">Demos</a> |
-				<a href="localize-en.xml">XML</a><br/>
+				<a href="../index.html">Demos</a> |
+				<a href="localize-en.xml">Data</a><br/>
 				<div id="playit-version-mode"></div>
 			</td>
 		</tr>
@@ -141,7 +139,6 @@
 				}
             });
 		</script>
-		<!-- ============================================== -->
 
 	</div>
 

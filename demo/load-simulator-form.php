@@ -55,7 +55,7 @@
 				<span>Testing PlayIt with large data sets</span>
 			</td>
 			<td class="column-2">
-				ThemeRoller Ready!<br/>
+				ThemeRoller:<br/>
 				<select id="theme" onchange="javascript:applyTheme(this.options[this.selectedIndex].text);">
 					<option>cupertino</option>
 					<option>black-tie</option>

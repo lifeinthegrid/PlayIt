@@ -4,12 +4,20 @@ PLAYIT: Used for styling the demos it is not requried for PlayIt */
 @import url(https://fonts.googleapis.com/css?family=Iceland);
 
 /*GLOBAL TAGS */
-body{height: 100%; margin: 0px auto; padding:0px; font-family: Tahoma, Geneva, Verdana;}
-h2 	{margin: 0px 0px 0px 3px; font-size:1.3em; font-style:italic; }
+body {font-family: 'Trebuchet MS', verdana, arial, sans-serif; max-width:800px; margin: auto; padding:20px 20px 0 20px  }
+body.demo { height: 100%; max-width:100%; margin:0; padding:0; }
 *:focus { outline: 0 none; }
 a {color:#000;}
-a:hover {color:#000;}
-a, a:link, a:visited, a:hover, a:focus, a:active {outline:0 none; border-style:none; noFocusLine: expression(this.onFocus=this.blur());}
+a:hover {color:#444;}
+a, a:link, a:visited, a:hover, a:focus, a:active {outline:0 none; border-style:none;}
+div.title {
+	padding:5px 10px 5px 10px;
+	margin:20px 0px 10px 0px;
+	border:1px solid silver;
+	background-color:#fff;
+	border-radius:5px;
+	box-shadow:2px 6px 8px #d4d3d3;
+}
 
 
 div.content-index-screen {
@@ -32,18 +40,18 @@ span.playit-compression {font-size:16px}
 table.top-nav {
 	width:100%;
 	padding:2px 8px 2px 8px;
-	margin:0px 0px 10px 0px;
+	margin:-10px 0 10px 0px;
 	border-top:0px solid silver;
 	border-bottom:1px solid silver;
 	background-color:#efefef;
 	line-height:22px;
 }
-table.top-nav td { padding:2px; }
-table.top-nav td.column-0 {width: 120px !important; background: url('source/images/play-32.png') no-repeat;}
-table.top-nav td.column-1 {white-space:nowrap; }
-table.top-nav td.column-1 div {margin:5px 0px 0px 20px;}
-table.top-nav td.column-1 h2 {font-family: 'Iceland', Tahoma; font-size:35px; font-weight:bold;}
-table.top-nav td.column-2 {text-align:center; width:100%; font-size:16px;}
+table.top-nav td {padding:2px 10px 2px 10px;  width:33%  }
+table.top-nav td.column-1 {white-space:nowrap;}
+table.top-nav td.column-1 div {margin:-25px 0 0 40px; font-style: italic;}
+table.top-nav td.column-1 h2 {font-family: 'Iceland', Tahoma; font-size:35px; font-weight:bold; }
+table.top-nav td.column-1 h2 img { vertical-align:text-bottom}
+table.top-nav td.column-2 {text-align:center; font-size:16px;}
 table.top-nav td.column-2 select {font-size:16px; border-radius:5px; padding:2px; border:1px solid silver; width:175px; }
 table.top-nav td.column-3 {white-space:nowrap; font-size:16px; text-align:right;}
 
@@ -62,17 +70,8 @@ div.link-button {
 	padding:8px;
 	border-radius:5px;
 	font-size:24px;
-
 	background: rgb(255,255,255); /* Old browsers */
-	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
 	background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
 }
 
 div.link-button a {text-decoration:none;}
@@ -89,8 +88,6 @@ div.figure-box  {
 	border-radius:5px;
 	margin-bottom:8px;
 	box-shadow: 3px 3px 4px #999;
-	-moz-box-shadow: 3px 3px 4px #999;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#999999')";
 }
 div.figure-text {margin-top:15px; text-align:center;color:#000; font-style:italic;font-size:12px;line-height:14px;}
 div.sub-title  {padding:5px 0px 0px 20px;margin-bottom:30px;}
@@ -99,19 +96,25 @@ div.demo-links table {border:1px solid silver; border-radius:5px;}
 div.demo-links a {text-decoration: underline}
 div.demo-links  table td {padding: 6px}
 
+/* Custom page header */
+.header {padding: 0 0 10px 0;}
+.header h3 {padding-bottom: 19px; margin-top: 0; margin-bottom: 0; line-height: 40px;}
+.header img  { height:25px; margin-top:-5px}
+.header a.logo-info {color:#000 !important; font-weight:bold; text-decoration: none;}
+.header a.git {text-decoration: none; color:#999; font-weight: normal;}
+.header a.git:hover {color:#777}
 
-.jumbotron, .gray-mix{
-	border-radius: 5px; text-align: center;	padding:10px;
-	color:#000; text-shadow: #dfdfdf 0.1em 0.1em 0.2em; font-family: 'Ropa Sans', 'sans-serif';
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+.jumbotron {
+	text-align: center;
+	padding:10px 0 1px 0;
+	color:#fff; text-shadow: #222 0.1em 0.1em 0.2em; font-family: 'Ropa Sans', 'sans-serif';
+    background: linear-gradient(-45deg, #8a9fce, #411fb2, #5e136e);
+    background-size: 400% 400%;
+    animation: background-gradient-animator 25s ease infinite;
 }
 
-/* Custom page header */
-.header h3 {padding-bottom: 19px; margin-top: 0; margin-bottom: 0; line-height: 40px;}
-div.content {padding:10px 50px; line-height:24px; width:800px; margin:auto}
+@keyframes background-gradient-animator {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}

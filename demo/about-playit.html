@@ -19,36 +19,30 @@
 
 	<script type="text/javascript" src="../config.js"></script>
 	<style>
-		/*Set the accordian header smaller */
+		/*Set the accordion header smaller */
 		h3.ui-accordion-header
 		{
 			line-height:14px;
 		}
-		html, body
-        {
-            height: 100%;
-            margin: 0px;
-        }
         div.content
         {
-            height: 75%;
+            height: 75vh;
             width: 95%;
             margin: 0 auto;
             text-align: left;
         }
 	</style>
 </head>
-<body>
+<body class="demo">
 
 	<table class="top-nav">
 		<tr>
-			<td class="column-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 			<td class="column-1">
-				<h2>PlayIt - All About</h2>
-				<span>The flow and layout of the PlayIt media player</span>
+				<h2><img src="../source/images/play-32.png" alt="play-it"> PlayIt - All About</h2>
+				<div>The flow and layout of the PlayIt media player</div>
 			</td>
 			<td class="column-2" style="text-align:center" align="center">
-				ThemeRoller Ready!<br/>
+				ThemeRoller:<br/>
 				<select id="theme" onchange="javascript:applyTheme(this.options[this.selectedIndex].text);">
 					<option>cupertino</option>
 					<option>black-tie</option>
@@ -68,13 +62,13 @@
 				</select>
 			</td>
 			<td class="column-3">
-				<a href="../index.html">Start</a> |
-				<a href="index.html">Demos</a> |
-				<a href="about-playit.xml">XML</a><br/>
+				<a href="../index.html">Demos</a> |
+				<a href="about-playit.xml">Data</a><br/>
 				<div id="playit-version-mode"></div>
 			</td>
 		</tr>
 	</table>
+
 
 	<div class="content">
 

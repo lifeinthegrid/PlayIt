@@ -1,4 +1,4 @@
-/* This file is NOT required for PlayIt.  
+/* This file is NOT required for PlayIt.
 However in order to run the demos is IS required */
 
 //MODES: DEV, WEB, PRO
@@ -20,28 +20,28 @@ switch (PLAYIT_MODE_SET) {
 
 jQuery(document).ready(function ()
 {
-	function isCompressionOn() 
+	function isCompressionOn()
 	{
 		var trigger1 = false;
-		jQuery('head script').each(function() 
+		jQuery('head script').each(function()
 		{
 			if (this.src.toLowerCase().indexOf("jquery.playit.min.js") != -1)
 			{
 				trigger1 = true;
 			}
 		});
-		
+
 		return (trigger1);
 	}
-	
+
 	//Show Active Version in UI
-	var fullDetails = PLAYIT_DETAILS + " | ";
-	fullDetails += (isCompressionOn()) 
-		? "<span class='playit-compression'>compression: on</span>"
-		: "<span class='playit-compression'>compression: off</span>";
+	var fullDetails = PLAYIT_DETAILS;
+	// fullDetails += (isCompressionOn())
+	// 	? "<span class='playit-compression'>compression: on</span>"
+	// 	: "<span class='playit-compression'>compression: off</span>";
 
 	jQuery('#playit-version-mode').html(fullDetails);
-	
+
 });
 
 
